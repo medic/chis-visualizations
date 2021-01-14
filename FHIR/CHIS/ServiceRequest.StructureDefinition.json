@@ -1,7 +1,7 @@
 {
   "resourceType": "StructureDefinition",
-  "url": "http://example.org/fhir/StructureDefinition/CommunityHealthServiceRequest",
-  "name": "CommunityHealthServiceRequest",
+  "url": "http://example.org/fhir/StructureDefinition/ServiceRequest",
+  "name": "ServiceRequest",
   "status": "draft",
   "fhirVersion": "4.0.1",
   "mapping": [
