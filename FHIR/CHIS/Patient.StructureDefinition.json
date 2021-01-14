@@ -1,7 +1,7 @@
 {
   "resourceType": "StructureDefinition",
-  "url": "http://example.org/fhir/StructureDefinition/CommunityHealthPatient",
-  "name": "CommunityHealthPatient",
+  "url": "http://example.org/fhir/StructureDefinition/Patient",
+  "name": "Patient",
   "status": "draft",
   "fhirVersion": "4.0.1",
   "mapping": [
