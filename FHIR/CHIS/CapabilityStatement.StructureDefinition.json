@@ -1,7 +1,7 @@
 {
   "resourceType": "StructureDefinition",
-  "url": "http://example.org/fhir/StructureDefinition/CHISCapabilityStatement",
-  "name": "CHISCapabilityStatement",
+  "url": "http://example.org/fhir/StructureDefinition/CapabilityStatement",
+  "name": "CapabilityStatement",
   "status": "draft",
   "fhirVersion": "4.0.1",
   "mapping": [
