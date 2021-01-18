@@ -16,5 +16,5 @@ ADP-Rockefeller
 6. Click the Save public key to save public key with .ppk extension.
 7. Share the public key with the client so that they give you permission to the dev environment.
 8. Open putty , add the dev environment ip and port.
-9. In the same putty , under ssh -Auth section browse to your private key (already saved), click on open and you will be redirected to the dev environment
+9. In the same putty , under ssh -Auth section browse to your private key (already saved), click on open and you will be redirected to the dev environment. 
 10.It will prompt you for login use "adp" as login
