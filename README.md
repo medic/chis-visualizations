@@ -18,3 +18,17 @@ ADP-Rockefeller
 8. Open putty , add the dev environment ip and port.
 9. In the same putty , under ssh -Auth section browse to your private key (already saved), click on open and you will be redirected to the dev environment. 
 10.It will prompt you for login use "adp" as login
+
+#Softwares to be installed on Dev Environment
+For Codebase
+•	Git
+For Superset
+•	python3-pip
+•	virtualenv
+For Airflow
+•	Postgres
+•	apache-airflow
+For DevOps
+•	Terraform (creating K8s cluster and nodes,dockerCE)
+•	Creation of Dockerfile
+
