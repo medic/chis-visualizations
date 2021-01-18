@@ -20,15 +20,23 @@ ADP-Rockefeller
 10.It will prompt you for login use "adp" as login
 
 #Softwares to be installed on Dev Environment
+
 For Codebase
+
 •	Git
+
 For Superset
+
 •	python3-pip
 •	virtualenv
+
 For Airflow
+
 •	Postgres
 •	apache-airflow
+
 For DevOps
+
 •	Terraform (creating K8s cluster and nodes,dockerCE)
 •	Creation of Dockerfile
 
