@@ -1,11 +1,15 @@
 # adp
-ADP-Rockefeller
+ADP-Rockefeller  
+
 #Accessing dev environment
+
 #Prerequisites:
+
  Download putty 
+ 
 #Steps to access the dev environment
 1. Open the PuTTYgen program.
-2. For Type of key to generate, select SSH-2 RSA.
+2. For Type of key to generate, select RSA.
 3. Click the Generate button.
 4. Move your mouse in the area below the progress bar. When the progress bar is full, PuTTYgen generates your key pair.
 5. Click the Save private key button to save the private key. Warning! You must save the private key. You will need it to connect to your machine.
