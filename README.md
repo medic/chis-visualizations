@@ -1,9 +1,9 @@
 # adp
 ADP-Rockefeller
 #Accessing dev environment
-Prerequisites:
+#Prerequisites:
  Download putty 
-Steps to access the dev environment
+#Steps to access the dev environment
 1. Open the PuTTYgen program.
 2. For Type of key to generate, select SSH-2 RSA.
 3. Click the Generate button.
@@ -13,4 +13,4 @@ Steps to access the dev environment
 7. Share the public key with the client so that they give you permission to the dev environment.
 8. Open putty , add the dev environment ip and port.
 9. In the same putty , under ssh -Auth section browse to your private key (already saved), click on open and you will be redirected to the dev environment
-10. It will prompt you for login use "adp" as login
+10.It will prompt you for login use "adp" as login
