@@ -1,0 +1,634 @@
+CREATE SCHEMA test_db AUTHORIZATION postgres;
+
+
+CREATE TABLE test_db.hbc_details
+(
+    chw_supervisor_id varchar ,
+	chw_id varchar,
+	case_id varchar NOT NULL,
+    case_opened_date date,
+	hbc_exit_status varchar,
+	eligible_for_hbc varchar,
+    date_of_enrollment_in_hbc date,
+	insert_timestamp timestamp,
+	update_timestamp timestamp
+);
+
+INSERT INTO test_db.hbc_details(
+	chw_supervisor_id, chw_id,case_id,case_opened_date,hbc_exit_status,eligible_for_hbc,date_of_enrollment_in_hbc,insert_timestamp,update_timestamp)
+	VALUES ('sup6ac853dd804ec20f03a9cd29cca7ca32','7ac853dd804ec20f03a9cd29cca7ca32','712363c7-a920-4a90-bc18-69206cd47bad','2020-10-30','lost_to_followup','yes','2020-10-30',CURRENT_TIMESTAMP,CURRENT_TIMESTAMP);
+INSERT INTO test_db.hbc_details(
+	chw_supervisor_id, chw_id,case_id,case_opened_date,hbc_exit_status,eligible_for_hbc,date_of_enrollment_in_hbc,insert_timestamp,update_timestamp)
+	VALUES ('sup6ac853dd804ec20f03a9cd29cca7ca32','7ac853dd804ec20f03a9cd29cca7ca32','8ddf49ee-27f1-43ea-bd07-af0660b67160','2020-09-28','lost_to_followup','yes','2020-09-28',CURRENT_TIMESTAMP,CURRENT_TIMESTAMP);
+INSERT INTO test_db.hbc_details(
+	chw_supervisor_id, chw_id,case_id,case_opened_date,hbc_exit_status,eligible_for_hbc,date_of_enrollment_in_hbc,insert_timestamp,update_timestamp)
+	VALUES ('sup6ac853dd804ec20f03a9cd29cca7ca32','7ac853dd804ec20f03a9cd29cca7ca33','688a3cf7-bae8-4f93-887c-745af9034e0c','2020-10-29','recovered','yes','2020-10-29',CURRENT_TIMESTAMP,CURRENT_TIMESTAMP);
+INSERT INTO test_db.hbc_details(
+	chw_supervisor_id, chw_id,case_id,case_opened_date,hbc_exit_status,eligible_for_hbc,date_of_enrollment_in_hbc,insert_timestamp,update_timestamp)
+	VALUES ('sup6ac853dd804ec20f03a9cd29cca7ca32','7ac853dd804ec20f03a9cd29cca7ca33','122c8d54-6624-4270-a2df-304720af9700','2020-11-30','recovered','yes','2020-11-30',CURRENT_TIMESTAMP,CURRENT_TIMESTAMP);
+INSERT INTO test_db.hbc_details(
+	chw_supervisor_id, chw_id,case_id,case_opened_date,hbc_exit_status,eligible_for_hbc,date_of_enrollment_in_hbc,insert_timestamp,update_timestamp)
+	VALUES ('sup6ac853dd804ec20f03a9cd29cca7ca32','7ac853dd804ec20f03a9cd29cca7ca34','91a30cd9-4218-432c-80e3-57b4e2f65995','2020-12-28','recovered','no','2020-12-28',CURRENT_TIMESTAMP,CURRENT_TIMESTAMP);
+INSERT INTO test_db.hbc_details(
+	chw_supervisor_id, chw_id,case_id,case_opened_date,hbc_exit_status,eligible_for_hbc,date_of_enrollment_in_hbc,insert_timestamp,update_timestamp)
+	VALUES ('sup6ac853dd804ec20f03a9cd29cca7ca32','7ac853dd804ec20f03a9cd29cca7ca34','cb86540c-7198-46b4-b509-d427c9e26168','2021-01-28','deceased','no','2021-01-28',CURRENT_TIMESTAMP,CURRENT_TIMESTAMP);
+INSERT INTO test_db.hbc_details(
+	chw_supervisor_id, chw_id,case_id,case_opened_date,hbc_exit_status,eligible_for_hbc,date_of_enrollment_in_hbc,insert_timestamp,update_timestamp)
+	VALUES ('sup6ac853dd804ec20f03a9cd29cca7ca33','7ac853dd804ec20f03a9cd29cca7ca34','8e7c808e-678e-426e-96d2-018bffe6bf26','2021-02-02','deceased','no','2021-02-02',CURRENT_TIMESTAMP,CURRENT_TIMESTAMP);
+INSERT INTO test_db.hbc_details(
+	chw_supervisor_id, chw_id,case_id,case_opened_date,hbc_exit_status,eligible_for_hbc,date_of_enrollment_in_hbc,insert_timestamp,update_timestamp)
+	VALUES ('sup6ac853dd804ec20f03a9cd29cca7ca33','7ac853dd804ec20f03a9cd29cca7ca35','ca34eae2-ce13-4b49-a689-5d9d83549730','2021-02-01','referred','yes','2021-02-01',CURRENT_TIMESTAMP,CURRENT_TIMESTAMP);
+INSERT INTO test_db.hbc_details(
+	chw_supervisor_id, chw_id,case_id,case_opened_date,hbc_exit_status,eligible_for_hbc,date_of_enrollment_in_hbc,insert_timestamp,update_timestamp)
+	VALUES ('sup6ac853dd804ec20f03a9cd29cca7ca33','7ac853dd804ec20f03a9cd29cca7ca35','610fe035-df4c-481c-8f42-4db427d210bc','2021-02-01','referred','yes','2021-02-01',CURRENT_TIMESTAMP,CURRENT_TIMESTAMP);
+INSERT INTO test_db.hbc_details(
+	chw_supervisor_id, chw_id,case_id,case_opened_date,hbc_exit_status,eligible_for_hbc,date_of_enrollment_in_hbc,insert_timestamp,update_timestamp)
+	VALUES ('sup6ac853dd804ec20f03a9cd29cca7ca34','7ac853dd804ec20f03a9cd29cca7ca35','b2984ed6-b5ec-490c-b3a8-618e76c15a6e','2021-02-01','referred','yes','2021-02-01',CURRENT_TIMESTAMP,CURRENT_TIMESTAMP);
+INSERT INTO test_db.hbc_details(
+	chw_supervisor_id, chw_id,case_id,case_opened_date,hbc_exit_status,eligible_for_hbc,date_of_enrollment_in_hbc,insert_timestamp,update_timestamp)
+	VALUES ('sup6ac853dd804ec20f03a9cd29cca7ca34','7ac853dd804ec20f03a9cd29cca7ca36','1689613eb0e544dab1c43dfcb68b0c76','2021-01-28','recovered','no','2021-01-28',CURRENT_TIMESTAMP,CURRENT_TIMESTAMP);
+INSERT INTO test_db.hbc_details(
+	chw_supervisor_id, chw_id,case_id,case_opened_date,hbc_exit_status,eligible_for_hbc,date_of_enrollment_in_hbc,insert_timestamp,update_timestamp)
+	VALUES ('sup6ac853dd804ec20f03a9cd29cca7ca34','7ac853dd804ec20f03a9cd29cca7ca37','0b4bf8dd0648404f98d8e8c08312bf9b','2021-01-28','recovered','no','2021-01-28',CURRENT_TIMESTAMP,CURRENT_TIMESTAMP);
+
+INSERT INTO test_db.hbc_details(chw_supervisor_id,chw_id,case_id,case_opened_date,hbc_exit_status,eligible_for_hbc,date_of_enrollment_in_hbc,insert_timestamp,update_timestamp)VALUES('sup6ac853dd804ec20f03a9cd29cca7ca32','7ac853dd804ec20f03a9cd29cca7ca32','712363c7-a920-4a90-bc18-69206cd47bad1','2021-01-04','lost_to_followup','yes','2021-01-04',CURRENT_TIMESTAMP,CURRENT_TIMESTAMP);
+INSERT INTO test_db.hbc_details(chw_supervisor_id,chw_id,case_id,case_opened_date,hbc_exit_status,eligible_for_hbc,date_of_enrollment_in_hbc,insert_timestamp,update_timestamp)VALUES('sup6ac853dd804ec20f03a9cd29cca7ca32','7ac853dd804ec20f03a9cd29cca7ca32','8ddf49ee-27f1-43ea-bd07-af0660b671601','2021-01-05','lost_to_followup','yes','2021-01-05',CURRENT_TIMESTAMP,CURRENT_TIMESTAMP);
+INSERT INTO test_db.hbc_details(chw_supervisor_id,chw_id,case_id,case_opened_date,hbc_exit_status,eligible_for_hbc,date_of_enrollment_in_hbc,insert_timestamp,update_timestamp)VALUES('sup6ac853dd804ec20f03a9cd29cca7ca32','7ac853dd804ec20f03a9cd29cca7ca32','8ddf49ee-27f1-43ea-bd07-af0660b671602','2021-01-06','referred','yes','2021-01-06',CURRENT_TIMESTAMP,CURRENT_TIMESTAMP);
+INSERT INTO test_db.hbc_details(chw_supervisor_id,chw_id,case_id,case_opened_date,hbc_exit_status,eligible_for_hbc,date_of_enrollment_in_hbc,insert_timestamp,update_timestamp)VALUES('sup6ac853dd804ec20f03a9cd29cca7ca32','7ac853dd804ec20f03a9cd29cca7ca32','8ddf49ee-27f1-43ea-bd07-af0660b671603','2021-01-05','recovered','yes','2021-01-05',CURRENT_TIMESTAMP,CURRENT_TIMESTAMP);
+INSERT INTO test_db.hbc_details(chw_supervisor_id,chw_id,case_id,case_opened_date,hbc_exit_status,eligible_for_hbc,date_of_enrollment_in_hbc,insert_timestamp,update_timestamp)VALUES('sup6ac853dd804ec20f03a9cd29cca7ca32','7ac853dd804ec20f03a9cd29cca7ca32','8ddf49ee-27f1-43ea-bd07-af0660b671604','2021-01-05','recovered','yes','2021-01-05',CURRENT_TIMESTAMP,CURRENT_TIMESTAMP);
+INSERT INTO test_db.hbc_details(chw_supervisor_id,chw_id,case_id,case_opened_date,hbc_exit_status,eligible_for_hbc,date_of_enrollment_in_hbc,insert_timestamp,update_timestamp)VALUES('sup6ac853dd804ec20f03a9cd29cca7ca32','7ac853dd804ec20f03a9cd29cca7ca33','688a3cf7-bae8-4f93-887c-745af9034e0c1','2021-01-11','recovered','yes','2021-01-11',CURRENT_TIMESTAMP,CURRENT_TIMESTAMP);
+INSERT INTO test_db.hbc_details(chw_supervisor_id,chw_id,case_id,case_opened_date,hbc_exit_status,eligible_for_hbc,date_of_enrollment_in_hbc,insert_timestamp,update_timestamp)VALUES('sup6ac853dd804ec20f03a9cd29cca7ca32','7ac853dd804ec20f03a9cd29cca7ca33','122c8d54-6624-4270-a2df-304720af97001','2021-01-12','recovered','yes','2021-01-12',CURRENT_TIMESTAMP,CURRENT_TIMESTAMP);
+INSERT INTO test_db.hbc_details(chw_supervisor_id,chw_id,case_id,case_opened_date,hbc_exit_status,eligible_for_hbc,date_of_enrollment_in_hbc,insert_timestamp,update_timestamp)VALUES('sup6ac853dd804ec20f03a9cd29cca7ca32','7ac853dd804ec20f03a9cd29cca7ca33','122c8d54-6624-4270-a2df-304720af97002','2021-01-12','referred','yes','2021-01-12',CURRENT_TIMESTAMP,CURRENT_TIMESTAMP);
+INSERT INTO test_db.hbc_details(chw_supervisor_id,chw_id,case_id,case_opened_date,hbc_exit_status,eligible_for_hbc,date_of_enrollment_in_hbc,insert_timestamp,update_timestamp)VALUES('sup6ac853dd804ec20f03a9cd29cca7ca32','7ac853dd804ec20f03a9cd29cca7ca33','122c8d54-6624-4270-a2df-304720af97003','2021-01-13','referred','yes','2021-01-13',CURRENT_TIMESTAMP,CURRENT_TIMESTAMP);
+INSERT INTO test_db.hbc_details(chw_supervisor_id,chw_id,case_id,case_opened_date,hbc_exit_status,eligible_for_hbc,date_of_enrollment_in_hbc,insert_timestamp,update_timestamp)VALUES('sup6ac853dd804ec20f03a9cd29cca7ca32','7ac853dd804ec20f03a9cd29cca7ca34','91a30cd9-4218-432c-80e3-57b4e2f659951','2021-01-15','recovered','yes','2021-01-15',CURRENT_TIMESTAMP,CURRENT_TIMESTAMP);
+INSERT INTO test_db.hbc_details(chw_supervisor_id,chw_id,case_id,case_opened_date,hbc_exit_status,eligible_for_hbc,date_of_enrollment_in_hbc,insert_timestamp,update_timestamp)VALUES('sup6ac853dd804ec20f03a9cd29cca7ca32','7ac853dd804ec20f03a9cd29cca7ca34','91a30cd9-4218-432c-80e3-57b4e2f659952','2021-01-15','recovered','yes','2021-01-15',CURRENT_TIMESTAMP,CURRENT_TIMESTAMP);
+INSERT INTO test_db.hbc_details(chw_supervisor_id,chw_id,case_id,case_opened_date,hbc_exit_status,eligible_for_hbc,date_of_enrollment_in_hbc,insert_timestamp,update_timestamp)VALUES('sup6ac853dd804ec20f03a9cd29cca7ca32','7ac853dd804ec20f03a9cd29cca7ca34','cb86540c-7198-46b4-b509-d427c9e261681','2021-01-16','deceased','yes','2021-01-16',CURRENT_TIMESTAMP,CURRENT_TIMESTAMP);
+INSERT INTO test_db.hbc_details(chw_supervisor_id,chw_id,case_id,case_opened_date,hbc_exit_status,eligible_for_hbc,date_of_enrollment_in_hbc,insert_timestamp,update_timestamp)VALUES('sup6ac853dd804ec20f03a9cd29cca7ca32','7ac853dd804ec20f03a9cd29cca7ca34','8e7c808e-678e-426e-96d2-018bffe6bf261','2021-01-17','referred','no','2021-01-17',CURRENT_TIMESTAMP,CURRENT_TIMESTAMP);
+INSERT INTO test_db.hbc_details(chw_supervisor_id,chw_id,case_id,case_opened_date,hbc_exit_status,eligible_for_hbc,date_of_enrollment_in_hbc,insert_timestamp,update_timestamp)VALUES('sup6ac853dd804ec20f03a9cd29cca7ca32','7ac853dd804ec20f03a9cd29cca7ca34','8e7c808e-678e-426e-96d2-018bffe6bf262','2021-01-17','referred','yes','2021-01-17',CURRENT_TIMESTAMP,CURRENT_TIMESTAMP);
+INSERT INTO test_db.hbc_details(chw_supervisor_id,chw_id,case_id,case_opened_date,hbc_exit_status,eligible_for_hbc,date_of_enrollment_in_hbc,insert_timestamp,update_timestamp)VALUES('sup6ac853dd804ec20f03a9cd29cca7ca32','7ac853dd804ec20f03a9cd29cca7ca35','ca34eae2-ce13-4b49-a689-5d9d835497301','2021-01-22','referred','no','2021-01-22',CURRENT_TIMESTAMP,CURRENT_TIMESTAMP);
+INSERT INTO test_db.hbc_details(chw_supervisor_id,chw_id,case_id,case_opened_date,hbc_exit_status,eligible_for_hbc,date_of_enrollment_in_hbc,insert_timestamp,update_timestamp)VALUES('sup6ac853dd804ec20f03a9cd29cca7ca32','7ac853dd804ec20f03a9cd29cca7ca35','610fe035-df4c-481c-8f42-4db427d210bc1','2021-01-23','referred','no','2021-01-23',CURRENT_TIMESTAMP,CURRENT_TIMESTAMP);
+INSERT INTO test_db.hbc_details(chw_supervisor_id,chw_id,case_id,case_opened_date,hbc_exit_status,eligible_for_hbc,date_of_enrollment_in_hbc,insert_timestamp,update_timestamp)VALUES('sup6ac853dd804ec20f03a9cd29cca7ca32','7ac853dd804ec20f03a9cd29cca7ca35','610fe035-df4c-481c-8f42-4db427d210bc2','2021-01-23','referred','yes','2021-01-23',CURRENT_TIMESTAMP,CURRENT_TIMESTAMP);
+INSERT INTO test_db.hbc_details(chw_supervisor_id,chw_id,case_id,case_opened_date,hbc_exit_status,eligible_for_hbc,date_of_enrollment_in_hbc,insert_timestamp,update_timestamp)VALUES('sup6ac853dd804ec20f03a9cd29cca7ca32','7ac853dd804ec20f03a9cd29cca7ca35','610fe035-df4c-481c-8f42-4db427d210bc3','2021-01-23','recovered','yes','2021-01-23',CURRENT_TIMESTAMP,CURRENT_TIMESTAMP);
+INSERT INTO test_db.hbc_details(chw_supervisor_id,chw_id,case_id,case_opened_date,hbc_exit_status,eligible_for_hbc,date_of_enrollment_in_hbc,insert_timestamp,update_timestamp)VALUES('sup6ac853dd804ec20f03a9cd29cca7ca32','7ac853dd804ec20f03a9cd29cca7ca35','610fe035-df4c-481c-8f42-4db427d210bc4','2021-01-23','recovered','yes','2021-01-23',CURRENT_TIMESTAMP,CURRENT_TIMESTAMP);
+INSERT INTO test_db.hbc_details(chw_supervisor_id,chw_id,case_id,case_opened_date,hbc_exit_status,eligible_for_hbc,date_of_enrollment_in_hbc,insert_timestamp,update_timestamp)VALUES('sup6ac853dd804ec20f03a9cd29cca7ca32','7ac853dd804ec20f03a9cd29cca7ca35','610fe035-df4c-481c-8f42-4db427d210bc5','2021-01-23','lost_to_followup','yes','2021-01-23',CURRENT_TIMESTAMP,CURRENT_TIMESTAMP);
+INSERT INTO test_db.hbc_details(chw_supervisor_id,chw_id,case_id,case_opened_date,hbc_exit_status,eligible_for_hbc,date_of_enrollment_in_hbc,insert_timestamp,update_timestamp)VALUES('sup6ac853dd804ec20f03a9cd29cca7ca33','7ac853dd804ec20f03a9cd29cca7ca36','1689613eb0e544dab1c43dfcb68b0c761','2021-02-01','recovered','yes','2021-02-01',CURRENT_TIMESTAMP,CURRENT_TIMESTAMP);
+INSERT INTO test_db.hbc_details(chw_supervisor_id,chw_id,case_id,case_opened_date,hbc_exit_status,eligible_for_hbc,date_of_enrollment_in_hbc,insert_timestamp,update_timestamp)VALUES('sup6ac853dd804ec20f03a9cd29cca7ca33','7ac853dd804ec20f03a9cd29cca7ca37','0b4bf8dd0648404f98d8e8c08312bf9b1','2021-02-08','recovered','yes','2021-02-08',CURRENT_TIMESTAMP,CURRENT_TIMESTAMP);
+
+	
+=====================================================================================================================================
+CREATE TABLE test_db.ch_supervisor_worker_mapping
+(
+    chw_supervisor_id varchar NOT NULL,
+    chw_id varchar NOT NULL,
+    insert_timestamp timestamp,
+	update_timestamp timestamp
+);
+
+INSERT INTO test_db.ch_supervisor_worker_mapping(
+chw_supervisor_id, chw_id,insert_timestamp,update_timestamp)
+	VALUES ('sup6ac853dd804ec20f03a9cd29cca7ca32','7ac853dd804ec20f03a9cd29cca7ca32',CURRENT_TIMESTAMP,CURRENT_TIMESTAMP);
+INSERT INTO test_db.ch_supervisor_worker_mapping(
+chw_supervisor_id, chw_id,insert_timestamp,update_timestamp)
+	VALUES ('sup6ac853dd804ec20f03a9cd29cca7ca32','7ac853dd804ec20f03a9cd29cca7ca32',CURRENT_TIMESTAMP,CURRENT_TIMESTAMP);
+INSERT INTO test_db.ch_supervisor_worker_mapping(
+chw_supervisor_id, chw_id,insert_timestamp,update_timestamp)
+	VALUES ('sup6ac853dd804ec20f03a9cd29cca7ca32','7ac853dd804ec20f03a9cd29cca7ca33',CURRENT_TIMESTAMP,CURRENT_TIMESTAMP);
+INSERT INTO test_db.ch_supervisor_worker_mapping(
+chw_supervisor_id, chw_id,insert_timestamp,update_timestamp)
+	VALUES ('sup6ac853dd804ec20f03a9cd29cca7ca32','7ac853dd804ec20f03a9cd29cca7ca33',CURRENT_TIMESTAMP,CURRENT_TIMESTAMP);
+INSERT INTO test_db.ch_supervisor_worker_mapping(
+chw_supervisor_id, chw_id,insert_timestamp,update_timestamp)
+	VALUES ('sup6ac853dd804ec20f03a9cd29cca7ca32','7ac853dd804ec20f03a9cd29cca7ca34',CURRENT_TIMESTAMP,CURRENT_TIMESTAMP);
+INSERT INTO test_db.ch_supervisor_worker_mapping(
+chw_supervisor_id, chw_id,insert_timestamp,update_timestamp)
+	VALUES ('sup6ac853dd804ec20f03a9cd29cca7ca32','7ac853dd804ec20f03a9cd29cca7ca34',CURRENT_TIMESTAMP,CURRENT_TIMESTAMP);
+INSERT INTO test_db.ch_supervisor_worker_mapping(
+chw_supervisor_id, chw_id,insert_timestamp,update_timestamp)
+	VALUES ('sup6ac853dd804ec20f03a9cd29cca7ca33','7ac853dd804ec20f03a9cd29cca7ca34',CURRENT_TIMESTAMP,CURRENT_TIMESTAMP);
+INSERT INTO test_db.ch_supervisor_worker_mapping(
+chw_supervisor_id, chw_id,insert_timestamp,update_timestamp)
+	VALUES ('sup6ac853dd804ec20f03a9cd29cca7ca33','7ac853dd804ec20f03a9cd29cca7ca35',CURRENT_TIMESTAMP,CURRENT_TIMESTAMP);
+INSERT INTO test_db.ch_supervisor_worker_mapping(
+chw_supervisor_id, chw_id,insert_timestamp,update_timestamp)
+	VALUES ('sup6ac853dd804ec20f03a9cd29cca7ca33','7ac853dd804ec20f03a9cd29cca7ca35',CURRENT_TIMESTAMP,CURRENT_TIMESTAMP);
+INSERT INTO test_db.ch_supervisor_worker_mapping(
+chw_supervisor_id, chw_id,insert_timestamp,update_timestamp)
+	VALUES ('sup6ac853dd804ec20f03a9cd29cca7ca34','7ac853dd804ec20f03a9cd29cca7ca35',CURRENT_TIMESTAMP,CURRENT_TIMESTAMP);
+INSERT INTO test_db.ch_supervisor_worker_mapping(
+chw_supervisor_id, chw_id,insert_timestamp,update_timestamp)
+	VALUES ('sup6ac853dd804ec20f03a9cd29cca7ca34','7ac853dd804ec20f03a9cd29cca7ca36',CURRENT_TIMESTAMP,CURRENT_TIMESTAMP);
+INSERT INTO test_db.ch_supervisor_worker_mapping(
+chw_supervisor_id, chw_id,insert_timestamp,update_timestamp)
+	VALUES ('sup6ac853dd804ec20f03a9cd29cca7ca34','7ac853dd804ec20f03a9cd29cca7ca37',CURRENT_TIMESTAMP,CURRENT_TIMESTAMP);
+
+INSERT INTO test_db.ch_supervisor_worker_mapping(chw_supervisor_id,chw_id,insert_timestamp,update_timestamp)VALUES('sup6ac853dd804ec20f03a9cd29cca7ca32','7ac853dd804ec20f03a9cd29cca7ca32',CURRENT_TIMESTAMP,CURRENT_TIMESTAMP);
+INSERT INTO test_db.ch_supervisor_worker_mapping(chw_supervisor_id,chw_id,insert_timestamp,update_timestamp)VALUES('sup6ac853dd804ec20f03a9cd29cca7ca32','7ac853dd804ec20f03a9cd29cca7ca32',CURRENT_TIMESTAMP,CURRENT_TIMESTAMP);
+INSERT INTO test_db.ch_supervisor_worker_mapping(chw_supervisor_id,chw_id,insert_timestamp,update_timestamp)VALUES('sup6ac853dd804ec20f03a9cd29cca7ca32','7ac853dd804ec20f03a9cd29cca7ca32',CURRENT_TIMESTAMP,CURRENT_TIMESTAMP);
+INSERT INTO test_db.ch_supervisor_worker_mapping(chw_supervisor_id,chw_id,insert_timestamp,update_timestamp)VALUES('sup6ac853dd804ec20f03a9cd29cca7ca32','7ac853dd804ec20f03a9cd29cca7ca32',CURRENT_TIMESTAMP,CURRENT_TIMESTAMP);
+INSERT INTO test_db.ch_supervisor_worker_mapping(chw_supervisor_id,chw_id,insert_timestamp,update_timestamp)VALUES('sup6ac853dd804ec20f03a9cd29cca7ca32','7ac853dd804ec20f03a9cd29cca7ca32',CURRENT_TIMESTAMP,CURRENT_TIMESTAMP);
+INSERT INTO test_db.ch_supervisor_worker_mapping(chw_supervisor_id,chw_id,insert_timestamp,update_timestamp)VALUES('sup6ac853dd804ec20f03a9cd29cca7ca32','7ac853dd804ec20f03a9cd29cca7ca33',CURRENT_TIMESTAMP,CURRENT_TIMESTAMP);
+INSERT INTO test_db.ch_supervisor_worker_mapping(chw_supervisor_id,chw_id,insert_timestamp,update_timestamp)VALUES('sup6ac853dd804ec20f03a9cd29cca7ca32','7ac853dd804ec20f03a9cd29cca7ca33',CURRENT_TIMESTAMP,CURRENT_TIMESTAMP);
+INSERT INTO test_db.ch_supervisor_worker_mapping(chw_supervisor_id,chw_id,insert_timestamp,update_timestamp)VALUES('sup6ac853dd804ec20f03a9cd29cca7ca32','7ac853dd804ec20f03a9cd29cca7ca33',CURRENT_TIMESTAMP,CURRENT_TIMESTAMP);
+INSERT INTO test_db.ch_supervisor_worker_mapping(chw_supervisor_id,chw_id,insert_timestamp,update_timestamp)VALUES('sup6ac853dd804ec20f03a9cd29cca7ca32','7ac853dd804ec20f03a9cd29cca7ca33',CURRENT_TIMESTAMP,CURRENT_TIMESTAMP);
+INSERT INTO test_db.ch_supervisor_worker_mapping(chw_supervisor_id,chw_id,insert_timestamp,update_timestamp)VALUES('sup6ac853dd804ec20f03a9cd29cca7ca32','7ac853dd804ec20f03a9cd29cca7ca34',CURRENT_TIMESTAMP,CURRENT_TIMESTAMP);
+INSERT INTO test_db.ch_supervisor_worker_mapping(chw_supervisor_id,chw_id,insert_timestamp,update_timestamp)VALUES('sup6ac853dd804ec20f03a9cd29cca7ca32','7ac853dd804ec20f03a9cd29cca7ca34',CURRENT_TIMESTAMP,CURRENT_TIMESTAMP);
+INSERT INTO test_db.ch_supervisor_worker_mapping(chw_supervisor_id,chw_id,insert_timestamp,update_timestamp)VALUES('sup6ac853dd804ec20f03a9cd29cca7ca32','7ac853dd804ec20f03a9cd29cca7ca34',CURRENT_TIMESTAMP,CURRENT_TIMESTAMP);
+INSERT INTO test_db.ch_supervisor_worker_mapping(chw_supervisor_id,chw_id,insert_timestamp,update_timestamp)VALUES('sup6ac853dd804ec20f03a9cd29cca7ca32','7ac853dd804ec20f03a9cd29cca7ca34',CURRENT_TIMESTAMP,CURRENT_TIMESTAMP);
+INSERT INTO test_db.ch_supervisor_worker_mapping(chw_supervisor_id,chw_id,insert_timestamp,update_timestamp)VALUES('sup6ac853dd804ec20f03a9cd29cca7ca32','7ac853dd804ec20f03a9cd29cca7ca34',CURRENT_TIMESTAMP,CURRENT_TIMESTAMP);
+INSERT INTO test_db.ch_supervisor_worker_mapping(chw_supervisor_id,chw_id,insert_timestamp,update_timestamp)VALUES('sup6ac853dd804ec20f03a9cd29cca7ca32','7ac853dd804ec20f03a9cd29cca7ca35',CURRENT_TIMESTAMP,CURRENT_TIMESTAMP);
+INSERT INTO test_db.ch_supervisor_worker_mapping(chw_supervisor_id,chw_id,insert_timestamp,update_timestamp)VALUES('sup6ac853dd804ec20f03a9cd29cca7ca32','7ac853dd804ec20f03a9cd29cca7ca35',CURRENT_TIMESTAMP,CURRENT_TIMESTAMP);
+INSERT INTO test_db.ch_supervisor_worker_mapping(chw_supervisor_id,chw_id,insert_timestamp,update_timestamp)VALUES('sup6ac853dd804ec20f03a9cd29cca7ca32','7ac853dd804ec20f03a9cd29cca7ca35',CURRENT_TIMESTAMP,CURRENT_TIMESTAMP);
+INSERT INTO test_db.ch_supervisor_worker_mapping(chw_supervisor_id,chw_id,insert_timestamp,update_timestamp)VALUES('sup6ac853dd804ec20f03a9cd29cca7ca32','7ac853dd804ec20f03a9cd29cca7ca35',CURRENT_TIMESTAMP,CURRENT_TIMESTAMP);
+INSERT INTO test_db.ch_supervisor_worker_mapping(chw_supervisor_id,chw_id,insert_timestamp,update_timestamp)VALUES('sup6ac853dd804ec20f03a9cd29cca7ca32','7ac853dd804ec20f03a9cd29cca7ca35',CURRENT_TIMESTAMP,CURRENT_TIMESTAMP);
+INSERT INTO test_db.ch_supervisor_worker_mapping(chw_supervisor_id,chw_id,insert_timestamp,update_timestamp)VALUES('sup6ac853dd804ec20f03a9cd29cca7ca32','7ac853dd804ec20f03a9cd29cca7ca35',CURRENT_TIMESTAMP,CURRENT_TIMESTAMP);
+INSERT INTO test_db.ch_supervisor_worker_mapping(chw_supervisor_id,chw_id,insert_timestamp,update_timestamp)VALUES('sup6ac853dd804ec20f03a9cd29cca7ca33','7ac853dd804ec20f03a9cd29cca7ca36',CURRENT_TIMESTAMP,CURRENT_TIMESTAMP);
+INSERT INTO test_db.ch_supervisor_worker_mapping(chw_supervisor_id,chw_id,insert_timestamp,update_timestamp)VALUES('sup6ac853dd804ec20f03a9cd29cca7ca33','7ac853dd804ec20f03a9cd29cca7ca37',CURRENT_TIMESTAMP,CURRENT_TIMESTAMP);
+
+=======================================================================================================================================
+CREATE TABLE test_db.patient_info
+(
+    case_id varchar NOT NULL,
+    patient_age int,
+    gender varchar,
+    eligible_for_hbc varchar,
+    date_of_enrollment_in_hbc date,
+    patient_status varchar,
+    caregiver_available varchar,
+    follow_up_meeting_location varchar,
+    insert_timestamp timestamp,
+	update_timestamp timestamp
+);
+
+INSERT INTO test_db.patient_info(
+	case_id,patient_age, gender, eligible_for_hbc, date_of_enrollment_in_hbc, patient_status,caregiver_available,follow_up_meeting_location,insert_timestamp,update_timestamp)
+	VALUES ('712363c7-a920-4a90-bc18-69206cd47bad','360','Male','yes','2020-09-18','alive','yes','remote',CURRENT_TIMESTAMP,CURRENT_TIMESTAMP);
+	
+	INSERT INTO test_db.patient_info(
+	case_id,patient_age, gender, eligible_for_hbc, date_of_enrollment_in_hbc, patient_status,caregiver_available,follow_up_meeting_location,insert_timestamp,update_timestamp)
+	VALUES ('8ddf49ee-27f1-43ea-bd07-af0660b67160','180','Male','yes','2020-09-18','alive','yes','in-person',CURRENT_TIMESTAMP,CURRENT_TIMESTAMP);
+INSERT INTO test_db.patient_info(
+	case_id,patient_age, gender, eligible_for_hbc, date_of_enrollment_in_hbc, patient_status,caregiver_available,follow_up_meeting_location,insert_timestamp,update_timestamp)
+	VALUES ('688a3cf7-bae8-4f93-887c-745af9034e0c','220','Male','yes','2020-09-18','alive','yes','remote',CURRENT_TIMESTAMP,CURRENT_TIMESTAMP);
+INSERT INTO test_db.patient_info(
+	case_id,patient_age, gender, eligible_for_hbc, date_of_enrollment_in_hbc, patient_status,caregiver_available,follow_up_meeting_location,insert_timestamp,update_timestamp)
+	VALUES ('122c8d54-6624-4270-a2df-304720af9700','720','Male','yes','2020-09-11','deceased','yes','remote',CURRENT_TIMESTAMP,CURRENT_TIMESTAMP);
+INSERT INTO test_db.patient_info(
+	case_id,patient_age, gender, eligible_for_hbc, date_of_enrollment_in_hbc, patient_status,caregiver_available,follow_up_meeting_location,insert_timestamp,update_timestamp)
+	VALUES ('91a30cd9-4218-432c-80e3-57b4e2f65995','840','Female','yes','2020-09-30','deceased','yes','remote',CURRENT_TIMESTAMP,CURRENT_TIMESTAMP);
+INSERT INTO test_db.patient_info(
+	case_id,patient_age, gender, eligible_for_hbc, date_of_enrollment_in_hbc, patient_status,caregiver_available,follow_up_meeting_location,insert_timestamp,update_timestamp)
+	VALUES ('cb86540c-7198-46b4-b509-d427c9e26168','120','Female','no','2020-09-28','alive','yes','remote',CURRENT_TIMESTAMP,CURRENT_TIMESTAMP);
+INSERT INTO test_db.patient_info(
+	case_id,patient_age, gender, eligible_for_hbc, date_of_enrollment_in_hbc, patient_status,caregiver_available,follow_up_meeting_location,insert_timestamp,update_timestamp)
+	VALUES ('8e7c808e-678e-426e-96d2-018bffe6bf26','10','Male','yes','2020-09-29','alive','yes','remote',CURRENT_TIMESTAMP,CURRENT_TIMESTAMP);
+INSERT INTO test_db.patient_info(
+	case_id,patient_age, gender, eligible_for_hbc, date_of_enrollment_in_hbc, patient_status,caregiver_available,follow_up_meeting_location,insert_timestamp,update_timestamp)
+	VALUES ('ca34eae2-ce13-4b49-a689-5d9d83549730','200','Female','yes','2020-09-28','alive','no','remote',CURRENT_TIMESTAMP,CURRENT_TIMESTAMP);
+INSERT INTO test_db.patient_info(
+	case_id,patient_age, gender, eligible_for_hbc, date_of_enrollment_in_hbc, patient_status,caregiver_available,follow_up_meeting_location,insert_timestamp,update_timestamp)
+	VALUES ('610fe035-df4c-481c-8f42-4db427d210bc','240','Female','yes','2020-09-29','alive','no','remote',CURRENT_TIMESTAMP,CURRENT_TIMESTAMP);
+INSERT INTO test_db.patient_info(
+	case_id,patient_age, gender, eligible_for_hbc, date_of_enrollment_in_hbc, patient_status,caregiver_available,follow_up_meeting_location,insert_timestamp,update_timestamp)
+	VALUES ('b2984ed6-b5ec-490c-b3a8-618e76c15a6e','220','Female','yes','2020-09-30','alive','no','remote',CURRENT_TIMESTAMP,CURRENT_TIMESTAMP);
+INSERT INTO test_db.patient_info(
+	case_id,patient_age, gender, eligible_for_hbc, date_of_enrollment_in_hbc, patient_status,caregiver_available,follow_up_meeting_location,insert_timestamp,update_timestamp)
+	VALUES ('1689613eb0e544dab1c43dfcb68b0c76','720','Female','yes','2020-09-28','alive','no','remote',CURRENT_TIMESTAMP,CURRENT_TIMESTAMP);
+INSERT INTO test_db.patient_info(
+	case_id,patient_age, gender, eligible_for_hbc, date_of_enrollment_in_hbc, patient_status,caregiver_available,follow_up_meeting_location,insert_timestamp,update_timestamp)
+	VALUES ('0b4bf8dd0648404f98d8e8c08312bf9b','840','Female','yes','2020-12-29','alive','yes','remote',CURRENT_TIMESTAMP,CURRENT_TIMESTAMP);
+INSERT INTO test_db.patient_info(
+	case_id,patient_age, gender, eligible_for_hbc, date_of_enrollment_in_hbc, patient_status,caregiver_available,follow_up_meeting_location,insert_timestamp,update_timestamp)
+	VALUES ('85438807e9a041828a5c2e68cdd77543','120','Female','yes','2020-12-30','alive','yes','remote',CURRENT_TIMESTAMP,CURRENT_TIMESTAMP);
+INSERT INTO test_db.patient_info(
+	case_id,patient_age, gender, eligible_for_hbc, date_of_enrollment_in_hbc, patient_status,caregiver_available,follow_up_meeting_location,insert_timestamp,update_timestamp)
+	VALUES ('0bd5543085084039b74fe8a4a8407548','15','Female','yes','2020-09-28','alive','yes','remote',CURRENT_TIMESTAMP,CURRENT_TIMESTAMP);
+INSERT INTO test_db.patient_info(
+	case_id,patient_age, gender, eligible_for_hbc, date_of_enrollment_in_hbc, patient_status,caregiver_available,follow_up_meeting_location,insert_timestamp,update_timestamp)
+	VALUES ('bc3aa454251a407f93a0ea3a268cd577','78','Male','yes','2020-11-29','deceased','yes','in-person',CURRENT_TIMESTAMP,CURRENT_TIMESTAMP);
+INSERT INTO test_db.patient_info(
+	case_id,patient_age, gender, eligible_for_hbc, date_of_enrollment_in_hbc, patient_status,caregiver_available,follow_up_meeting_location,insert_timestamp,update_timestamp)
+	VALUES ('fe20b15a-a59e-4002-8297-1482a927eb9b','190','Male','no','2020-10-30','deceased','yes','in-person',CURRENT_TIMESTAMP,CURRENT_TIMESTAMP);
+INSERT INTO test_db.patient_info(
+	case_id,patient_age, gender, eligible_for_hbc, date_of_enrollment_in_hbc, patient_status,caregiver_available,follow_up_meeting_location,insert_timestamp,update_timestamp)
+	VALUES ('42769ac5-0e17-4ad4-bcd4-c13c47d1d567','290','Male','no','2020-09-28','deceased','yes','in-person',CURRENT_TIMESTAMP,CURRENT_TIMESTAMP);
+INSERT INTO test_db.patient_info(
+	case_id,patient_age, gender, eligible_for_hbc, date_of_enrollment_in_hbc, patient_status,caregiver_available,follow_up_meeting_location,insert_timestamp,update_timestamp)
+	VALUES ('c6f6e645-2dad-4b20-a4d3-2e0b6095e608','220','Male','no','2020-10-29','deceased','yes','in-person',CURRENT_TIMESTAMP,CURRENT_TIMESTAMP);
+INSERT INTO test_db.patient_info(
+	case_id,patient_age, gender, eligible_for_hbc, date_of_enrollment_in_hbc, patient_status,caregiver_available,follow_up_meeting_location,insert_timestamp,update_timestamp)
+	VALUES ('b8fe0ce8-7df4-4ec3-b7e8-cf04c40c684d','480','Male','no','2020-11-30','alive','yes','in-person',CURRENT_TIMESTAMP,CURRENT_TIMESTAMP);
+INSERT INTO test_db.patient_info(
+	case_id,patient_age, gender, eligible_for_hbc, date_of_enrollment_in_hbc, patient_status,caregiver_available,follow_up_meeting_location,insert_timestamp,update_timestamp)
+	VALUES ('b4dea5d3-c395-4da2-89e9-6a48f2a8f4fa','780','Female','no','2020-12-28','alive','yes','remote',CURRENT_TIMESTAMP,CURRENT_TIMESTAMP);
+INSERT INTO test_db.patient_info(
+	case_id,patient_age, gender, eligible_for_hbc, date_of_enrollment_in_hbc, patient_status,caregiver_available,follow_up_meeting_location,insert_timestamp,update_timestamp)
+	VALUES ('5842d63a-a238-4784-a665-77eed76ffc44','650','Female','yes','2021-01-28','alive','yes','remote',CURRENT_TIMESTAMP,CURRENT_TIMESTAMP);
+INSERT INTO test_db.patient_info(
+	case_id,patient_age, gender, eligible_for_hbc, date_of_enrollment_in_hbc, patient_status,caregiver_available,follow_up_meeting_location,insert_timestamp,update_timestamp)
+	VALUES ('cc29aa1a-489d-4147-a47f-1774f3c73396','330','Female','yes','2021-02-02','alive','no','remote',CURRENT_TIMESTAMP,CURRENT_TIMESTAMP);
+INSERT INTO test_db.patient_info(
+	case_id,patient_age, gender, eligible_for_hbc, date_of_enrollment_in_hbc, patient_status,caregiver_available,follow_up_meeting_location,insert_timestamp,update_timestamp)
+	VALUES ('81069d90-8a55-4bfc-9ea9-8766ca692021','190','Female','yes','2021-02-01','alive','no','remote',CURRENT_TIMESTAMP,CURRENT_TIMESTAMP);
+
+INSERT INTO test_db.patient_info(case_id,patient_age,gender,eligible_for_hbc,date_of_enrollment_in_hbc,patient_status,caregiver_available,follow_up_meeting_location,insert_timestamp,update_timestamp)VALUES('712363c7-a920-4a90-bc18-69206cd47bad1','360','Male','yes','2021-01-04','alive','yes','in-person',CURRENT_TIMESTAMP,CURRENT_TIMESTAMP);
+INSERT INTO test_db.patient_info(case_id,patient_age,gender,eligible_for_hbc,date_of_enrollment_in_hbc,patient_status,caregiver_available,follow_up_meeting_location,insert_timestamp,update_timestamp)VALUES('8ddf49ee-27f1-43ea-bd07-af0660b671601','360','Female','yes','2021-01-05','alive','yes','in-person',CURRENT_TIMESTAMP,CURRENT_TIMESTAMP);
+INSERT INTO test_db.patient_info(case_id,patient_age,gender,eligible_for_hbc,date_of_enrollment_in_hbc,patient_status,caregiver_available,follow_up_meeting_location,insert_timestamp,update_timestamp)VALUES('8ddf49ee-27f1-43ea-bd07-af0660b671602','180','Not Known','yes','2021-01-06','alive','no','remote',CURRENT_TIMESTAMP,CURRENT_TIMESTAMP);
+INSERT INTO test_db.patient_info(case_id,patient_age,gender,eligible_for_hbc,date_of_enrollment_in_hbc,patient_status,caregiver_available,follow_up_meeting_location,insert_timestamp,update_timestamp)VALUES('8ddf49ee-27f1-43ea-bd07-af0660b671603','220','Male','yes','2021-01-05','alive','yes','in-person',CURRENT_TIMESTAMP,CURRENT_TIMESTAMP);
+INSERT INTO test_db.patient_info(case_id,patient_age,gender,eligible_for_hbc,date_of_enrollment_in_hbc,patient_status,caregiver_available,follow_up_meeting_location,insert_timestamp,update_timestamp)VALUES('8ddf49ee-27f1-43ea-bd07-af0660b671604','720','Male','yes','2021-01-05','alive','yes','in-person',CURRENT_TIMESTAMP,CURRENT_TIMESTAMP);
+INSERT INTO test_db.patient_info(case_id,patient_age,gender,eligible_for_hbc,date_of_enrollment_in_hbc,patient_status,caregiver_available,follow_up_meeting_location,insert_timestamp,update_timestamp)VALUES('688a3cf7-bae8-4f93-887c-745af9034e0c1','360','Male','yes','2021-01-11','alive','yes','in-person',CURRENT_TIMESTAMP,CURRENT_TIMESTAMP);
+INSERT INTO test_db.patient_info(case_id,patient_age,gender,eligible_for_hbc,date_of_enrollment_in_hbc,patient_status,caregiver_available,follow_up_meeting_location,insert_timestamp,update_timestamp)VALUES('122c8d54-6624-4270-a2df-304720af97001','180','Female','yes','2021-01-12','alive','yes','remote',CURRENT_TIMESTAMP,CURRENT_TIMESTAMP);
+INSERT INTO test_db.patient_info(case_id,patient_age,gender,eligible_for_hbc,date_of_enrollment_in_hbc,patient_status,caregiver_available,follow_up_meeting_location,insert_timestamp,update_timestamp)VALUES('122c8d54-6624-4270-a2df-304720af97002','220','Not Known','yes','2021-01-12','alive','no','remote',CURRENT_TIMESTAMP,CURRENT_TIMESTAMP);
+INSERT INTO test_db.patient_info(case_id,patient_age,gender,eligible_for_hbc,date_of_enrollment_in_hbc,patient_status,caregiver_available,follow_up_meeting_location,insert_timestamp,update_timestamp)VALUES('122c8d54-6624-4270-a2df-304720af97003','720','Male','yes','2021-01-13','alive','yes','remote',CURRENT_TIMESTAMP,CURRENT_TIMESTAMP);
+INSERT INTO test_db.patient_info(case_id,patient_age,gender,eligible_for_hbc,date_of_enrollment_in_hbc,patient_status,caregiver_available,follow_up_meeting_location,insert_timestamp,update_timestamp)VALUES('91a30cd9-4218-432c-80e3-57b4e2f659951','360','Male','yes','2021-01-15','alive','yes','in-person',CURRENT_TIMESTAMP,CURRENT_TIMESTAMP);
+INSERT INTO test_db.patient_info(case_id,patient_age,gender,eligible_for_hbc,date_of_enrollment_in_hbc,patient_status,caregiver_available,follow_up_meeting_location,insert_timestamp,update_timestamp)VALUES('91a30cd9-4218-432c-80e3-57b4e2f659952','180','Male','yes','2021-01-15','alive','yes','in-person',CURRENT_TIMESTAMP,CURRENT_TIMESTAMP);
+INSERT INTO test_db.patient_info(case_id,patient_age,gender,eligible_for_hbc,date_of_enrollment_in_hbc,patient_status,caregiver_available,follow_up_meeting_location,insert_timestamp,update_timestamp)VALUES('cb86540c-7198-46b4-b509-d427c9e261681','220','Female','yes','2021-01-16','deceased','no','remote',CURRENT_TIMESTAMP,CURRENT_TIMESTAMP);
+INSERT INTO test_db.patient_info(case_id,patient_age,gender,eligible_for_hbc,date_of_enrollment_in_hbc,patient_status,caregiver_available,follow_up_meeting_location,insert_timestamp,update_timestamp)VALUES('8e7c808e-678e-426e-96d2-018bffe6bf261','720','Female','no','2021-01-17','alive','yes','remote',CURRENT_TIMESTAMP,CURRENT_TIMESTAMP);
+INSERT INTO test_db.patient_info(case_id,patient_age,gender,eligible_for_hbc,date_of_enrollment_in_hbc,patient_status,caregiver_available,follow_up_meeting_location,insert_timestamp,update_timestamp)VALUES('8e7c808e-678e-426e-96d2-018bffe6bf262','840','Male','yes','2021-01-17','alive','no','remote',CURRENT_TIMESTAMP,CURRENT_TIMESTAMP);
+INSERT INTO test_db.patient_info(case_id,patient_age,gender,eligible_for_hbc,date_of_enrollment_in_hbc,patient_status,caregiver_available,follow_up_meeting_location,insert_timestamp,update_timestamp)VALUES('ca34eae2-ce13-4b49-a689-5d9d835497301','360','Male','no','2021-01-22','alive','yes','remote',CURRENT_TIMESTAMP,CURRENT_TIMESTAMP);
+INSERT INTO test_db.patient_info(case_id,patient_age,gender,eligible_for_hbc,date_of_enrollment_in_hbc,patient_status,caregiver_available,follow_up_meeting_location,insert_timestamp,update_timestamp)VALUES('610fe035-df4c-481c-8f42-4db427d210bc1','180','Female','no','2021-01-23','alive','yes','in-person',CURRENT_TIMESTAMP,CURRENT_TIMESTAMP);
+INSERT INTO test_db.patient_info(case_id,patient_age,gender,eligible_for_hbc,date_of_enrollment_in_hbc,patient_status,caregiver_available,follow_up_meeting_location,insert_timestamp,update_timestamp)VALUES('610fe035-df4c-481c-8f42-4db427d210bc2','180','Female','yes','2021-01-23','alive','no','remote',CURRENT_TIMESTAMP,CURRENT_TIMESTAMP);
+INSERT INTO test_db.patient_info(case_id,patient_age,gender,eligible_for_hbc,date_of_enrollment_in_hbc,patient_status,caregiver_available,follow_up_meeting_location,insert_timestamp,update_timestamp)VALUES('610fe035-df4c-481c-8f42-4db427d210bc3','220','Male','yes','2021-01-23','alive','yes','remote',CURRENT_TIMESTAMP,CURRENT_TIMESTAMP);
+INSERT INTO test_db.patient_info(case_id,patient_age,gender,eligible_for_hbc,date_of_enrollment_in_hbc,patient_status,caregiver_available,follow_up_meeting_location,insert_timestamp,update_timestamp)VALUES('610fe035-df4c-481c-8f42-4db427d210bc4','720','Male','yes','2021-01-23','alive','yes','in-person',CURRENT_TIMESTAMP,CURRENT_TIMESTAMP);
+INSERT INTO test_db.patient_info(case_id,patient_age,gender,eligible_for_hbc,date_of_enrollment_in_hbc,patient_status,caregiver_available,follow_up_meeting_location,insert_timestamp,update_timestamp)VALUES('610fe035-df4c-481c-8f42-4db427d210bc5','840','Not Known','yes','2021-01-23','alive','yes','in-person',CURRENT_TIMESTAMP,CURRENT_TIMESTAMP);
+INSERT INTO test_db.patient_info(case_id,patient_age,gender,eligible_for_hbc,date_of_enrollment_in_hbc,patient_status,caregiver_available,follow_up_meeting_location,insert_timestamp,update_timestamp)VALUES('1689613eb0e544dab1c43dfcb68b0c761','220','Male','yes','2021-02-01','alive','yes','in-person',CURRENT_TIMESTAMP,CURRENT_TIMESTAMP);
+INSERT INTO test_db.patient_info(case_id,patient_age,gender,eligible_for_hbc,date_of_enrollment_in_hbc,patient_status,caregiver_available,follow_up_meeting_location,insert_timestamp,update_timestamp)VALUES('0b4bf8dd0648404f98d8e8c08312bf9b1','720','Female','yes','2021-02-08','alive','yes','remote',CURRENT_TIMESTAMP,CURRENT_TIMESTAMP);
+
+================================================================================================================================
+
+CREATE TABLE test_db.followup_details
+(
+    case_id varchar NOT NULL,
+    xform_ids varchar,
+    follow_up_start_date date,
+    follow_up_end_date date,
+    insert_timestamp timestamp,
+	update_timestamp timestamp
+);
+
+INSERT INTO test_db.followup_details(
+	case_id, xform_ids, follow_up_start_date, follow_up_end_date,insert_timestamp,update_timestamp)
+	VALUES ('712363c7-a920-4a90-bc18-69206cd47bad','28fbbe5e-b54f-4cd8-a93f-d31d4a2e3344','2020-09-18','2020-09-18',CURRENT_TIMESTAMP,CURRENT_TIMESTAMP);
+INSERT INTO test_db.followup_details(
+	case_id, xform_ids, follow_up_start_date, follow_up_end_date,insert_timestamp,update_timestamp)
+	VALUES ('712363c7-a920-4a90-bc18-69206cd47bad','28fbbe5e-b54f-4cd8-a93f-d31d4a2e3345','2020-09-18','2020-09-18',CURRENT_TIMESTAMP,CURRENT_TIMESTAMP);
+INSERT INTO test_db.followup_details(
+	case_id, xform_ids, follow_up_start_date, follow_up_end_date,insert_timestamp,update_timestamp)
+	VALUES ('712363c7-a920-4a90-bc18-69206cd47bad','28fbbe5e-b54f-4cd8-a93f-d31d4a2e3346','2020-09-18','2020-09-18',CURRENT_TIMESTAMP,CURRENT_TIMESTAMP);
+INSERT INTO test_db.followup_details(
+	case_id, xform_ids, follow_up_start_date, follow_up_end_date,insert_timestamp,update_timestamp)
+	VALUES ('122c8d54-6624-4270-a2df-304720af9700','28fbbe5e-b54f-4cd8-a93f-d31d4a2e3347','2020-09-11','2020-09-11',CURRENT_TIMESTAMP,CURRENT_TIMESTAMP);
+INSERT INTO test_db.followup_details(
+	case_id, xform_ids, follow_up_start_date, follow_up_end_date,insert_timestamp,update_timestamp)
+	VALUES ('122c8d54-6624-4270-a2df-304720af9700','28fbbe5e-b54f-4cd8-a93f-d31d4a2e3348','2020-09-30','2020-09-30',CURRENT_TIMESTAMP,CURRENT_TIMESTAMP);
+INSERT INTO test_db.followup_details(
+	case_id, xform_ids, follow_up_start_date, follow_up_end_date,insert_timestamp,update_timestamp)
+	VALUES ('122c8d54-6624-4270-a2df-304720af9700','28fbbe5e-b54f-4cd8-a93f-d31d4a2e3349','2020-09-28','2020-09-28',CURRENT_TIMESTAMP,CURRENT_TIMESTAMP);
+INSERT INTO test_db.followup_details(
+	case_id, xform_ids, follow_up_start_date, follow_up_end_date,insert_timestamp,update_timestamp)
+	VALUES ('122c8d54-6624-4270-a2df-304720af9700','28fbbe5e-b54f-4cd8-a93f-d31d4a2e3350','2020-09-29','2020-09-29',CURRENT_TIMESTAMP,CURRENT_TIMESTAMP);
+INSERT INTO test_db.followup_details(
+	case_id, xform_ids, follow_up_start_date, follow_up_end_date,insert_timestamp,update_timestamp)
+	VALUES ('ca34eae2-ce13-4b49-a689-5d9d83549730','28fbbe5e-b54f-4cd8-a93f-d31d4a2e3351','2020-09-28','2020-09-28',CURRENT_TIMESTAMP,CURRENT_TIMESTAMP);
+INSERT INTO test_db.followup_details(
+	case_id, xform_ids, follow_up_start_date, follow_up_end_date,insert_timestamp,update_timestamp)
+	VALUES ('ca34eae2-ce13-4b49-a689-5d9d83549730','28fbbe5e-b54f-4cd8-a93f-d31d4a2e3352','2020-09-29','2020-09-29',CURRENT_TIMESTAMP,CURRENT_TIMESTAMP);
+INSERT INTO test_db.followup_details(
+	case_id, xform_ids, follow_up_start_date, follow_up_end_date,insert_timestamp,update_timestamp)
+	VALUES ('ca34eae2-ce13-4b49-a689-5d9d83549730','28fbbe5e-b54f-4cd8-a93f-d31d4a2e3353','2020-12-29','2021-01-12',CURRENT_TIMESTAMP,CURRENT_TIMESTAMP);
+INSERT INTO test_db.followup_details(
+	case_id, xform_ids, follow_up_start_date, follow_up_end_date,insert_timestamp,update_timestamp)
+	VALUES ('ca34eae2-ce13-4b49-a689-5d9d83549730','28fbbe5e-b54f-4cd8-a93f-d31d4a2e3354','2020-12-30','2021-01-13',CURRENT_TIMESTAMP,CURRENT_TIMESTAMP);
+INSERT INTO test_db.followup_details(
+	case_id, xform_ids, follow_up_start_date, follow_up_end_date,insert_timestamp,update_timestamp)
+	VALUES ('ca34eae2-ce13-4b49-a689-5d9d83549730','28fbbe5e-b54f-4cd8-a93f-d31d4a2e3355','2020-09-28','2020-10-10',CURRENT_TIMESTAMP,CURRENT_TIMESTAMP);
+INSERT INTO test_db.followup_details(
+	case_id, xform_ids, follow_up_start_date, follow_up_end_date,insert_timestamp,update_timestamp)
+	VALUES ('85438807e9a041828a5c2e68cdd77543','28fbbe5e-b54f-4cd8-a93f-d31d4a2e3356','2020-11-29','2020-10-11',CURRENT_TIMESTAMP,CURRENT_TIMESTAMP);
+INSERT INTO test_db.followup_details(
+	case_id, xform_ids, follow_up_start_date, follow_up_end_date,insert_timestamp,update_timestamp)
+	VALUES ('0bd5543085084039b74fe8a4a8407548','28fbbe5e-b54f-4cd8-a93f-d31d4a2e3357','2020-10-30','2020-10-12',CURRENT_TIMESTAMP,CURRENT_TIMESTAMP);
+INSERT INTO test_db.followup_details(
+	case_id, xform_ids, follow_up_start_date, follow_up_end_date,insert_timestamp,update_timestamp)
+	VALUES ('bc3aa454251a407f93a0ea3a268cd577','28fbbe5e-b54f-4cd8-a93f-d31d4a2e3358','2020-09-28','2020-10-13',CURRENT_TIMESTAMP,CURRENT_TIMESTAMP);
+INSERT INTO test_db.followup_details(
+	case_id, xform_ids, follow_up_start_date, follow_up_end_date,insert_timestamp,update_timestamp)
+	VALUES ('bc3aa454251a407f93a0ea3a268cd577','28fbbe5e-b54f-4cd8-a93f-d31d4a2e3359','2020-10-29','2020-10-14',CURRENT_TIMESTAMP,CURRENT_TIMESTAMP);
+INSERT INTO test_db.followup_details(
+	case_id, xform_ids, follow_up_start_date, follow_up_end_date,insert_timestamp,update_timestamp)
+	VALUES ('42769ac5-0e17-4ad4-bcd4-c13c47d1d567','28fbbe5e-b54f-4cd8-a93f-d31d4a2e3360','2020-11-30','2020-10-15',CURRENT_TIMESTAMP,CURRENT_TIMESTAMP);
+INSERT INTO test_db.followup_details(
+	case_id, xform_ids, follow_up_start_date, follow_up_end_date,insert_timestamp,update_timestamp)
+	VALUES ('42769ac5-0e17-4ad4-bcd4-c13c47d1d567','28fbbe5e-b54f-4cd8-a93f-d31d4a2e3361','2020-12-28','2021-01-12',CURRENT_TIMESTAMP,CURRENT_TIMESTAMP);
+INSERT INTO test_db.followup_details(
+	case_id, xform_ids, follow_up_start_date, follow_up_end_date,insert_timestamp,update_timestamp)
+	VALUES ('b8fe0ce8-7df4-4ec3-b7e8-cf04c40c684d','28fbbe5e-b54f-4cd8-a93f-d31d4a2e3362','2021-01-28','2021-01-13',CURRENT_TIMESTAMP,CURRENT_TIMESTAMP);
+INSERT INTO test_db.followup_details(
+	case_id, xform_ids, follow_up_start_date, follow_up_end_date,insert_timestamp,update_timestamp)
+	VALUES ('b4dea5d3-c395-4da2-89e9-6a48f2a8f4fa','28fbbe5e-b54f-4cd8-a93f-d31d4a2e3363','2021-01-02','2021-01-12',CURRENT_TIMESTAMP,CURRENT_TIMESTAMP);
+INSERT INTO test_db.followup_details(
+	case_id, xform_ids, follow_up_start_date, follow_up_end_date,insert_timestamp,update_timestamp)
+	VALUES ('5842d63a-a238-4784-a665-77eed76ffc44','28fbbe5e-b54f-4cd8-a93f-d31d4a2e3364','2021-01-01','2021-01-13',CURRENT_TIMESTAMP,CURRENT_TIMESTAMP);
+INSERT INTO test_db.followup_details(
+	case_id, xform_ids, follow_up_start_date, follow_up_end_date,insert_timestamp,update_timestamp)
+	VALUES ('cc29aa1a-489d-4147-a47f-1774f3c73396','28fbbe5e-b54f-4cd8-a93f-d31d4a2e3365','2021-01-01','2021-01-14',CURRENT_TIMESTAMP,CURRENT_TIMESTAMP);
+INSERT INTO test_db.followup_details(
+	case_id, xform_ids, follow_up_start_date, follow_up_end_date,insert_timestamp,update_timestamp)
+	VALUES ('81069d90-8a55-4bfc-9ea9-8766ca692021','28fbbe5e-b54f-4cd8-a93f-d31d4a2e3366','2021-01-01','2021-01-15',CURRENT_TIMESTAMP,CURRENT_TIMESTAMP);
+
+INSERT INTO test_db.followup_details(case_id,xform_ids,follow_up_start_date,follow_up_end_date,insert_timestamp,update_timestamp)VALUES('712363c7-a920-4a90-bc18-69206cd47bad1','','2021-01-04','2021-01-04',CURRENT_TIMESTAMP,CURRENT_TIMESTAMP);
+INSERT INTO test_db.followup_details(case_id,xform_ids,follow_up_start_date,follow_up_end_date,insert_timestamp,update_timestamp)VALUES('8ddf49ee-27f1-43ea-bd07-af0660b671601','','2021-01-05','2021-01-05',CURRENT_TIMESTAMP,CURRENT_TIMESTAMP);
+INSERT INTO test_db.followup_details(case_id,xform_ids,follow_up_start_date,follow_up_end_date,insert_timestamp,update_timestamp)VALUES('8ddf49ee-27f1-43ea-bd07-af0660b671602','28fbbe5e-b54f-4cd8-a93f-d31d4a2e33441','2021-01-04','2021-01-04',CURRENT_TIMESTAMP,CURRENT_TIMESTAMP);
+INSERT INTO test_db.followup_details(case_id,xform_ids,follow_up_start_date,follow_up_end_date,insert_timestamp,update_timestamp)VALUES('8ddf49ee-27f1-43ea-bd07-af0660b671602','28fbbe5e-b54f-4cd8-a93f-d31d4a2e334422','2021-01-06','2021-01-06',CURRENT_TIMESTAMP,CURRENT_TIMESTAMP);
+INSERT INTO test_db.followup_details(case_id,xform_ids,follow_up_start_date,follow_up_end_date,insert_timestamp,update_timestamp)VALUES('8ddf49ee-27f1-43ea-bd07-af0660b671603','28fbbe5e-b54f-4cd8-a93f-d31d4a2e33442','2021-01-05','2021-01-05',CURRENT_TIMESTAMP,CURRENT_TIMESTAMP);
+INSERT INTO test_db.followup_details(case_id,xform_ids,follow_up_start_date,follow_up_end_date,insert_timestamp,update_timestamp)VALUES('8ddf49ee-27f1-43ea-bd07-af0660b671603','28fbbe5e-b54f-4cd8-a93f-d31d4a2e33443','2021-01-07','2021-01-07',CURRENT_TIMESTAMP,CURRENT_TIMESTAMP);
+INSERT INTO test_db.followup_details(case_id,xform_ids,follow_up_start_date,follow_up_end_date,insert_timestamp,update_timestamp)VALUES('8ddf49ee-27f1-43ea-bd07-af0660b671603','28fbbe5e-b54f-4cd8-a93f-d31d4a2e33444','2021-01-09','2021-01-09',CURRENT_TIMESTAMP,CURRENT_TIMESTAMP);
+INSERT INTO test_db.followup_details(case_id,xform_ids,follow_up_start_date,follow_up_end_date,insert_timestamp,update_timestamp)VALUES('8ddf49ee-27f1-43ea-bd07-af0660b671603','28fbbe5e-b54f-4cd8-a93f-d31d4a2e33445','2021-01-08','2021-01-08',CURRENT_TIMESTAMP,CURRENT_TIMESTAMP);
+INSERT INTO test_db.followup_details(case_id,xform_ids,follow_up_start_date,follow_up_end_date,insert_timestamp,update_timestamp)VALUES('8ddf49ee-27f1-43ea-bd07-af0660b671603','28fbbe5e-b54f-4cd8-a93f-d31d4a2e33446','2021-01-09','2021-01-09',CURRENT_TIMESTAMP,CURRENT_TIMESTAMP);
+INSERT INTO test_db.followup_details(case_id,xform_ids,follow_up_start_date,follow_up_end_date,insert_timestamp,update_timestamp)VALUES('8ddf49ee-27f1-43ea-bd07-af0660b671603','28fbbe5e-b54f-4cd8-a93f-d31d4a2e33447','2021-01-10','2021-01-10',CURRENT_TIMESTAMP,CURRENT_TIMESTAMP);
+INSERT INTO test_db.followup_details(case_id,xform_ids,follow_up_start_date,follow_up_end_date,insert_timestamp,update_timestamp)VALUES('8ddf49ee-27f1-43ea-bd07-af0660b671604','28fbbe5e-b54f-4cd8-a93f-d31d4a2e33448','2021-01-05','2021-01-05',CURRENT_TIMESTAMP,CURRENT_TIMESTAMP);
+INSERT INTO test_db.followup_details(case_id,xform_ids,follow_up_start_date,follow_up_end_date,insert_timestamp,update_timestamp)VALUES('8ddf49ee-27f1-43ea-bd07-af0660b671604','28fbbe5e-b54f-4cd8-a93f-d31d4a2e33449','2021-01-06','2021-01-06',CURRENT_TIMESTAMP,CURRENT_TIMESTAMP);
+INSERT INTO test_db.followup_details(case_id,xform_ids,follow_up_start_date,follow_up_end_date,insert_timestamp,update_timestamp)VALUES('8ddf49ee-27f1-43ea-bd07-af0660b671604','28fbbe5e-b54f-4cd8-a93f-d31d4a2e33450','2021-01-07','2021-01-07',CURRENT_TIMESTAMP,CURRENT_TIMESTAMP);
+INSERT INTO test_db.followup_details(case_id,xform_ids,follow_up_start_date,follow_up_end_date,insert_timestamp,update_timestamp)VALUES('8ddf49ee-27f1-43ea-bd07-af0660b671604','28fbbe5e-b54f-4cd8-a93f-d31d4a2e33451','2021-01-08','2021-01-08',CURRENT_TIMESTAMP,CURRENT_TIMESTAMP);
+INSERT INTO test_db.followup_details(case_id,xform_ids,follow_up_start_date,follow_up_end_date,insert_timestamp,update_timestamp)VALUES('8ddf49ee-27f1-43ea-bd07-af0660b671604','28fbbe5e-b54f-4cd8-a93f-d31d4a2e33452','2021-01-09','2021-01-09',CURRENT_TIMESTAMP,CURRENT_TIMESTAMP);
+INSERT INTO test_db.followup_details(case_id,xform_ids,follow_up_start_date,follow_up_end_date,insert_timestamp,update_timestamp)VALUES('8ddf49ee-27f1-43ea-bd07-af0660b671604','28fbbe5e-b54f-4cd8-a93f-d31d4a2e33453','2021-01-10','2021-01-10',CURRENT_TIMESTAMP,CURRENT_TIMESTAMP);
+INSERT INTO test_db.followup_details(case_id,xform_ids,follow_up_start_date,follow_up_end_date,insert_timestamp,update_timestamp)VALUES('688a3cf7-bae8-4f93-887c-745af9034e0c1','28fbbe5e-b54f-4cd8-a93f-d31d4a2e33454','2021-01-11','2021-01-11',CURRENT_TIMESTAMP,CURRENT_TIMESTAMP);
+INSERT INTO test_db.followup_details(case_id,xform_ids,follow_up_start_date,follow_up_end_date,insert_timestamp,update_timestamp)VALUES('688a3cf7-bae8-4f93-887c-745af9034e0c1','28fbbe5e-b54f-4cd8-a93f-d31d4a2e33455','2021-01-12','2021-01-12',CURRENT_TIMESTAMP,CURRENT_TIMESTAMP);
+INSERT INTO test_db.followup_details(case_id,xform_ids,follow_up_start_date,follow_up_end_date,insert_timestamp,update_timestamp)VALUES('122c8d54-6624-4270-a2df-304720af97001','28fbbe5e-b54f-4cd8-a93f-d31d4a2e33456','2021-01-12','2021-01-12',CURRENT_TIMESTAMP,CURRENT_TIMESTAMP);
+INSERT INTO test_db.followup_details(case_id,xform_ids,follow_up_start_date,follow_up_end_date,insert_timestamp,update_timestamp)VALUES('122c8d54-6624-4270-a2df-304720af97001','28fbbe5e-b54f-4cd8-a93f-d31d4a2e33457','2021-01-12','2021-01-12',CURRENT_TIMESTAMP,CURRENT_TIMESTAMP);
+INSERT INTO test_db.followup_details(case_id,xform_ids,follow_up_start_date,follow_up_end_date,insert_timestamp,update_timestamp)VALUES('122c8d54-6624-4270-a2df-304720af97001','28fbbe5e-b54f-4cd8-a93f-d31d4a2e33458','2021-01-12','2021-01-12',CURRENT_TIMESTAMP,CURRENT_TIMESTAMP);
+INSERT INTO test_db.followup_details(case_id,xform_ids,follow_up_start_date,follow_up_end_date,insert_timestamp,update_timestamp)VALUES('122c8d54-6624-4270-a2df-304720af97001','28fbbe5e-b54f-4cd8-a93f-d31d4a2e33459','2021-01-12','2021-01-12',CURRENT_TIMESTAMP,CURRENT_TIMESTAMP);
+INSERT INTO test_db.followup_details(case_id,xform_ids,follow_up_start_date,follow_up_end_date,insert_timestamp,update_timestamp)VALUES('122c8d54-6624-4270-a2df-304720af97001','28fbbe5e-b54f-4cd8-a93f-d31d4a2e33460','2021-01-12','2021-01-12',CURRENT_TIMESTAMP,CURRENT_TIMESTAMP);
+INSERT INTO test_db.followup_details(case_id,xform_ids,follow_up_start_date,follow_up_end_date,insert_timestamp,update_timestamp)VALUES('122c8d54-6624-4270-a2df-304720af97001','28fbbe5e-b54f-4cd8-a93f-d31d4a2e33461','2021-01-12','2021-01-12',CURRENT_TIMESTAMP,CURRENT_TIMESTAMP);
+INSERT INTO test_db.followup_details(case_id,xform_ids,follow_up_start_date,follow_up_end_date,insert_timestamp,update_timestamp)VALUES('122c8d54-6624-4270-a2df-304720af97001','28fbbe5e-b54f-4cd8-a93f-d31d4a2e33462','2021-01-12','2021-01-12',CURRENT_TIMESTAMP,CURRENT_TIMESTAMP);
+INSERT INTO test_db.followup_details(case_id,xform_ids,follow_up_start_date,follow_up_end_date,insert_timestamp,update_timestamp)VALUES('122c8d54-6624-4270-a2df-304720af97002','28fbbe5e-b54f-4cd8-a93f-d31d4a2e33463','2021-01-12','2021-01-12',CURRENT_TIMESTAMP,CURRENT_TIMESTAMP);
+INSERT INTO test_db.followup_details(case_id,xform_ids,follow_up_start_date,follow_up_end_date,insert_timestamp,update_timestamp)VALUES('122c8d54-6624-4270-a2df-304720af97003','28fbbe5e-b54f-4cd8-a93f-d31d4a2e33464','2021-01-13','2021-01-13',CURRENT_TIMESTAMP,CURRENT_TIMESTAMP);
+INSERT INTO test_db.followup_details(case_id,xform_ids,follow_up_start_date,follow_up_end_date,insert_timestamp,update_timestamp)VALUES('122c8d54-6624-4270-a2df-304720af97003','28fbbe5e-b54f-4cd8-a93f-d31d4a2e33465','2021-01-14','2021-01-14',CURRENT_TIMESTAMP,CURRENT_TIMESTAMP);
+INSERT INTO test_db.followup_details(case_id,xform_ids,follow_up_start_date,follow_up_end_date,insert_timestamp,update_timestamp)VALUES('91a30cd9-4218-432c-80e3-57b4e2f659951','28fbbe5e-b54f-4cd8-a93f-d31d4a2e33466','2021-01-15','2021-01-15',CURRENT_TIMESTAMP,CURRENT_TIMESTAMP);
+INSERT INTO test_db.followup_details(case_id,xform_ids,follow_up_start_date,follow_up_end_date,insert_timestamp,update_timestamp)VALUES('91a30cd9-4218-432c-80e3-57b4e2f659951','28fbbe5e-b54f-4cd8-a93f-d31d4a2e33467','2021-01-15','2021-01-15',CURRENT_TIMESTAMP,CURRENT_TIMESTAMP);
+INSERT INTO test_db.followup_details(case_id,xform_ids,follow_up_start_date,follow_up_end_date,insert_timestamp,update_timestamp)VALUES('91a30cd9-4218-432c-80e3-57b4e2f659952','28fbbe5e-b54f-4cd8-a93f-d31d4a2e33468','2021-01-15','2021-01-15',CURRENT_TIMESTAMP,CURRENT_TIMESTAMP);
+INSERT INTO test_db.followup_details(case_id,xform_ids,follow_up_start_date,follow_up_end_date,insert_timestamp,update_timestamp)VALUES('91a30cd9-4218-432c-80e3-57b4e2f659952','28fbbe5e-b54f-4cd8-a93f-d31d4a2e33469','2021-01-15','2021-01-15',CURRENT_TIMESTAMP,CURRENT_TIMESTAMP);
+INSERT INTO test_db.followup_details(case_id,xform_ids,follow_up_start_date,follow_up_end_date,insert_timestamp,update_timestamp)VALUES('91a30cd9-4218-432c-80e3-57b4e2f659952','28fbbe5e-b54f-4cd8-a93f-d31d4a2e33470','2021-01-15','2021-01-15',CURRENT_TIMESTAMP,CURRENT_TIMESTAMP);
+INSERT INTO test_db.followup_details(case_id,xform_ids,follow_up_start_date,follow_up_end_date,insert_timestamp,update_timestamp)VALUES('91a30cd9-4218-432c-80e3-57b4e2f659952','28fbbe5e-b54f-4cd8-a93f-d31d4a2e33471','2021-01-15','2021-01-15',CURRENT_TIMESTAMP,CURRENT_TIMESTAMP);
+INSERT INTO test_db.followup_details(case_id,xform_ids,follow_up_start_date,follow_up_end_date,insert_timestamp,update_timestamp)VALUES('91a30cd9-4218-432c-80e3-57b4e2f659952','28fbbe5e-b54f-4cd8-a93f-d31d4a2e33472','2021-01-15','2021-01-15',CURRENT_TIMESTAMP,CURRENT_TIMESTAMP);
+INSERT INTO test_db.followup_details(case_id,xform_ids,follow_up_start_date,follow_up_end_date,insert_timestamp,update_timestamp)VALUES('91a30cd9-4218-432c-80e3-57b4e2f659952','28fbbe5e-b54f-4cd8-a93f-d31d4a2e33473','2021-01-15','2021-01-15',CURRENT_TIMESTAMP,CURRENT_TIMESTAMP);
+INSERT INTO test_db.followup_details(case_id,xform_ids,follow_up_start_date,follow_up_end_date,insert_timestamp,update_timestamp)VALUES('91a30cd9-4218-432c-80e3-57b4e2f659952','28fbbe5e-b54f-4cd8-a93f-d31d4a2e33474','2021-01-15','2021-01-15',CURRENT_TIMESTAMP,CURRENT_TIMESTAMP);
+INSERT INTO test_db.followup_details(case_id,xform_ids,follow_up_start_date,follow_up_end_date,insert_timestamp,update_timestamp)VALUES('cb86540c-7198-46b4-b509-d427c9e261681','28fbbe5e-b54f-4cd8-a93f-d31d4a2e33475','2021-01-16','2021-01-16',CURRENT_TIMESTAMP,CURRENT_TIMESTAMP);
+INSERT INTO test_db.followup_details(case_id,xform_ids,follow_up_start_date,follow_up_end_date,insert_timestamp,update_timestamp)VALUES('cb86540c-7198-46b4-b509-d427c9e261681','28fbbe5e-b54f-4cd8-a93f-d31d4a2e33476','2021-01-16','2021-01-16',CURRENT_TIMESTAMP,CURRENT_TIMESTAMP);
+INSERT INTO test_db.followup_details(case_id,xform_ids,follow_up_start_date,follow_up_end_date,insert_timestamp,update_timestamp)VALUES('cb86540c-7198-46b4-b509-d427c9e261681','28fbbe5e-b54f-4cd8-a93f-d31d4a2e33477','2021-01-16','2021-01-16',CURRENT_TIMESTAMP,CURRENT_TIMESTAMP);
+INSERT INTO test_db.followup_details(case_id,xform_ids,follow_up_start_date,follow_up_end_date,insert_timestamp,update_timestamp)VALUES('8e7c808e-678e-426e-96d2-018bffe6bf261','','2021-01-17','2021-01-17',CURRENT_TIMESTAMP,CURRENT_TIMESTAMP);
+INSERT INTO test_db.followup_details(case_id,xform_ids,follow_up_start_date,follow_up_end_date,insert_timestamp,update_timestamp)VALUES('8e7c808e-678e-426e-96d2-018bffe6bf262','28fbbe5e-b54f-4cd8-a93f-d31d4a2e33478','2021-01-17','2021-01-17',CURRENT_TIMESTAMP,CURRENT_TIMESTAMP);
+INSERT INTO test_db.followup_details(case_id,xform_ids,follow_up_start_date,follow_up_end_date,insert_timestamp,update_timestamp)VALUES('8e7c808e-678e-426e-96d2-018bffe6bf262','28fbbe5e-b54f-4cd8-a93f-d31d4a2e33479','2021-01-17','2021-01-17',CURRENT_TIMESTAMP,CURRENT_TIMESTAMP);
+INSERT INTO test_db.followup_details(case_id,xform_ids,follow_up_start_date,follow_up_end_date,insert_timestamp,update_timestamp)VALUES('ca34eae2-ce13-4b49-a689-5d9d835497301','','2021-01-22','2021-01-22',CURRENT_TIMESTAMP,CURRENT_TIMESTAMP);
+INSERT INTO test_db.followup_details(case_id,xform_ids,follow_up_start_date,follow_up_end_date,insert_timestamp,update_timestamp)VALUES('610fe035-df4c-481c-8f42-4db427d210bc1','','2021-01-23','2021-01-23',CURRENT_TIMESTAMP,CURRENT_TIMESTAMP);
+INSERT INTO test_db.followup_details(case_id,xform_ids,follow_up_start_date,follow_up_end_date,insert_timestamp,update_timestamp)VALUES('610fe035-df4c-481c-8f42-4db427d210bc2','28fbbe5e-b54f-4cd8-a93f-d31d4a2e33480','2021-01-23','2021-01-23',CURRENT_TIMESTAMP,CURRENT_TIMESTAMP);
+INSERT INTO test_db.followup_details(case_id,xform_ids,follow_up_start_date,follow_up_end_date,insert_timestamp,update_timestamp)VALUES('610fe035-df4c-481c-8f42-4db427d210bc2','28fbbe5e-b54f-4cd8-a93f-d31d4a2e33481','2021-01-23','2021-01-23',CURRENT_TIMESTAMP,CURRENT_TIMESTAMP);
+INSERT INTO test_db.followup_details(case_id,xform_ids,follow_up_start_date,follow_up_end_date,insert_timestamp,update_timestamp)VALUES('610fe035-df4c-481c-8f42-4db427d210bc3','28fbbe5e-b54f-4cd8-a93f-d31d4a2e33482','2021-01-23','2021-01-23',CURRENT_TIMESTAMP,CURRENT_TIMESTAMP);
+INSERT INTO test_db.followup_details(case_id,xform_ids,follow_up_start_date,follow_up_end_date,insert_timestamp,update_timestamp)VALUES('610fe035-df4c-481c-8f42-4db427d210bc3','28fbbe5e-b54f-4cd8-a93f-d31d4a2e33483','2021-01-23','2021-01-23',CURRENT_TIMESTAMP,CURRENT_TIMESTAMP);
+INSERT INTO test_db.followup_details(case_id,xform_ids,follow_up_start_date,follow_up_end_date,insert_timestamp,update_timestamp)VALUES('610fe035-df4c-481c-8f42-4db427d210bc3','28fbbe5e-b54f-4cd8-a93f-d31d4a2e33484','2021-01-23','2021-01-23',CURRENT_TIMESTAMP,CURRENT_TIMESTAMP);
+INSERT INTO test_db.followup_details(case_id,xform_ids,follow_up_start_date,follow_up_end_date,insert_timestamp,update_timestamp)VALUES('610fe035-df4c-481c-8f42-4db427d210bc3','28fbbe5e-b54f-4cd8-a93f-d31d4a2e33485','2021-01-23','2021-01-23',CURRENT_TIMESTAMP,CURRENT_TIMESTAMP);
+INSERT INTO test_db.followup_details(case_id,xform_ids,follow_up_start_date,follow_up_end_date,insert_timestamp,update_timestamp)VALUES('610fe035-df4c-481c-8f42-4db427d210bc3','28fbbe5e-b54f-4cd8-a93f-d31d4a2e33486','2021-01-23','2021-01-23',CURRENT_TIMESTAMP,CURRENT_TIMESTAMP);
+INSERT INTO test_db.followup_details(case_id,xform_ids,follow_up_start_date,follow_up_end_date,insert_timestamp,update_timestamp)VALUES('610fe035-df4c-481c-8f42-4db427d210bc3','28fbbe5e-b54f-4cd8-a93f-d31d4a2e33487','2021-01-23','2021-01-23',CURRENT_TIMESTAMP,CURRENT_TIMESTAMP);
+INSERT INTO test_db.followup_details(case_id,xform_ids,follow_up_start_date,follow_up_end_date,insert_timestamp,update_timestamp)VALUES('610fe035-df4c-481c-8f42-4db427d210bc3','28fbbe5e-b54f-4cd8-a93f-d31d4a2e33488','2021-01-23','2021-01-23',CURRENT_TIMESTAMP,CURRENT_TIMESTAMP);
+INSERT INTO test_db.followup_details(case_id,xform_ids,follow_up_start_date,follow_up_end_date,insert_timestamp,update_timestamp)VALUES('610fe035-df4c-481c-8f42-4db427d210bc4','28fbbe5e-b54f-4cd8-a93f-d31d4a2e33489','2021-01-23','2021-01-23',CURRENT_TIMESTAMP,CURRENT_TIMESTAMP);
+INSERT INTO test_db.followup_details(case_id,xform_ids,follow_up_start_date,follow_up_end_date,insert_timestamp,update_timestamp)VALUES('610fe035-df4c-481c-8f42-4db427d210bc4','28fbbe5e-b54f-4cd8-a93f-d31d4a2e33490','2021-01-23','2021-01-23',CURRENT_TIMESTAMP,CURRENT_TIMESTAMP);
+INSERT INTO test_db.followup_details(case_id,xform_ids,follow_up_start_date,follow_up_end_date,insert_timestamp,update_timestamp)VALUES('610fe035-df4c-481c-8f42-4db427d210bc4','28fbbe5e-b54f-4cd8-a93f-d31d4a2e33491','2021-01-23','2021-01-23',CURRENT_TIMESTAMP,CURRENT_TIMESTAMP);
+INSERT INTO test_db.followup_details(case_id,xform_ids,follow_up_start_date,follow_up_end_date,insert_timestamp,update_timestamp)VALUES('610fe035-df4c-481c-8f42-4db427d210bc4','28fbbe5e-b54f-4cd8-a93f-d31d4a2e33492','2021-01-23','2021-01-23',CURRENT_TIMESTAMP,CURRENT_TIMESTAMP);
+INSERT INTO test_db.followup_details(case_id,xform_ids,follow_up_start_date,follow_up_end_date,insert_timestamp,update_timestamp)VALUES('610fe035-df4c-481c-8f42-4db427d210bc4','28fbbe5e-b54f-4cd8-a93f-d31d4a2e33493','2021-01-23','2021-01-23',CURRENT_TIMESTAMP,CURRENT_TIMESTAMP);
+INSERT INTO test_db.followup_details(case_id,xform_ids,follow_up_start_date,follow_up_end_date,insert_timestamp,update_timestamp)VALUES('610fe035-df4c-481c-8f42-4db427d210bc5','','2021-01-23','2021-01-23',CURRENT_TIMESTAMP,CURRENT_TIMESTAMP);
+INSERT INTO test_db.followup_details(case_id,xform_ids,follow_up_start_date,follow_up_end_date,insert_timestamp,update_timestamp)VALUES('1689613eb0e544dab1c43dfcb68b0c761','28fbbe5e-b54f-4cd8-a93f-d31d4a2e33494','2021-02-01','2021-02-01',CURRENT_TIMESTAMP,CURRENT_TIMESTAMP);
+INSERT INTO test_db.followup_details(case_id,xform_ids,follow_up_start_date,follow_up_end_date,insert_timestamp,update_timestamp)VALUES('1689613eb0e544dab1c43dfcb68b0c761','28fbbe5e-b54f-4cd8-a93f-d31d4a2e33495','2021-02-01','2021-02-01',CURRENT_TIMESTAMP,CURRENT_TIMESTAMP);
+INSERT INTO test_db.followup_details(case_id,xform_ids,follow_up_start_date,follow_up_end_date,insert_timestamp,update_timestamp)VALUES('1689613eb0e544dab1c43dfcb68b0c761','28fbbe5e-b54f-4cd8-a93f-d31d4a2e33496','2021-02-01','2021-02-01',CURRENT_TIMESTAMP,CURRENT_TIMESTAMP);
+INSERT INTO test_db.followup_details(case_id,xform_ids,follow_up_start_date,follow_up_end_date,insert_timestamp,update_timestamp)VALUES('0b4bf8dd0648404f98d8e8c08312bf9b1','28fbbe5e-b54f-4cd8-a93f-d31d4a2e33497','2021-02-08','2021-02-08',CURRENT_TIMESTAMP,CURRENT_TIMESTAMP);
+INSERT INTO test_db.followup_details(case_id,xform_ids,follow_up_start_date,follow_up_end_date,insert_timestamp,update_timestamp)VALUES('0b4bf8dd0648404f98d8e8c08312bf9b1','28fbbe5e-b54f-4cd8-a93f-d31d4a2e33498','2021-02-09','2021-02-09',CURRENT_TIMESTAMP,CURRENT_TIMESTAMP);
+INSERT INTO test_db.followup_details(case_id,xform_ids,follow_up_start_date,follow_up_end_date,insert_timestamp,update_timestamp)VALUES('0b4bf8dd0648404f98d8e8c08312bf9b1','28fbbe5e-b54f-4cd8-a93f-d31d4a2e33499','2021-02-10','2021-02-10',CURRENT_TIMESTAMP,CURRENT_TIMESTAMP);
+INSERT INTO test_db.followup_details(case_id,xform_ids,follow_up_start_date,follow_up_end_date,insert_timestamp,update_timestamp)VALUES('0b4bf8dd0648404f98d8e8c08312bf9b1','28fbbe5e-b54f-4cd8-a93f-d31d4a2e33500','2021-02-11','2021-02-11',CURRENT_TIMESTAMP,CURRENT_TIMESTAMP);
+INSERT INTO test_db.followup_details(case_id,xform_ids,follow_up_start_date,follow_up_end_date,insert_timestamp,update_timestamp)VALUES('0b4bf8dd0648404f98d8e8c08312bf9b1','28fbbe5e-b54f-4cd8-a93f-d31d4a2e33501','2021-02-12','2021-02-12',CURRENT_TIMESTAMP,CURRENT_TIMESTAMP);
+INSERT INTO test_db.followup_details(case_id,xform_ids,follow_up_start_date,follow_up_end_date,insert_timestamp,update_timestamp)VALUES('0b4bf8dd0648404f98d8e8c08312bf9b1','28fbbe5e-b54f-4cd8-a93f-d31d4a2e33502','2021-02-13','2021-02-13',CURRENT_TIMESTAMP,CURRENT_TIMESTAMP);
+
+===================================================================================
+
+CREATE TABLE test_db.geographic_details
+(
+    case_id varchar NOT NULL,
+    country varchar,
+    state varchar,
+    city varchar,
+    patient_location_lat varchar,
+    patient_location_lon varchar,
+	insert_timestamp timestamp,
+	update_timestamp timestamp
+);
+
+
+INSERT INTO test_db.geographic_details(
+	case_id, country, state, city, patient_location_lat, patient_location_lon,insert_timestamp,update_timestamp)
+	VALUES ('712363c7-a920-4a90-bc18-69206cd47bad','','','','-29.8586803999999','31.0218404',CURRENT_TIMESTAMP,CURRENT_TIMESTAMP);
+INSERT INTO test_db.geographic_details(
+	case_id, country, state, city, patient_location_lat, patient_location_lon,insert_timestamp,update_timestamp)
+	VALUES ('8ddf49ee-27f1-43ea-bd07-af0660b67160','','','','-29.8586803999999','31.0218404',CURRENT_TIMESTAMP,CURRENT_TIMESTAMP);
+INSERT INTO test_db.geographic_details(
+	case_id, country, state, city, patient_location_lat, patient_location_lon,insert_timestamp,update_timestamp)
+	VALUES ('688a3cf7-bae8-4f93-887c-745af9034e0c','','','','-33.7342304','18.9621091',CURRENT_TIMESTAMP,CURRENT_TIMESTAMP);
+INSERT INTO test_db.geographic_details(
+	case_id, country, state, city, patient_location_lat, patient_location_lon,insert_timestamp,update_timestamp)
+	VALUES ('122c8d54-6624-4270-a2df-304720af9700','','','','-33.4287725190512','19.3211405292968',CURRENT_TIMESTAMP,CURRENT_TIMESTAMP);
+INSERT INTO test_db.geographic_details(
+	case_id, country, state, city, patient_location_lat, patient_location_lon,insert_timestamp,update_timestamp)
+	VALUES ('91a30cd9-4218-432c-80e3-57b4e2f65995','','','','-29.8586803999999','31.0218404',CURRENT_TIMESTAMP,CURRENT_TIMESTAMP);
+INSERT INTO test_db.geographic_details(
+	case_id, country, state, city, patient_location_lat, patient_location_lon,insert_timestamp,update_timestamp)
+	VALUES ('cb86540c-7198-46b4-b509-d427c9e26168','','','','-29.085214','26.1595761',CURRENT_TIMESTAMP,CURRENT_TIMESTAMP);
+INSERT INTO test_db.geographic_details(
+	case_id, country, state, city, patient_location_lat, patient_location_lon,insert_timestamp,update_timestamp)
+	VALUES ('8e7c808e-678e-426e-96d2-018bffe6bf26','','','','-28.3117476000001','21.2973118',CURRENT_TIMESTAMP,CURRENT_TIMESTAMP);
+INSERT INTO test_db.geographic_details(
+	case_id, country, state, city, patient_location_lat, patient_location_lon,insert_timestamp,update_timestamp)
+	VALUES ('ca34eae2-ce13-4b49-a689-5d9d83549730','','','','-27.5382812000002','16.4350475',CURRENT_TIMESTAMP,CURRENT_TIMESTAMP);
+INSERT INTO test_db.geographic_details(
+	case_id, country, state, city, patient_location_lat, patient_location_lon,insert_timestamp,update_timestamp)
+	VALUES ('610fe035-df4c-481c-8f42-4db427d210bc','','','','-26.7648148000003','11.5727832',CURRENT_TIMESTAMP,CURRENT_TIMESTAMP);
+INSERT INTO test_db.geographic_details(
+	case_id, country, state, city, patient_location_lat, patient_location_lon,insert_timestamp,update_timestamp)
+	VALUES ('b2984ed6-b5ec-490c-b3a8-618e76c15a6e','','','','-25.9913484000004','6.7105189',CURRENT_TIMESTAMP,CURRENT_TIMESTAMP);
+INSERT INTO test_db.geographic_details(
+	case_id, country, state, city, patient_location_lat, patient_location_lon,insert_timestamp,update_timestamp)
+	VALUES ('1689613eb0e544dab1c43dfcb68b0c76','','','','-25.2178820000005','1.8482546',CURRENT_TIMESTAMP,CURRENT_TIMESTAMP);
+INSERT INTO test_db.geographic_details(
+	case_id, country, state, city, patient_location_lat, patient_location_lon,insert_timestamp,update_timestamp)
+	VALUES ('0b4bf8dd0648404f98d8e8c08312bf9b','','','','-24.4444156000006','-3.0140097',CURRENT_TIMESTAMP,CURRENT_TIMESTAMP);
+INSERT INTO test_db.geographic_details(
+	case_id, country, state, city, patient_location_lat, patient_location_lon,insert_timestamp,update_timestamp)
+	VALUES ('85438807e9a041828a5c2e68cdd77543','','','','-23.6709492000007','-7.876274',CURRENT_TIMESTAMP,CURRENT_TIMESTAMP);
+INSERT INTO test_db.geographic_details(
+	case_id, country, state, city, patient_location_lat, patient_location_lon,insert_timestamp,update_timestamp)
+	VALUES ('0bd5543085084039b74fe8a4a8407548','','','','-22.8974828000008','-12.7385383',CURRENT_TIMESTAMP,CURRENT_TIMESTAMP);
+INSERT INTO test_db.geographic_details(
+	case_id, country, state, city, patient_location_lat, patient_location_lon,insert_timestamp,update_timestamp)
+	VALUES ('bc3aa454251a407f93a0ea3a268cd577','','','','-22.1240164000009','-17.6008026',CURRENT_TIMESTAMP,CURRENT_TIMESTAMP);
+INSERT INTO test_db.geographic_details(
+	case_id, country, state, city, patient_location_lat, patient_location_lon,insert_timestamp,update_timestamp)
+	VALUES ('fe20b15a-a59e-4002-8297-1482a927eb9b','','','','-21.350550000001','-22.4630669',CURRENT_TIMESTAMP,CURRENT_TIMESTAMP);
+INSERT INTO test_db.geographic_details(
+	case_id, country, state, city, patient_location_lat, patient_location_lon,insert_timestamp,update_timestamp)
+	VALUES ('42769ac5-0e17-4ad4-bcd4-c13c47d1d567','','','','-20.5770836000011','-27.3253312',CURRENT_TIMESTAMP,CURRENT_TIMESTAMP);
+INSERT INTO test_db.geographic_details(
+	case_id, country, state, city, patient_location_lat, patient_location_lon,insert_timestamp,update_timestamp)
+	VALUES ('c6f6e645-2dad-4b20-a4d3-2e0b6095e608','','','','-19.8036172000012','-32.1875955',CURRENT_TIMESTAMP,CURRENT_TIMESTAMP);
+INSERT INTO test_db.geographic_details(
+	case_id, country, state, city, patient_location_lat, patient_location_lon,insert_timestamp,update_timestamp)
+	VALUES ('b8fe0ce8-7df4-4ec3-b7e8-cf04c40c684d','','','','-19.0301508000013','-37.0498598',CURRENT_TIMESTAMP,CURRENT_TIMESTAMP);
+INSERT INTO test_db.geographic_details(
+	case_id, country, state, city, patient_location_lat, patient_location_lon,insert_timestamp,update_timestamp)
+	VALUES ('b4dea5d3-c395-4da2-89e9-6a48f2a8f4fa','','','','-18.2566844000014','-41.9121241',CURRENT_TIMESTAMP,CURRENT_TIMESTAMP);
+INSERT INTO test_db.geographic_details(
+	case_id, country, state, city, patient_location_lat, patient_location_lon,insert_timestamp,update_timestamp)
+	VALUES ('5842d63a-a238-4784-a665-77eed76ffc44','','','','-17.4832180000015','-46.7743884',CURRENT_TIMESTAMP,CURRENT_TIMESTAMP);
+INSERT INTO test_db.geographic_details(
+	case_id, country, state, city, patient_location_lat, patient_location_lon,insert_timestamp,update_timestamp)
+	VALUES ('cc29aa1a-489d-4147-a47f-1774f3c73396','','','','-16.7097516000016','-51.6366527',CURRENT_TIMESTAMP,CURRENT_TIMESTAMP);
+INSERT INTO test_db.geographic_details(
+	case_id, country, state, city, patient_location_lat, patient_location_lon,insert_timestamp,update_timestamp)
+	VALUES ('81069d90-8a55-4bfc-9ea9-8766ca692021','','','','-15.9362852000017','-56.498917',CURRENT_TIMESTAMP,CURRENT_TIMESTAMP);
+
+INSERT INTO test_db.geographic_details(case_id,country,state,city,patient_location_lat,patient_location_lon,insert_timestamp,update_timestamp)VALUES('712363c7-a920-4a90-bc18-69206cd47bad1','','','Mombasa','','',CURRENT_TIMESTAMP,CURRENT_TIMESTAMP);
+INSERT INTO test_db.geographic_details(case_id,country,state,city,patient_location_lat,patient_location_lon,insert_timestamp,update_timestamp)VALUES('8ddf49ee-27f1-43ea-bd07-af0660b671601','','','Mombasa','','',CURRENT_TIMESTAMP,CURRENT_TIMESTAMP);
+INSERT INTO test_db.geographic_details(case_id,country,state,city,patient_location_lat,patient_location_lon,insert_timestamp,update_timestamp)VALUES('8ddf49ee-27f1-43ea-bd07-af0660b671602','','','Nairobi','','',CURRENT_TIMESTAMP,CURRENT_TIMESTAMP);
+INSERT INTO test_db.geographic_details(case_id,country,state,city,patient_location_lat,patient_location_lon,insert_timestamp,update_timestamp)VALUES('8ddf49ee-27f1-43ea-bd07-af0660b671603','','','Kwale','','',CURRENT_TIMESTAMP,CURRENT_TIMESTAMP);
+INSERT INTO test_db.geographic_details(case_id,country,state,city,patient_location_lat,patient_location_lon,insert_timestamp,update_timestamp)VALUES('8ddf49ee-27f1-43ea-bd07-af0660b671604','','','Kilifi','','',CURRENT_TIMESTAMP,CURRENT_TIMESTAMP);
+INSERT INTO test_db.geographic_details(case_id,country,state,city,patient_location_lat,patient_location_lon,insert_timestamp,update_timestamp)VALUES('688a3cf7-bae8-4f93-887c-745af9034e0c1','','','Mombasa','','',CURRENT_TIMESTAMP,CURRENT_TIMESTAMP);
+INSERT INTO test_db.geographic_details(case_id,country,state,city,patient_location_lat,patient_location_lon,insert_timestamp,update_timestamp)VALUES('122c8d54-6624-4270-a2df-304720af97001','','','Nairobi','','',CURRENT_TIMESTAMP,CURRENT_TIMESTAMP);
+INSERT INTO test_db.geographic_details(case_id,country,state,city,patient_location_lat,patient_location_lon,insert_timestamp,update_timestamp)VALUES('122c8d54-6624-4270-a2df-304720af97002','','','Kwale','','',CURRENT_TIMESTAMP,CURRENT_TIMESTAMP);
+INSERT INTO test_db.geographic_details(case_id,country,state,city,patient_location_lat,patient_location_lon,insert_timestamp,update_timestamp)VALUES('122c8d54-6624-4270-a2df-304720af97003','','','Kilifi','','',CURRENT_TIMESTAMP,CURRENT_TIMESTAMP);
+INSERT INTO test_db.geographic_details(case_id,country,state,city,patient_location_lat,patient_location_lon,insert_timestamp,update_timestamp)VALUES('91a30cd9-4218-432c-80e3-57b4e2f659951','','','Mombasa','','',CURRENT_TIMESTAMP,CURRENT_TIMESTAMP);
+INSERT INTO test_db.geographic_details(case_id,country,state,city,patient_location_lat,patient_location_lon,insert_timestamp,update_timestamp)VALUES('91a30cd9-4218-432c-80e3-57b4e2f659952','','','Nairobi','','',CURRENT_TIMESTAMP,CURRENT_TIMESTAMP);
+INSERT INTO test_db.geographic_details(case_id,country,state,city,patient_location_lat,patient_location_lon,insert_timestamp,update_timestamp)VALUES('cb86540c-7198-46b4-b509-d427c9e261681','','','Nairobi','','',CURRENT_TIMESTAMP,CURRENT_TIMESTAMP);
+INSERT INTO test_db.geographic_details(case_id,country,state,city,patient_location_lat,patient_location_lon,insert_timestamp,update_timestamp)VALUES('8e7c808e-678e-426e-96d2-018bffe6bf261','','','Kwale','','',CURRENT_TIMESTAMP,CURRENT_TIMESTAMP);
+INSERT INTO test_db.geographic_details(case_id,country,state,city,patient_location_lat,patient_location_lon,insert_timestamp,update_timestamp)VALUES('8e7c808e-678e-426e-96d2-018bffe6bf262','','','Kilifi','','',CURRENT_TIMESTAMP,CURRENT_TIMESTAMP);
+INSERT INTO test_db.geographic_details(case_id,country,state,city,patient_location_lat,patient_location_lon,insert_timestamp,update_timestamp)VALUES('ca34eae2-ce13-4b49-a689-5d9d835497301','','','Mombasa','','',CURRENT_TIMESTAMP,CURRENT_TIMESTAMP);
+INSERT INTO test_db.geographic_details(case_id,country,state,city,patient_location_lat,patient_location_lon,insert_timestamp,update_timestamp)VALUES('610fe035-df4c-481c-8f42-4db427d210bc1','','','Nairobi','','',CURRENT_TIMESTAMP,CURRENT_TIMESTAMP);
+INSERT INTO test_db.geographic_details(case_id,country,state,city,patient_location_lat,patient_location_lon,insert_timestamp,update_timestamp)VALUES('610fe035-df4c-481c-8f42-4db427d210bc2','','','Kwale','','',CURRENT_TIMESTAMP,CURRENT_TIMESTAMP);
+INSERT INTO test_db.geographic_details(case_id,country,state,city,patient_location_lat,patient_location_lon,insert_timestamp,update_timestamp)VALUES('610fe035-df4c-481c-8f42-4db427d210bc3','','','Kwale','','',CURRENT_TIMESTAMP,CURRENT_TIMESTAMP);
+INSERT INTO test_db.geographic_details(case_id,country,state,city,patient_location_lat,patient_location_lon,insert_timestamp,update_timestamp)VALUES('610fe035-df4c-481c-8f42-4db427d210bc4','','','Kilifi','','',CURRENT_TIMESTAMP,CURRENT_TIMESTAMP);
+INSERT INTO test_db.geographic_details(case_id,country,state,city,patient_location_lat,patient_location_lon,insert_timestamp,update_timestamp)VALUES('610fe035-df4c-481c-8f42-4db427d210bc5','','','Lamu','','',CURRENT_TIMESTAMP,CURRENT_TIMESTAMP);
+INSERT INTO test_db.geographic_details(case_id,country,state,city,patient_location_lat,patient_location_lon,insert_timestamp,update_timestamp)VALUES('1689613eb0e544dab1c43dfcb68b0c761','','','Mombasa','','',CURRENT_TIMESTAMP,CURRENT_TIMESTAMP);
+INSERT INTO test_db.geographic_details(case_id,country,state,city,patient_location_lat,patient_location_lon,insert_timestamp,update_timestamp)VALUES('0b4bf8dd0648404f98d8e8c08312bf9b1','','','Nairobi','','',CURRENT_TIMESTAMP,CURRENT_TIMESTAMP);
+
+==============================================================================================
+CREATE TABLE test_db.symptom_monitoring
+(
+    case_id varchar NOT NULL,
+    symptom_details varchar,
+    symptom_onset_date date,
+    reported_date date,
+    has_underlying_condition varchar,
+    symptom_severity varchar,
+    insert_timestamp timestamp,
+	update_timestamp timestamp
+);
+
+
+INSERT INTO test_db.symptom_monitoring(
+	case_id, symptom_details, symptom_onset_date, reported_date, has_underlying_condition,  symptom_severity,insert_timestamp,update_timestamp)
+	VALUES ('712363c7-a920-4a90-bc18-69206cd47bad','fever','2020-09-18','2020-09-18','yes','mild',CURRENT_TIMESTAMP,CURRENT_TIMESTAMP);
+INSERT INTO test_db.symptom_monitoring(
+	case_id, symptom_details, symptom_onset_date, reported_date, has_underlying_condition,  symptom_severity,insert_timestamp,update_timestamp)
+	VALUES ('8ddf49ee-27f1-43ea-bd07-af0660b67160','fever and cough','2020-09-18','2020-09-18','yes','mild',CURRENT_TIMESTAMP,CURRENT_TIMESTAMP);
+INSERT INTO test_db.symptom_monitoring(
+	case_id, symptom_details, symptom_onset_date, reported_date, has_underlying_condition,  symptom_severity,insert_timestamp,update_timestamp)
+	VALUES ('688a3cf7-bae8-4f93-887c-745af9034e0c','headache','2020-09-18','2020-09-18','no','mild',CURRENT_TIMESTAMP,CURRENT_TIMESTAMP);
+INSERT INTO test_db.symptom_monitoring(
+	case_id, symptom_details, symptom_onset_date, reported_date, has_underlying_condition,  symptom_severity,insert_timestamp,update_timestamp)
+	VALUES ('122c8d54-6624-4270-a2df-304720af9700','fever','2020-09-11','2020-09-11','no','mild',CURRENT_TIMESTAMP,CURRENT_TIMESTAMP);
+INSERT INTO test_db.symptom_monitoring(
+	case_id, symptom_details, symptom_onset_date, reported_date, has_underlying_condition,  symptom_severity,insert_timestamp,update_timestamp)
+	VALUES ('91a30cd9-4218-432c-80e3-57b4e2f65995','diarrhoea','2020-09-30','2020-09-30','yes','severe',CURRENT_TIMESTAMP,CURRENT_TIMESTAMP);
+INSERT INTO test_db.symptom_monitoring(
+	case_id, symptom_details, symptom_onset_date, reported_date, has_underlying_condition,  symptom_severity,insert_timestamp,update_timestamp)
+	VALUES ('cb86540c-7198-46b4-b509-d427c9e26168','fever and cough and diarrhoea and Vomiting','2020-09-28','2020-09-28','yes','severe',CURRENT_TIMESTAMP,CURRENT_TIMESTAMP);
+INSERT INTO test_db.symptom_monitoring(
+	case_id, symptom_details, symptom_onset_date, reported_date, has_underlying_condition,  symptom_severity,insert_timestamp,update_timestamp)
+	VALUES ('8e7c808e-678e-426e-96d2-018bffe6bf26','fever and cough and diarrhoea and Myalgia','2020-09-29','2020-09-29','yes','severe',CURRENT_TIMESTAMP,CURRENT_TIMESTAMP);
+INSERT INTO test_db.symptom_monitoring(
+	case_id, symptom_details, symptom_onset_date, reported_date, has_underlying_condition,  symptom_severity,insert_timestamp,update_timestamp)
+	VALUES ('ca34eae2-ce13-4b49-a689-5d9d83549730','fever and cough and diarrhoea','2020-09-28','2020-09-28','no','moderate',CURRENT_TIMESTAMP,CURRENT_TIMESTAMP);
+INSERT INTO test_db.symptom_monitoring(
+	case_id, symptom_details, symptom_onset_date, reported_date, has_underlying_condition,  symptom_severity,insert_timestamp,update_timestamp)
+	VALUES ('610fe035-df4c-481c-8f42-4db427d210bc','fever and cough and diarrhoea','2020-09-29','2020-09-29','no','moderate',CURRENT_TIMESTAMP,CURRENT_TIMESTAMP);
+INSERT INTO test_db.symptom_monitoring(
+	case_id, symptom_details, symptom_onset_date, reported_date, has_underlying_condition,  symptom_severity,insert_timestamp,update_timestamp)
+	VALUES ('b2984ed6-b5ec-490c-b3a8-618e76c15a6e','headache','2020-12-29','2020-12-29','yes','mild',CURRENT_TIMESTAMP,CURRENT_TIMESTAMP);
+INSERT INTO test_db.symptom_monitoring(
+	case_id, symptom_details, symptom_onset_date, reported_date, has_underlying_condition,  symptom_severity,insert_timestamp,update_timestamp)
+	VALUES ('1689613eb0e544dab1c43dfcb68b0c76','fever','2020-12-30','2020-12-30','yes','mild',CURRENT_TIMESTAMP,CURRENT_TIMESTAMP);
+INSERT INTO test_db.symptom_monitoring(
+	case_id, symptom_details, symptom_onset_date, reported_date, has_underlying_condition,  symptom_severity,insert_timestamp,update_timestamp)
+	VALUES ('0b4bf8dd0648404f98d8e8c08312bf9b','diarrhoea','2020-09-28','2020-09-28','no','mild',CURRENT_TIMESTAMP,CURRENT_TIMESTAMP);
+INSERT INTO test_db.symptom_monitoring(
+	case_id, symptom_details, symptom_onset_date, reported_date, has_underlying_condition,  symptom_severity,insert_timestamp,update_timestamp)
+	VALUES ('85438807e9a041828a5c2e68cdd77543','fever','2020-11-29','2020-11-29','no','mild',CURRENT_TIMESTAMP,CURRENT_TIMESTAMP);
+INSERT INTO test_db.symptom_monitoring(
+	case_id, symptom_details, symptom_onset_date, reported_date, has_underlying_condition,  symptom_severity,insert_timestamp,update_timestamp)
+	VALUES ('0bd5543085084039b74fe8a4a8407548','fever and cough','2020-10-30','2020-10-30','yes','severe',CURRENT_TIMESTAMP,CURRENT_TIMESTAMP);
+INSERT INTO test_db.symptom_monitoring(
+	case_id, symptom_details, symptom_onset_date, reported_date, has_underlying_condition,  symptom_severity,insert_timestamp,update_timestamp)
+	VALUES ('bc3aa454251a407f93a0ea3a268cd577','fever and cough and diarrhoea and Vomiting','2020-09-28','2020-09-28','yes','severe',CURRENT_TIMESTAMP,CURRENT_TIMESTAMP);
+INSERT INTO test_db.symptom_monitoring(
+	case_id, symptom_details, symptom_onset_date, reported_date, has_underlying_condition,  symptom_severity,insert_timestamp,update_timestamp)
+	VALUES ('fe20b15a-a59e-4002-8297-1482a927eb9b','fever and cough and diarrhoea and Myalgia','2020-10-29','2020-10-29','yes','severe',CURRENT_TIMESTAMP,CURRENT_TIMESTAMP);
+INSERT INTO test_db.symptom_monitoring(
+	case_id, symptom_details, symptom_onset_date, reported_date, has_underlying_condition,  symptom_severity,insert_timestamp,update_timestamp)
+	VALUES ('42769ac5-0e17-4ad4-bcd4-c13c47d1d567','fever and cough and diarrhoea','2020-11-30','2020-11-30','no','moderate',CURRENT_TIMESTAMP,CURRENT_TIMESTAMP);
+INSERT INTO test_db.symptom_monitoring(
+	case_id, symptom_details, symptom_onset_date, reported_date, has_underlying_condition,  symptom_severity,insert_timestamp,update_timestamp)
+	VALUES ('c6f6e645-2dad-4b20-a4d3-2e0b6095e608','fever and cough and diarrhoea','2020-12-28','2020-12-28','no','moderate',CURRENT_TIMESTAMP,CURRENT_TIMESTAMP);
+INSERT INTO test_db.symptom_monitoring(
+	case_id, symptom_details, symptom_onset_date, reported_date, has_underlying_condition,  symptom_severity,insert_timestamp,update_timestamp)
+	VALUES ('b8fe0ce8-7df4-4ec3-b7e8-cf04c40c684d','diarrhoea','2021-01-28','2021-01-28','yes','mild',CURRENT_TIMESTAMP,CURRENT_TIMESTAMP);
+INSERT INTO test_db.symptom_monitoring(
+	case_id, symptom_details, symptom_onset_date, reported_date, has_underlying_condition,  symptom_severity,insert_timestamp,update_timestamp)
+	VALUES ('b4dea5d3-c395-4da2-89e9-6a48f2a8f4fa','fever','2021-02-02','2021-02-02','yes','mild',CURRENT_TIMESTAMP,CURRENT_TIMESTAMP);
+INSERT INTO test_db.symptom_monitoring(
+	case_id, symptom_details, symptom_onset_date, reported_date, has_underlying_condition,  symptom_severity,insert_timestamp,update_timestamp)
+	VALUES ('5842d63a-a238-4784-a665-77eed76ffc44','fever and cough','2021-02-01','2021-02-01','no','mild',CURRENT_TIMESTAMP,CURRENT_TIMESTAMP);
+INSERT INTO test_db.symptom_monitoring(
+	case_id, symptom_details, symptom_onset_date, reported_date, has_underlying_condition,  symptom_severity,insert_timestamp,update_timestamp)
+	VALUES ('cc29aa1a-489d-4147-a47f-1774f3c73396','diarrhoea','2021-02-01','2021-02-01','no','mild',CURRENT_TIMESTAMP,CURRENT_TIMESTAMP);
+INSERT INTO test_db.symptom_monitoring(
+	case_id, symptom_details, symptom_onset_date, reported_date, has_underlying_condition,  symptom_severity,insert_timestamp,update_timestamp)
+	VALUES ('81069d90-8a55-4bfc-9ea9-8766ca692021','fever','2021-02-01','2021-02-01','yes','severe',CURRENT_TIMESTAMP,CURRENT_TIMESTAMP);
+
+INSERT INTO test_db.symptom_monitoring(case_id,symptom_details,symptom_onset_date,reported_date,has_underlying_condition,symptom_severity,insert_timestamp,update_timestamp)VALUES('712363c7-a920-4a90-bc18-69206cd47bad1','fever','2021-01-04','2021-01-04','no','mild',CURRENT_TIMESTAMP,CURRENT_TIMESTAMP);
+INSERT INTO test_db.symptom_monitoring(case_id,symptom_details,symptom_onset_date,reported_date,has_underlying_condition,symptom_severity,insert_timestamp,update_timestamp)VALUES('8ddf49ee-27f1-43ea-bd07-af0660b671601','fever','2021-01-05','2021-01-05','no','mild',CURRENT_TIMESTAMP,CURRENT_TIMESTAMP);
+INSERT INTO test_db.symptom_monitoring(case_id,symptom_details,symptom_onset_date,reported_date,has_underlying_condition,symptom_severity,insert_timestamp,update_timestamp)VALUES('8ddf49ee-27f1-43ea-bd07-af0660b671602','fever and cough','2021-01-06','2021-01-06','yes','mild',CURRENT_TIMESTAMP,CURRENT_TIMESTAMP);
+INSERT INTO test_db.symptom_monitoring(case_id,symptom_details,symptom_onset_date,reported_date,has_underlying_condition,symptom_severity,insert_timestamp,update_timestamp)VALUES('8ddf49ee-27f1-43ea-bd07-af0660b671603','fever and cough and diarrhoea and Vomiting','2021-01-05','2021-01-05','no','severe',CURRENT_TIMESTAMP,CURRENT_TIMESTAMP);
+INSERT INTO test_db.symptom_monitoring(case_id,symptom_details,symptom_onset_date,reported_date,has_underlying_condition,symptom_severity,insert_timestamp,update_timestamp)VALUES('8ddf49ee-27f1-43ea-bd07-af0660b671604','fever and cough and diarrhoea','2021-01-05','2021-01-05','no','moderate',CURRENT_TIMESTAMP,CURRENT_TIMESTAMP);
+INSERT INTO test_db.symptom_monitoring(case_id,symptom_details,symptom_onset_date,reported_date,has_underlying_condition,symptom_severity,insert_timestamp,update_timestamp)VALUES('688a3cf7-bae8-4f93-887c-745af9034e0c1','fever','2021-01-11','2021-01-11','no','mild',CURRENT_TIMESTAMP,CURRENT_TIMESTAMP);
+INSERT INTO test_db.symptom_monitoring(case_id,symptom_details,symptom_onset_date,reported_date,has_underlying_condition,symptom_severity,insert_timestamp,update_timestamp)VALUES('122c8d54-6624-4270-a2df-304720af97001','fever and cough and diarrhoea','2021-01-12','2021-01-12','no','moderate',CURRENT_TIMESTAMP,CURRENT_TIMESTAMP);
+INSERT INTO test_db.symptom_monitoring(case_id,symptom_details,symptom_onset_date,reported_date,has_underlying_condition,symptom_severity,insert_timestamp,update_timestamp)VALUES('122c8d54-6624-4270-a2df-304720af97002','fever and cough','2021-01-12','2021-01-12','yes','mild',CURRENT_TIMESTAMP,CURRENT_TIMESTAMP);
+INSERT INTO test_db.symptom_monitoring(case_id,symptom_details,symptom_onset_date,reported_date,has_underlying_condition,symptom_severity,insert_timestamp,update_timestamp)VALUES('122c8d54-6624-4270-a2df-304720af97003','fever and cough','2021-01-13','2021-01-13','yes','mild',CURRENT_TIMESTAMP,CURRENT_TIMESTAMP);
+INSERT INTO test_db.symptom_monitoring(case_id,symptom_details,symptom_onset_date,reported_date,has_underlying_condition,symptom_severity,insert_timestamp,update_timestamp)VALUES('91a30cd9-4218-432c-80e3-57b4e2f659951','fever','2021-01-15','2021-01-15','no','mild',CURRENT_TIMESTAMP,CURRENT_TIMESTAMP);
+INSERT INTO test_db.symptom_monitoring(case_id,symptom_details,symptom_onset_date,reported_date,has_underlying_condition,symptom_severity,insert_timestamp,update_timestamp)VALUES('91a30cd9-4218-432c-80e3-57b4e2f659952','fever and cough and diarrhoea','2021-01-15','2021-01-15','yes','moderate',CURRENT_TIMESTAMP,CURRENT_TIMESTAMP);
+INSERT INTO test_db.symptom_monitoring(case_id,symptom_details,symptom_onset_date,reported_date,has_underlying_condition,symptom_severity,insert_timestamp,update_timestamp)VALUES('cb86540c-7198-46b4-b509-d427c9e261681','fever and cough and diarrhoea and Myalgia','2021-01-16','2021-01-16','yes','severe',CURRENT_TIMESTAMP,CURRENT_TIMESTAMP);
+INSERT INTO test_db.symptom_monitoring(case_id,symptom_details,symptom_onset_date,reported_date,has_underlying_condition,symptom_severity,insert_timestamp,update_timestamp)VALUES('8e7c808e-678e-426e-96d2-018bffe6bf261','fever and cough and diarrhoea and Myalgia','2021-01-17','2021-01-17','yes','severe',CURRENT_TIMESTAMP,CURRENT_TIMESTAMP);
+INSERT INTO test_db.symptom_monitoring(case_id,symptom_details,symptom_onset_date,reported_date,has_underlying_condition,symptom_severity,insert_timestamp,update_timestamp)VALUES('8e7c808e-678e-426e-96d2-018bffe6bf262','fever','2021-01-17','2021-01-17','yes','mild',CURRENT_TIMESTAMP,CURRENT_TIMESTAMP);
+INSERT INTO test_db.symptom_monitoring(case_id,symptom_details,symptom_onset_date,reported_date,has_underlying_condition,symptom_severity,insert_timestamp,update_timestamp)VALUES('ca34eae2-ce13-4b49-a689-5d9d835497301','fever and cough and diarrhoea','2021-01-22','2021-01-22','yes','moderate',CURRENT_TIMESTAMP,CURRENT_TIMESTAMP);
+INSERT INTO test_db.symptom_monitoring(case_id,symptom_details,symptom_onset_date,reported_date,has_underlying_condition,symptom_severity,insert_timestamp,update_timestamp)VALUES('610fe035-df4c-481c-8f42-4db427d210bc1','fever and cough and diarrhoea and Myalgia','2021-01-23','2021-01-23','yes','severe',CURRENT_TIMESTAMP,CURRENT_TIMESTAMP);
+INSERT INTO test_db.symptom_monitoring(case_id,symptom_details,symptom_onset_date,reported_date,has_underlying_condition,symptom_severity,insert_timestamp,update_timestamp)VALUES('610fe035-df4c-481c-8f42-4db427d210bc2','fever','2021-01-23','2021-01-23','yes','mild',CURRENT_TIMESTAMP,CURRENT_TIMESTAMP);
+INSERT INTO test_db.symptom_monitoring(case_id,symptom_details,symptom_onset_date,reported_date,has_underlying_condition,symptom_severity,insert_timestamp,update_timestamp)VALUES('610fe035-df4c-481c-8f42-4db427d210bc3','headache and fever','2021-01-23','2021-01-23','no','mild',CURRENT_TIMESTAMP,CURRENT_TIMESTAMP);
+INSERT INTO test_db.symptom_monitoring(case_id,symptom_details,symptom_onset_date,reported_date,has_underlying_condition,symptom_severity,insert_timestamp,update_timestamp)VALUES('610fe035-df4c-481c-8f42-4db427d210bc4','fever and cough','2021-01-23','2021-01-23','no','mild',CURRENT_TIMESTAMP,CURRENT_TIMESTAMP);
+INSERT INTO test_db.symptom_monitoring(case_id,symptom_details,symptom_onset_date,reported_date,has_underlying_condition,symptom_severity,insert_timestamp,update_timestamp)VALUES('610fe035-df4c-481c-8f42-4db427d210bc5','fever and cough','2021-01-23','2021-01-23','no','mild',CURRENT_TIMESTAMP,CURRENT_TIMESTAMP);
+INSERT INTO test_db.symptom_monitoring(case_id,symptom_details,symptom_onset_date,reported_date,has_underlying_condition,symptom_severity,insert_timestamp,update_timestamp)VALUES('1689613eb0e544dab1c43dfcb68b0c761','fever and cough and diarrhoea','2021-02-01','2021-02-01','no','moderate',CURRENT_TIMESTAMP,CURRENT_TIMESTAMP);
+INSERT INTO test_db.symptom_monitoring(case_id,symptom_details,symptom_onset_date,reported_date,has_underlying_condition,symptom_severity,insert_timestamp,update_timestamp)VALUES('0b4bf8dd0648404f98d8e8c08312bf9b1','fever and cough','2021-02-08','2021-02-08','no ','mild',CURRENT_TIMESTAMP,CURRENT_TIMESTAMP);
+
+
+=================================
+
+
+
+
+
+
+
+
+
+
