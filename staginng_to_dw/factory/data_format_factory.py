@@ -1,5 +1,5 @@
 from factory import objectfactory_with_parms
-from jsonprocessor import JsonSimpleProcessor, \
+from responseprocessor.jsonprocessor import  JsonSimpleProcessor, \
     JsonNormalizeProcessor, \
     ListAsJsonProcessor, \
     ScalarValuesAsJson

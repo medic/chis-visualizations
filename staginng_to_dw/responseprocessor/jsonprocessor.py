@@ -1,4 +1,4 @@
-from iresponseprocessor import ResponseProcessor as  Processor
+from responseprocessor.iresponseprocessor import ResponseProcessor as  Processor
 import pandas as pd
 from io import StringIO
 import json
