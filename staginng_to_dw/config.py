@@ -2,7 +2,7 @@
 from configparser import ConfigParser
 
 
-def config(filename='C:/Users/priyanka.h.das/OneDrive - Accenture/Documents/Rockefeller/staginng_to_dw/staginng_to_dw/database.ini', section='postgresql'):
+def config(filename='.dbenv', section='postgresql'):
     # create a parser
     parser = ConfigParser()
     # read config file
