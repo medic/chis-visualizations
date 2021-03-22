@@ -1,5 +1,6 @@
 [postgresql]
-host=localhost
+host=
 database=superset
 user=superset
 password=superset
+port=5432
