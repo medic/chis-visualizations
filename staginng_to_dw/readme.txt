@@ -28,7 +28,7 @@ Scenarion 4.
 Insert statement for source_details:
 INSERT INTO test_db.source_details(
     run_id, source_name, source_column_details, source_type, source_connection_details, data_format, load_type, load_version, delta_load_condition, update_strategy, target_db_name,target_db_connection_details, processing_needed)
-    VALUES (1, 'test_db.dimagi_json_data', 'json_data', 'postgresql','{​​​​​​​"host":"localhost","dbname":"postgres", "user":"postgres", "password":"pdtestdb","port":"5432"}​​​​​​​', 'json', 'full', '1', '', '','postgresql', '{​​​​​​​"host":"localhost","dbname":"postgres", "user":"postgres", "password":"pdtestdb", "port":"5432"}​​​​​​​', 'yes');   
+    VALUES (1, 'test_db.dimagi_json_data', 'json_data', 'postgresql','{"host":"localhost","dbname":"postgres", "user":"***", "password":"***","port":"5432"}', 'json', 'full', '1', '', '','postgresql', '{"host":"localhost","dbname":"postgres", "user":"***", "password":"***", "port":"5432"}', 'yes');   
 
 
 Insert startement for source_mapping_details metadta:
