@@ -1,4 +1,5 @@
 A.	Steps to setup and run ETL pipeline.
+
     1.	Download code from git - https://github.com/medic/chis-visualizations/tree/ETL
     2.	Create and insert data to source tables in Postgres as mentioned in source_data_creation.sql
     3.	Create target star schema tables and views in Postgres using the queries present in star_schema_tables_vw.sql.
