@@ -16,11 +16,11 @@ class Postgresql:
         conn = psycopg2.connect(**self.connection_details)
         # save dataframe to an in memory buffer
         buffer = StringIO()
-        self.data.to_csv(buffer, index=False, header=False)
+        self.data.to_csv(buffer, index=False, header=False,sep="\t")
         buffer.seek(0)
         cursor = conn.cursor()
         try:
-            cursor.copy_from(buffer, self.table_name, sep=",")
+            cursor.copy_from(buffer, self.table_name, sep="\t")
             conn.commit()
         except (Exception, psycopg2.DatabaseError) as error:
             print("Error: %s" % error)

@@ -10,7 +10,6 @@ import datetime
 from config import config
 
 
-
 def load_data_to_database(data,
                           table_name,
                           target_type,
@@ -52,7 +51,7 @@ def process_source_n_load_target(source_df,
     # below for loop to process individual table data.
     current_timestamp = datetime.datetime.now()
     for current_target_table in metadata_mapping_df["target_table"].unique():
-        print('current_target_table', current_target_table)
+        print(f'Processing target table:{current_target_table}')
         data_frame_dict = {}
         current_mapping_data = metadata_mapping_df[metadata_mapping_df["target_table"] == current_target_table]
         # Populate default values in source Dataframe.
@@ -60,13 +59,13 @@ def process_source_n_load_target(source_df,
         for source_column in list_of_source_columns:
             if source_column not in source_df.columns.tolist():
                 source_df[source_column] = \
-                   current_mapping_data[current_mapping_data['source_column'] == source_column]['default_value'].tolist()[0]
+                    current_mapping_data[current_mapping_data['source_column'] == source_column][
+                        'default_value'].tolist()[0]
 
         # Below for loop processes individual column data
         # outputs a dictionary with target_column_name as key and transformed data as value.
         for index, current_record in current_mapping_data.iterrows():
             transformation_details = json.loads(current_record["transformation_rule"])
-            print('transformation_details', transformation_details)
             if len(list(current_record["source_column"].split(","))) > 1:
                 data = source_df[list(current_record["source_column"].split(","))]
             else:
@@ -91,7 +90,6 @@ def process_source_n_load_target(source_df,
                                       connection_details=target_db_connection_details,
                                       load_type=load_type)
 
-
         if transformation_details['rule'] in ['copy']:
             target_df = pd.DataFrame(data_frame_dict)
             target_df["insert_timestamp"] = current_timestamp
@@ -108,6 +106,7 @@ def process_data(metadata_df, metadata_mapping_df):
     # loop through the list of src to be processed
     for index, current_source in metadata_df.iterrows():
         try:
+            print(f'Reading data for source:{current_source["source_name"]}')
             data_source = dsf.data_source_factory.create(current_source["source_type"],
                                                          connection_details=current_source["source_connection_details"],
                                                          table_name=current_source["source_name"],
@@ -123,7 +122,8 @@ def process_data(metadata_df, metadata_mapping_df):
                 try:
                     process_source_n_load_target(source_df,
                                                  metadata_mapping_df[
-                                                     metadata_mapping_df["source_table"] == current_source["source_name"]],
+                                                     metadata_mapping_df["source_table"] == current_source[
+                                                         "source_name"]],
                                                  current_source["target_db_name"],
                                                  current_source["target_db_connection_details"],
                                                  current_source["load_type"]
@@ -144,7 +144,6 @@ def process_data(metadata_df, metadata_mapping_df):
             target_table = current_source["target_db_name"]
             print(f"Failed to read load data to dataframe for source:{source_name} for target: {target_table},"
                   f" with error:{e}")
-
 
 
 def load_response_to_dataframe(response, data_format):
