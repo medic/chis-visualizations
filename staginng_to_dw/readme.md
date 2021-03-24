@@ -2,14 +2,15 @@
 
     a.	Download code from git - https://github.com/medic/chis-visualizations/tree/ETL
     b.	Create and insert data to source tables in Postgres as mentioned in source_data_creation.sql
-    c.	Create target star schema tables and views using the queries present in star_schema_tables_vw.sql.
-    d.	Create meta data table as provided in metadata_details.sql 
+    c.	Create target star schema tables and views in Postgres using the queries present in star_schema_tables_vw.sql.
+    d.	Create meta data tables in Postgres as provided in metadata_details.sql 
     e.	Update the .dbenv file with the credentials of the data base on given environment.
     f.	Execute main.py to trigger the ETL.
  
 2. Steps to update ETL/data model for new scenarios.
 
 a. Scenario 1 - New column added in the source data follow the below steps:
+
     1. Add the source column details in the source_mapping_details along with it's transformation logic.
     2. If the source column is going to sit in an already existing table, then update the table to add the new column in postgres DB.
     3. Update the corresponding views along with fact_details_vw and semantic_layer_vw view updatation to accomodate new column.
