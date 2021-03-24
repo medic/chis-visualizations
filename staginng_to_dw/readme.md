@@ -1,13 +1,13 @@
-**1.	Steps to setup and run ETL pipeline.
-**    a.	Download code from git - https://github.com/medic/chis-visualizations/tree/ETL
-    b.	Create and insert data to source tables in Postgres as mentioned in source_data_creation.sql
-    c.	Create target star schema tables and views in Postgres using the queries present in star_schema_tables_vw.sql.
-    d.	Create meta data tables in Postgres as provided in metadata_details.sql 
-    e.	Update the .dbenv file with the credentials of the data base on given environment.
-    f.	Execute main.py to trigger the ETL.
+A.	Steps to setup and run ETL pipeline.
+    1.	Download code from git - https://github.com/medic/chis-visualizations/tree/ETL
+    2.	Create and insert data to source tables in Postgres as mentioned in source_data_creation.sql
+    3.	Create target star schema tables and views in Postgres using the queries present in star_schema_tables_vw.sql.
+    4.	Create meta data tables in Postgres as provided in metadata_details.sql 
+    5.	Update the .dbenv file with the credentials of the data base on given environment.
+    6.	Execute main.py to trigger the ETL.
  
-**2. Steps to update ETL/data model for new scenarios.
-**
+B. Steps to update ETL/data model for new scenarios.
+
 a. Scenario 1 - New column added in the source data follow the below steps.
 
     1. Add the source column details in the source_mapping_details along with it's transformation logic.
