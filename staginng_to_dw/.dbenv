@@ -1,5 +1,5 @@
 [postgresql]
-host=
+host=172.21.0.2
 database=superset
 user=superset
 password=superset
