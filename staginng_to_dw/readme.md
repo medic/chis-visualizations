@@ -1,15 +1,14 @@
-1.	Steps to setup and run ETL pipeline.
-
-    a.	Download code from git - https://github.com/medic/chis-visualizations/tree/ETL
+**1.	Steps to setup and run ETL pipeline.
+**    a.	Download code from git - https://github.com/medic/chis-visualizations/tree/ETL
     b.	Create and insert data to source tables in Postgres as mentioned in source_data_creation.sql
     c.	Create target star schema tables and views in Postgres using the queries present in star_schema_tables_vw.sql.
     d.	Create meta data tables in Postgres as provided in metadata_details.sql 
     e.	Update the .dbenv file with the credentials of the data base on given environment.
     f.	Execute main.py to trigger the ETL.
  
-2. Steps to update ETL/data model for new scenarios.
-
-a. Scenario 1 - New column added in the source data follow the below steps:
+**2. Steps to update ETL/data model for new scenarios.
+**
+a. Scenario 1 - New column added in the source data follow the below steps.
 
     1. Add the source column details in the source_mapping_details along with it's transformation logic.
     2. If the source column is going to sit in an already existing table, then update the table to add the new column in postgres DB.
@@ -29,7 +28,7 @@ c. Scenario 3 - Add a new source follow the below steps.
     3. If the source is not DB, then follow the steps described in scenario 2 to get a separate factory pattern for that source type.
     4. A separate factory pattern might be required if the data type is not JSON or the load type is other than Full load.
 
-d. Scenario 4 - Updating views involving xform ids
+d. Scenario 4 - Updating views involving xform ids.
 
     1. As of now, we are getting the form_ids as a list with comma separated values (28fbbe5e-b54f-4cd8-a93f-d31d4a2e3344,adaab35c-0c4d-46bf-a439-ca321c0324b9)
     2. The feq_follow_up_vw view to get the count of form_id is being build based on comma separator ( array_length(regexp_split_to_array(form_id, ','),1), so if in the data there is any other separator than comma(,) then this view needs to be modified accordingly
