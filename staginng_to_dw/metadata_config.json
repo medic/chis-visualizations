@@ -1,0 +1,6 @@
+{
+    "source_details_schema_name" : "test_db",
+    "source_details_table_name" : "source_details",
+    "mapping_schema_name" : "test_db",
+    "mapping_table_name" : "source_mapping_details"
+}
