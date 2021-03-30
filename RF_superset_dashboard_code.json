@@ -1,0 +1,769 @@
+{
+    "dashboards": [
+        {
+            "__Dashboard__": {
+                "css": "",
+                "dashboard_title": "HOME BASED CARE",
+                "description": null,
+                "json_metadata": "{\"timed_refresh_immune_slices\": [], \"expanded_slices\": {}, \"refresh_frequency\": 0, \"default_filters\": \"{\\\"247\\\": {\\\"__time_range\\\": \\\"No filter\\\", \\\"__time_grain\\\": \\\"P1W\\\"}, \\\"403\\\": {\\\"__time_range\\\": \\\"No filter\\\", \\\"__time_grain\\\": null}, \\\"404\\\": {\\\"__time_range\\\": \\\"No filter\\\", \\\"__time_grain\\\": \\\"P0.25Y\\\"}}\", \"color_scheme\": null, \"filter_scopes\": {\"247\": {\"__time_range\": {\"scope\": [\"TAB-oNnki0FFwg\"], \"immune\": []}, \"__time_grain\": {\"scope\": [\"TAB-oNnki0FFwg\"], \"immune\": []}}, \"380\": {\"chw_id\": {\"scope\": [\"ROOT_ID\"], \"immune\": []}, \"gender\": {\"scope\": [\"ROOT_ID\"], \"immune\": []}, \"age_group\": {\"scope\": [\"ROOT_ID\"], \"immune\": []}, \"catchment_area\": {\"scope\": [\"ROOT_ID\"], \"immune\": []}}, \"382\": {\"caregiver_available\": {\"scope\": [\"ROOT_ID\"], \"immune\": []}, \"contact_type\": {\"scope\": [\"ROOT_ID\"], \"immune\": []}, \"symptom_severity\": {\"scope\": [\"ROOT_ID\"], \"immune\": []}, \"comorbidity\": {\"scope\": [\"ROOT_ID\"], \"immune\": []}, \"chw_id\": {\"scope\": [\"ROOT_ID\"], \"immune\": []}}, \"403\": {\"catchment_area\": {\"scope\": [\"ROOT_ID\"], \"immune\": []}, \"age_group\": {\"scope\": [\"TAB-rllKRGzdj\"], \"immune\": []}, \"gender\": {\"scope\": [\"TAB-rllKRGzdj\"], \"immune\": []}, \"__time_range\": {\"scope\": [\"TAB-rllKRGzdj\"], \"immune\": []}, \"__time_grain\": {\"scope\": [\"TAB-rllKRGzdj\"], \"immune\": []}}, \"404\": {\"__time_range\": {\"scope\": [\"TAB-Ec-stLBDn\"], \"immune\": []}, \"__time_grain\": {\"scope\": [\"TAB-Ec-stLBDn\"], \"immune\": []}}}, \"remote_id\": 63, \"import_time\": 1616663883}",
+                "position_json": "{\"CHART--IdU7DgQyi\":{\"children\":[],\"id\":\"CHART--IdU7DgQyi\",\"meta\":{\"chartId\":381,\"height\":47,\"sliceName\":\"CHW Aggregation\",\"sliceNameOverride\":\"HBC Enrollments & Referrals\",\"uuid\":\"82ba5d13-d475-49a2-9439-84560ca734ae\",\"width\":4},\"parents\":[\"ROOT_ID\",\"TABS-SVez7HN87o\",\"TAB-oNnki0FFwg\",\"ROW-jt5sbvOUa\",\"COLUMN-buk8z77FMZ\"],\"type\":\"CHART\"},\"CHART-0hg-RCKkHc\":{\"children\":[],\"id\":\"CHART-0hg-RCKkHc\",\"meta\":{\"chartId\":347,\"height\":44,\"sliceName\":\"Trends in HBC Exit Pattern\",\"sliceNameOverride\":\"Trends in HBC Exit Patterns\",\"uuid\":\"bd43606b-5e9b-4dd9-8774-efb9b5838ecd\",\"width\":10},\"parents\":[\"ROOT_ID\",\"TABS-SVez7HN87o\",\"TAB-oNnki0FFwg\",\"ROW-4IS72bTxtA\"],\"type\":\"CHART\"},\"CHART-1eNas6Nzdi\":{\"children\":[],\"id\":\"CHART-1eNas6Nzdi\",\"meta\":{\"chartId\":387,\"height\":50,\"sliceName\":\"Aggregate Follow-ups per CHW\",\"uuid\":\"49ed8bc5-bd84-428b-a981-61fe9d6b74fa\",\"width\":5},\"parents\":[\"ROOT_ID\",\"TABS-SVez7HN87o\",\"TAB-Ec-stLBDn\",\"ROW-o37RCHvlHC\"],\"type\":\"CHART\"},\"CHART-2BzDsI1G8Y\":{\"children\":[],\"id\":\"CHART-2BzDsI1G8Y\",\"meta\":{\"chartId\":359,\"height\":31,\"sliceName\":\"Total Recovered\",\"sliceNameOverride\":\"Recovered Patients\",\"uuid\":\"0a577d29-6bed-4dd3-82cd-b306b1732911\",\"width\":3},\"parents\":[\"ROOT_ID\",\"TABS-SVez7HN87o\",\"TAB-rllKRGzdj\",\"ROW-pZPtGY1Wjs\"],\"type\":\"CHART\"},\"CHART-602j14VySf\":{\"children\":[],\"id\":\"CHART-602j14VySf\",\"meta\":{\"chartId\":389,\"height\":50,\"sliceName\":\"Follow-ups per Patient\",\"uuid\":\"b11e654d-ee20-4a0b-8db1-44754661bc04\",\"width\":5},\"parents\":[\"ROOT_ID\",\"TABS-SVez7HN87o\",\"TAB-Ec-stLBDn\",\"ROW-o37RCHvlHC\"],\"type\":\"CHART\"},\"CHART-8pcSplNe21\":{\"children\":[],\"id\":\"CHART-8pcSplNe21\",\"meta\":{\"chartId\":380,\"height\":44,\"sliceName\":\"Filter by Population\",\"uuid\":\"cb3e4305-b035-4094-b751-e9c046a4ef26\",\"width\":2},\"parents\":[\"ROOT_ID\",\"TABS-SVez7HN87o\",\"TAB-oNnki0FFwg\",\"ROW-4IS72bTxtA\"],\"type\":\"CHART\"},\"CHART-A_JmjolK61\":{\"children\":[],\"id\":\"CHART-A_JmjolK61\",\"meta\":{\"chartId\":403,\"height\":54,\"sliceName\":\"Filter\",\"uuid\":\"dc3929c7-81ce-48ec-b4c5-3ab53b44a0cd\",\"width\":2},\"parents\":[\"ROOT_ID\",\"TABS-SVez7HN87o\",\"TAB-rllKRGzdj\",\"ROW-Wyq4XqcgKo\"],\"type\":\"CHART\"},\"CHART-H91MqHTGRO\":{\"children\":[],\"id\":\"CHART-H91MqHTGRO\",\"meta\":{\"chartId\":384,\"height\":30,\"sliceName\":\"Total Enrolled in HBC\",\"sliceNameOverride\":\"Enrolled in HBC\",\"uuid\":\"49b76776-f343-48db-9554-c2743c7947f3\",\"width\":3},\"parents\":[\"ROOT_ID\",\"TABS-SVez7HN87o\",\"TAB-rllKRGzdj\",\"ROW-pZPtGY1Wjs\"],\"type\":\"CHART\"},\"CHART-JpQFbmKFS-\":{\"children\":[],\"id\":\"CHART-JpQFbmKFS-\",\"meta\":{\"chartId\":352,\"height\":28,\"sliceName\":\"Patients Screened per CHW\",\"uuid\":\"58329311-9a75-4b91-862c-e8e56b0cc969\",\"width\":3},\"parents\":[\"ROOT_ID\",\"TABS-SVez7HN87o\",\"TAB-rllKRGzdj\",\"ROW-TdfVS7rEbE\"],\"type\":\"CHART\"},\"CHART-NhvVL-Jd1N\":{\"children\":[],\"id\":\"CHART-NhvVL-Jd1N\",\"meta\":{\"chartId\":355,\"height\":28,\"sliceName\":\"Follow-ups per Patient\",\"uuid\":\"988022c1-0a58-41e8-ba67-f9e0aedbd7f8\",\"width\":3},\"parents\":[\"ROOT_ID\",\"TABS-SVez7HN87o\",\"TAB-rllKRGzdj\",\"ROW-TdfVS7rEbE\"],\"type\":\"CHART\"},\"CHART-QtNQqP00tq\":{\"children\":[],\"id\":\"CHART-QtNQqP00tq\",\"meta\":{\"chartId\":383,\"height\":28,\"sliceName\":\"Patients Enrolled per CHW\",\"uuid\":\"ef3ae688-87f1-4d41-8172-3f95e7cdf36c\",\"width\":3},\"parents\":[\"ROOT_ID\",\"TABS-SVez7HN87o\",\"TAB-rllKRGzdj\",\"ROW-TdfVS7rEbE\"],\"type\":\"CHART\"},\"CHART-_OTxJypjSV\":{\"children\":[],\"id\":\"CHART-_OTxJypjSV\",\"meta\":{\"chartId\":210,\"height\":47,\"sliceName\":\"Follow-up Adherence Bar\",\"sliceNameOverride\":\"Follow-up Adherence\",\"uuid\":\"96d642e8-b76f-418e-b3ae-a3bdadc91b22\",\"width\":7},\"parents\":[\"ROOT_ID\",\"TABS-SVez7HN87o\",\"TAB-Ec-stLBDn\",\"ROW-esq0nYGUIw\",\"COLUMN-pWxm6BiepH\"],\"type\":\"CHART\"},\"CHART-gqi-zpPkt5\":{\"children\":[],\"id\":\"CHART-gqi-zpPkt5\",\"meta\":{\"chartId\":247,\"height\":47,\"sliceName\":\"Time Range & Granularity\",\"uuid\":\"ce7c75f6-5b75-45ea-8eec-81f0c22d6566\",\"width\":2},\"parents\":[\"ROOT_ID\",\"TABS-SVez7HN87o\",\"TAB-oNnki0FFwg\",\"ROW-jt5sbvOUa\"],\"type\":\"CHART\"},\"CHART-hSnIuNo4L2\":{\"children\":[],\"id\":\"CHART-hSnIuNo4L2\",\"meta\":{\"chartId\":356,\"height\":30,\"sliceName\":\"KPI - #screened\",\"sliceNameOverride\":\"Screened Patients\",\"uuid\":\"022e0dc4-cf15-46a2-a0b9-0d2e40b0b138\",\"width\":3},\"parents\":[\"ROOT_ID\",\"TABS-SVez7HN87o\",\"TAB-rllKRGzdj\",\"ROW-pZPtGY1Wjs\"],\"type\":\"CHART\"},\"CHART-ktROUZP-MC\":{\"children\":[],\"id\":\"CHART-ktROUZP-MC\",\"meta\":{\"chartId\":385,\"height\":30,\"sliceName\":\"Total Referred\",\"sliceNameOverride\":\"Referred after Screening\",\"uuid\":\"e631db84-d138-4b6b-bf01-1d69f104f46d\",\"width\":3},\"parents\":[\"ROOT_ID\",\"TABS-SVez7HN87o\",\"TAB-rllKRGzdj\",\"ROW-pZPtGY1Wjs\"],\"type\":\"CHART\"},\"CHART-mppvlhZh_F\":{\"children\":[],\"id\":\"CHART-mppvlhZh_F\",\"meta\":{\"chartId\":388,\"height\":54,\"sliceName\":\"Proportion of Enrolled Patients out of total Screened\",\"sliceNameOverride\":\"Proportion of Enrolled & Referred Patients of Total Screened\",\"uuid\":\"b81392d0-a505-4626-a485-727146409dd6\",\"width\":4},\"parents\":[\"ROOT_ID\",\"TABS-SVez7HN87o\",\"TAB-rllKRGzdj\",\"ROW-Wyq4XqcgKo\"],\"type\":\"CHART\"},\"CHART-n0t-fuvPRE\":{\"children\":[],\"id\":\"CHART-n0t-fuvPRE\",\"meta\":{\"chartId\":354,\"height\":28,\"sliceName\":\"Follow-ups per CHW\",\"uuid\":\"f54bf89c-5627-49c5-bdf5-6d84b56c1faf\",\"width\":3},\"parents\":[\"ROOT_ID\",\"TABS-SVez7HN87o\",\"TAB-rllKRGzdj\",\"ROW-TdfVS7rEbE\"],\"type\":\"CHART\"},\"CHART-pyay60EJL0\":{\"children\":[],\"id\":\"CHART-pyay60EJL0\",\"meta\":{\"chartId\":382,\"height\":50,\"sliceName\":\"Filter Follow-up Info\",\"uuid\":\"57ed4af2-9e58-4672-8566-e87942948286\",\"width\":2},\"parents\":[\"ROOT_ID\",\"TABS-SVez7HN87o\",\"TAB-Ec-stLBDn\",\"ROW-o37RCHvlHC\"],\"type\":\"CHART\"},\"CHART-rMR6HAb1nP\":{\"children\":[],\"id\":\"CHART-rMR6HAb1nP\",\"meta\":{\"chartId\":391,\"height\":54,\"sliceName\":\"Aggregate Breakdown of Enrolled Patients\",\"uuid\":\"b9cc7458-6bbd-4bab-bc0f-b773e615798a\",\"width\":6},\"parents\":[\"ROOT_ID\",\"TABS-SVez7HN87o\",\"TAB-rllKRGzdj\",\"ROW-Wyq4XqcgKo\"],\"type\":\"CHART\"},\"CHART-w10PnsEVAA\":{\"children\":[],\"id\":\"CHART-w10PnsEVAA\",\"meta\":{\"chartId\":348,\"height\":47,\"sliceName\":\"Comparison of Symptom Severity & HBC Outcomes\",\"sliceNameOverride\":\"Comparison of Symptom Severity & HBC Outcomes\",\"uuid\":\"ba43fa18-89a1-4d83-adc7-689336247de6\",\"width\":5},\"parents\":[\"ROOT_ID\",\"TABS-SVez7HN87o\",\"TAB-oNnki0FFwg\",\"ROW-jt5sbvOUa\"],\"type\":\"CHART\"},\"CHART-wdDKcGBgCc\":{\"children\":[],\"id\":\"CHART-wdDKcGBgCc\",\"meta\":{\"chartId\":404,\"height\":47,\"sliceName\":\"Time Range\",\"uuid\":\"d6a79354-bc48-4a7b-87ed-5097951c3127\",\"width\":2},\"parents\":[\"ROOT_ID\",\"TABS-SVez7HN87o\",\"TAB-Ec-stLBDn\",\"ROW-esq0nYGUIw\"],\"type\":\"CHART\"},\"COLUMN-buk8z77FMZ\":{\"children\":[\"CHART--IdU7DgQyi\"],\"id\":\"COLUMN-buk8z77FMZ\",\"meta\":{\"background\":\"BACKGROUND_TRANSPARENT\",\"width\":5},\"parents\":[\"ROOT_ID\",\"TABS-SVez7HN87o\",\"TAB-oNnki0FFwg\",\"ROW-jt5sbvOUa\"],\"type\":\"COLUMN\"},\"COLUMN-pWxm6BiepH\":{\"children\":[\"CHART-_OTxJypjSV\"],\"id\":\"COLUMN-pWxm6BiepH\",\"meta\":{\"background\":\"BACKGROUND_TRANSPARENT\",\"width\":10},\"parents\":[\"ROOT_ID\",\"TABS-SVez7HN87o\",\"TAB-Ec-stLBDn\",\"ROW-esq0nYGUIw\"],\"type\":\"COLUMN\"},\"DASHBOARD_VERSION_KEY\":\"v2\",\"GRID_ID\":{\"children\":[],\"id\":\"GRID_ID\",\"parents\":[\"ROOT_ID\"],\"type\":\"GRID\"},\"HEADER-Pz8ySmvZcd\":{\"children\":[],\"id\":\"HEADER-Pz8ySmvZcd\",\"meta\":{\"background\":\"BACKGROUND_TRANSPARENT\",\"headerSize\":\"MEDIUM_HEADER\",\"text\":\"Cumulative KPIs\"},\"parents\":[\"ROOT_ID\",\"TABS-SVez7HN87o\",\"TAB-rllKRGzdj\"],\"type\":\"HEADER\"},\"HEADER-X1xcuvoyb7\":{\"children\":[],\"id\":\"HEADER-X1xcuvoyb7\",\"meta\":{\"background\":\"BACKGROUND_TRANSPARENT\",\"headerSize\":\"MEDIUM_HEADER\",\"text\":\"KPIs per CHW\"},\"parents\":[\"ROOT_ID\",\"TABS-SVez7HN87o\",\"TAB-rllKRGzdj\"],\"type\":\"HEADER\"},\"HEADER-f6_E9tsQZe\":{\"children\":[],\"id\":\"HEADER-f6_E9tsQZe\",\"meta\":{\"background\":\"BACKGROUND_TRANSPARENT\",\"headerSize\":\"MEDIUM_HEADER\",\"text\":\"Follow-ups Breakdown\"},\"parents\":[\"ROOT_ID\",\"TABS-SVez7HN87o\",\"TAB-Ec-stLBDn\"],\"type\":\"HEADER\"},\"HEADER-u0St9hdtVb\":{\"children\":[],\"id\":\"HEADER-u0St9hdtVb\",\"meta\":{\"background\":\"BACKGROUND_TRANSPARENT\",\"headerSize\":\"MEDIUM_HEADER\",\"text\":\"HBC Key Program Indicators\"},\"parents\":[\"ROOT_ID\",\"TABS-SVez7HN87o\",\"TAB-rllKRGzdj\"],\"type\":\"HEADER\"},\"HEADER_ID\":{\"id\":\"HEADER_ID\",\"meta\":{\"text\":\"HOME BASED CARE\"},\"type\":\"HEADER\"},\"ROOT_ID\":{\"children\":[\"TABS-SVez7HN87o\"],\"id\":\"ROOT_ID\",\"type\":\"ROOT\"},\"ROW-4IS72bTxtA\":{\"children\":[\"CHART-0hg-RCKkHc\",\"CHART-8pcSplNe21\"],\"id\":\"ROW-4IS72bTxtA\",\"meta\":{\"background\":\"BACKGROUND_TRANSPARENT\"},\"parents\":[\"ROOT_ID\",\"TABS-SVez7HN87o\",\"TAB-oNnki0FFwg\"],\"type\":\"ROW\"},\"ROW-TdfVS7rEbE\":{\"children\":[\"CHART-JpQFbmKFS-\",\"CHART-QtNQqP00tq\",\"CHART-n0t-fuvPRE\",\"CHART-NhvVL-Jd1N\"],\"id\":\"ROW-TdfVS7rEbE\",\"meta\":{\"background\":\"BACKGROUND_TRANSPARENT\"},\"parents\":[\"ROOT_ID\",\"TABS-SVez7HN87o\",\"TAB-rllKRGzdj\"],\"type\":\"ROW\"},\"ROW-Wyq4XqcgKo\":{\"children\":[\"CHART-mppvlhZh_F\",\"CHART-rMR6HAb1nP\",\"CHART-A_JmjolK61\"],\"id\":\"ROW-Wyq4XqcgKo\",\"meta\":{\"background\":\"BACKGROUND_TRANSPARENT\"},\"parents\":[\"ROOT_ID\",\"TABS-SVez7HN87o\",\"TAB-rllKRGzdj\"],\"type\":\"ROW\"},\"ROW-esq0nYGUIw\":{\"children\":[\"COLUMN-pWxm6BiepH\",\"CHART-wdDKcGBgCc\"],\"id\":\"ROW-esq0nYGUIw\",\"meta\":{\"background\":\"BACKGROUND_TRANSPARENT\"},\"parents\":[\"ROOT_ID\",\"TABS-SVez7HN87o\",\"TAB-Ec-stLBDn\"],\"type\":\"ROW\"},\"ROW-jt5sbvOUa\":{\"children\":[\"COLUMN-buk8z77FMZ\",\"CHART-w10PnsEVAA\",\"CHART-gqi-zpPkt5\"],\"id\":\"ROW-jt5sbvOUa\",\"meta\":{\"0\":\"ROOT_ID\",\"background\":\"BACKGROUND_TRANSPARENT\"},\"parents\":[\"ROOT_ID\",\"TABS-SVez7HN87o\",\"TAB-oNnki0FFwg\"],\"type\":\"ROW\"},\"ROW-o37RCHvlHC\":{\"children\":[\"CHART-1eNas6Nzdi\",\"CHART-602j14VySf\",\"CHART-pyay60EJL0\"],\"id\":\"ROW-o37RCHvlHC\",\"meta\":{\"background\":\"BACKGROUND_TRANSPARENT\"},\"parents\":[\"ROOT_ID\",\"TABS-SVez7HN87o\",\"TAB-Ec-stLBDn\"],\"type\":\"ROW\"},\"ROW-pZPtGY1Wjs\":{\"children\":[\"CHART-hSnIuNo4L2\",\"CHART-H91MqHTGRO\",\"CHART-ktROUZP-MC\",\"CHART-2BzDsI1G8Y\"],\"id\":\"ROW-pZPtGY1Wjs\",\"meta\":{\"background\":\"BACKGROUND_TRANSPARENT\"},\"parents\":[\"ROOT_ID\",\"TABS-SVez7HN87o\",\"TAB-rllKRGzdj\"],\"type\":\"ROW\"},\"TAB-Ec-stLBDn\":{\"children\":[\"ROW-esq0nYGUIw\",\"HEADER-f6_E9tsQZe\",\"ROW-o37RCHvlHC\"],\"id\":\"TAB-Ec-stLBDn\",\"meta\":{\"text\":\"HBC Follow-Ups\"},\"parents\":[\"ROOT_ID\",\"TABS-SVez7HN87o\"],\"type\":\"TAB\"},\"TAB-oNnki0FFwg\":{\"children\":[\"ROW-jt5sbvOUa\",\"ROW-4IS72bTxtA\"],\"id\":\"TAB-oNnki0FFwg\",\"meta\":{\"text\":\"HBC Enrollments\"},\"parents\":[\"ROOT_ID\",\"TABS-SVez7HN87o\"],\"type\":\"TAB\"},\"TAB-rllKRGzdj\":{\"children\":[\"HEADER-Pz8ySmvZcd\",\"ROW-Wyq4XqcgKo\",\"HEADER-u0St9hdtVb\",\"ROW-pZPtGY1Wjs\",\"HEADER-X1xcuvoyb7\",\"ROW-TdfVS7rEbE\"],\"id\":\"TAB-rllKRGzdj\",\"meta\":{\"text\":\"HBC Overview\"},\"parents\":[\"ROOT_ID\",\"TABS-SVez7HN87o\"],\"type\":\"TAB\"},\"TABS-SVez7HN87o\":{\"children\":[\"TAB-rllKRGzdj\",\"TAB-oNnki0FFwg\",\"TAB-Ec-stLBDn\"],\"id\":\"TABS-SVez7HN87o\",\"meta\":{},\"parents\":[\"ROOT_ID\"],\"type\":\"TABS\"}}",
+                "slices": [
+                    {
+                        "__Slice__": {
+                            "cache_timeout": null,
+                            "datasource_name": "test_db.semantic_layer",
+                            "datasource_type": "table",
+                            "id": 347,
+                            "params": "{\"adhoc_filters\": [{\"clause\": \"WHERE\", \"comparator\": \"no\", \"expressionType\": \"SIMPLE\", \"filterOptionName\": \"filter_1t9b9pqodck_cu2a2t595z8\", \"isExtra\": false, \"isNew\": false, \"operator\": \"!=\", \"sqlExpression\": null, \"subject\": \"eligible_for_hbc\"}], \"annotation_layers\": [], \"bar_stacked\": true, \"bottom_margin\": \"auto\", \"color_scheme\": \"presetColors\", \"comparison_type\": \"values\", \"contribution\": true, \"datasource\": \"59__table\", \"granularity_sqla\": \"date_of_enrollment_in_hbc\", \"groupby\": [\"hbc_exit_status\"], \"label_colors\": {\"Enrolled\": \"#454E7C\", \"Patients\": \"#1FA8C9\", \"Referred\": \"#5AC189\"}, \"left_margin\": \"auto\", \"line_interpolation\": \"linear\", \"metrics\": [{\"aggregate\": \"COUNT\", \"column\": {\"column_name\": \"hbc_exit_status\", \"description\": null, \"expression\": null, \"filterable\": true, \"groupby\": true, \"id\": 814, \"is_dttm\": false, \"python_date_format\": null, \"type\": \"VARCHAR\", \"verbose_name\": null}, \"expressionType\": \"SIMPLE\", \"hasCustomLabel\": false, \"isNew\": false, \"label\": \"COUNT(hbc_exit_status)\", \"optionName\": \"metric_2tvalux18y2_4a0etrf1hvn\", \"sqlExpression\": null}], \"order_desc\": true, \"rich_tooltip\": true, \"rolling_type\": \"None\", \"row_limit\": 10000, \"show_brush\": \"auto\", \"slice_id\": 241, \"time_grain_sqla\": \"P1W\", \"time_range\": \"No filter\", \"time_range_endpoints\": [\"inclusive\", \"exclusive\"], \"url_params\": {\"preselect_filters\": \"{\\\"178\\\":{\\\"__time_range\\\":\\\"No filter\\\"}}\"}, \"viz_type\": \"bar\", \"x_axis_format\": \"%Y-%m-%d\", \"x_axis_label\": \"Time Period\", \"x_ticks_layout\": \"auto\", \"y_axis_bounds\": [null, null], \"y_axis_format\": \"SMART_NUMBER\", \"y_axis_label\": \"Patients\", \"remote_id\": 347, \"datasource_name\": \"semantic_layer\", \"schema\": \"test_db\", \"database_name\": \"examples\", \"import_time\": 1616735886}",
+                            "slice_name": "Trends in HBC Exit Pattern",
+                            "viz_type": "bar"
+                        }
+                    },
+                    {
+                        "__Slice__": {
+                            "cache_timeout": null,
+                            "datasource_name": "test_db.semantic_layer",
+                            "datasource_type": "table",
+                            "id": 210,
+                            "params": "{\"adhoc_filters\": [{\"clause\": \"WHERE\", \"comparator\": \"yes\", \"expressionType\": \"SIMPLE\", \"filterOptionName\": \"filter_licqhd5x8i_ggyu63ncvoa\", \"isExtra\": false, \"isNew\": false, \"operator\": \"==\", \"sqlExpression\": null, \"subject\": \"eligible_for_hbc\"}, {\"clause\": \"WHERE\", \"comparator\": \"lost_to_followup\", \"expressionType\": \"SIMPLE\", \"filterOptionName\": \"filter_t8wtxlejtlo_p6ceqevlhwh\", \"isExtra\": false, \"isNew\": false, \"operator\": \"!=\", \"sqlExpression\": null, \"subject\": \"hbc_exit_status\"}], \"annotation_layers\": [], \"bar_stacked\": false, \"bottom_margin\": \"auto\", \"color_scheme\": \"presetColors\", \"comparison_type\": \"values\", \"datasource\": \"59__table\", \"granularity_sqla\": \"case_opened_date\", \"groupby\": [], \"label_colors\": {\"Enrolled\": \"#454E7C\", \"Patients\": \"#1FA8C9\", \"Referred\": \"#5AC189\"}, \"left_margin\": \"auto\", \"line_interpolation\": \"linear\", \"metrics\": [{\"aggregate\": \"SUM\", \"column\": {\"column_name\": \"expected_follow_up\", \"description\": null, \"expression\": null, \"filterable\": true, \"groupby\": true, \"id\": 822, \"is_dttm\": false, \"python_date_format\": null, \"type\": \"INTEGER\", \"verbose_name\": null}, \"expressionType\": \"SIMPLE\", \"hasCustomLabel\": true, \"isNew\": false, \"label\": \"Expected Follow up\", \"optionName\": \"metric_v75nalup2n_7zpso7wr0ll\", \"sqlExpression\": null}, {\"aggregate\": \"SUM\", \"column\": {\"column_name\": \"actual_follow_ups_completed\", \"description\": null, \"expression\": null, \"filterable\": true, \"groupby\": true, \"id\": 823, \"is_dttm\": false, \"python_date_format\": null, \"type\": \"INTEGER\", \"verbose_name\": null}, \"expressionType\": \"SIMPLE\", \"hasCustomLabel\": true, \"isNew\": false, \"label\": \"Actual Follow up\", \"optionName\": \"metric_95ew4upf4yd_fm73k4de1u\", \"sqlExpression\": null}], \"order_desc\": true, \"rich_tooltip\": true, \"rolling_type\": \"None\", \"row_limit\": 10000, \"show_bar_value\": true, \"show_brush\": \"auto\", \"show_legend\": true, \"slice_id\": 183, \"time_grain_sqla\": \"P1W\", \"time_range\": \"No filter\", \"time_range_endpoints\": [\"inclusive\", \"exclusive\"], \"url_params\": {\"preselect_filters\": \"{\\\"178\\\":{\\\"__time_range\\\":\\\"No filter\\\"}}\"}, \"viz_type\": \"bar\", \"x_axis_format\": \"%Y-%m-%d\", \"x_axis_label\": \"Time Period\", \"x_ticks_layout\": \"auto\", \"y_axis_bounds\": [null, null], \"y_axis_format\": \"SMART_NUMBER\", \"y_axis_label\": \"# of Follow-ups\", \"remote_id\": 210, \"datasource_name\": \"semantic_layer\", \"schema\": \"test_db\", \"database_name\": \"examples\", \"import_time\": 1616735886}",
+                            "slice_name": "Follow-up Adherence Bar",
+                            "viz_type": "bar"
+                        }
+                    },
+                    {
+                        "__Slice__": {
+                            "cache_timeout": null,
+                            "datasource_name": "test_db.semantic_layer",
+                            "datasource_type": "table",
+                            "id": 352,
+                            "params": "{\"adhoc_filters\": [], \"color_picker\": {\"a\": 1, \"b\": 135, \"g\": 122, \"r\": 0}, \"compare_lag\": 1, \"datasource\": \"59__table\", \"granularity_sqla\": \"case_opened_date\", \"header_font_size\": 0.4, \"metric\": {\"aggregate\": null, \"column\": null, \"expressionType\": \"SQL\", \"hasCustomLabel\": false, \"isNew\": false, \"label\": \"COUNT(case_id)/COUNT( DISTINCT chw_id)\", \"optionName\": \"metric_j5b8btq2a7_eq7j44iehr5\", \"sqlExpression\": \"COUNT(case_id)/COUNT( DISTINCT chw_id)\"}, \"rolling_type\": \"None\", \"show_trend_line\": true, \"slice_id\": 249, \"start_y_axis_at_zero\": true, \"subheader_font_size\": 0.15, \"time_grain_sqla\": \"P0.25Y\", \"time_range\": \"No filter\", \"time_range_endpoints\": [\"inclusive\", \"exclusive\"], \"url_params\": {}, \"viz_type\": \"big_number\", \"y_axis_format\": \"SMART_NUMBER\", \"remote_id\": 352, \"datasource_name\": \"semantic_layer\", \"schema\": \"test_db\", \"database_name\": \"examples\", \"import_time\": 1616735886}",
+                            "slice_name": "Patients Screened per CHW",
+                            "viz_type": "big_number"
+                        }
+                    },
+                    {
+                        "__Slice__": {
+                            "cache_timeout": null,
+                            "datasource_name": "test_db.semantic_layer",
+                            "datasource_type": "table",
+                            "id": 354,
+                            "params": "{\"adhoc_filters\": [], \"color_picker\": {\"a\": 1, \"b\": 135, \"g\": 122, \"r\": 0}, \"compare_lag\": 1, \"datasource\": \"59__table\", \"granularity_sqla\": \"date_of_enrollment_in_hbc\", \"header_font_size\": 0.5, \"metric\": {\"aggregate\": null, \"column\": null, \"expressionType\": \"SQL\", \"hasCustomLabel\": false, \"isNew\": false, \"label\": \"SUM(actual_follow_ups_completed)/ COUNT ...\", \"optionName\": \"metric_fzs3bkhqga9_002nf91k3glsu\", \"sqlExpression\": \"SUM(actual_follow_ups_completed)/ COUNT (DISTINCT chw_id ) \"}, \"rolling_type\": \"None\", \"show_trend_line\": true, \"slice_id\": 251, \"start_y_axis_at_zero\": true, \"subheader_font_size\": 0.15, \"time_grain_sqla\": \"P0.25Y\", \"time_range\": \"No filter\", \"time_range_endpoints\": [\"inclusive\", \"exclusive\"], \"url_params\": {\"preselect_filters\": \"{\\\"178\\\":{\\\"__time_range\\\":\\\"No filter\\\"}}\"}, \"viz_type\": \"big_number\", \"y_axis_format\": \"SMART_NUMBER\", \"remote_id\": 354, \"datasource_name\": \"semantic_layer\", \"schema\": \"test_db\", \"database_name\": \"examples\", \"import_time\": 1616735886}",
+                            "slice_name": "Follow-ups per CHW",
+                            "viz_type": "big_number"
+                        }
+                    },
+                    {
+                        "__Slice__": {
+                            "cache_timeout": null,
+                            "datasource_name": "test_db.semantic_layer",
+                            "datasource_type": "table",
+                            "id": 355,
+                            "params": "{\"adhoc_filters\": [{\"clause\": \"WHERE\", \"comparator\": \"0\", \"expressionType\": \"SIMPLE\", \"filterOptionName\": \"filter_iiilu2y7um_w3ilorju1c9\", \"isExtra\": false, \"isNew\": false, \"operator\": \"!=\", \"sqlExpression\": null, \"subject\": \"actual_follow_ups_completed\"}], \"color_picker\": {\"a\": 1, \"b\": 135, \"g\": 122, \"r\": 0}, \"compare_lag\": 1, \"datasource\": \"59__table\", \"granularity_sqla\": \"date_of_enrollment_in_hbc\", \"header_font_size\": 0.5, \"metric\": {\"aggregate\": null, \"column\": null, \"expressionType\": \"SQL\", \"hasCustomLabel\": false, \"isNew\": false, \"label\": \"SUM(actual_follow_ups_completed)/ COUNT ...\", \"optionName\": \"metric_btdeowygogp_i5c3og7giad\", \"sqlExpression\": \"SUM(actual_follow_ups_completed)/ COUNT (DISTINCT case_id ) \"}, \"rolling_type\": \"None\", \"show_trend_line\": true, \"slice_id\": 216, \"start_y_axis_at_zero\": true, \"subheader_font_size\": 0.15, \"time_grain_sqla\": \"P0.25Y\", \"time_range\": \"No filter\", \"time_range_endpoints\": [\"inclusive\", \"exclusive\"], \"url_params\": {}, \"viz_type\": \"big_number\", \"y_axis_format\": \"SMART_NUMBER\", \"remote_id\": 355, \"datasource_name\": \"semantic_layer\", \"schema\": \"test_db\", \"database_name\": \"examples\", \"import_time\": 1616735886}",
+                            "slice_name": "Follow-ups per Patient",
+                            "viz_type": "big_number"
+                        }
+                    },
+                    {
+                        "__Slice__": {
+                            "cache_timeout": null,
+                            "datasource_name": "test_db.semantic_layer",
+                            "datasource_type": "table",
+                            "id": 384,
+                            "params": "{\"adhoc_filters\": [{\"clause\": \"WHERE\", \"comparator\": \"Enrolled\", \"expressionType\": \"SIMPLE\", \"filterOptionName\": \"filter_r7a16cd19f_lr2ub9p1rzf\", \"isExtra\": false, \"isNew\": false, \"operator\": \"==\", \"sqlExpression\": null, \"subject\": \"screening_outcome\"}], \"color_picker\": {\"a\": 1, \"b\": 135, \"g\": 122, \"r\": 0}, \"compare_lag\": 1, \"datasource\": \"59__table\", \"granularity_sqla\": \"date_of_enrollment_in_hbc\", \"header_font_size\": 0.4, \"metric\": {\"aggregate\": \"COUNT\", \"column\": {\"column_name\": \"screening_outcome\", \"description\": null, \"expression\": null, \"filterable\": true, \"groupby\": true, \"id\": 892, \"is_dttm\": false, \"python_date_format\": null, \"type\": \"VARCHAR\", \"verbose_name\": null}, \"expressionType\": \"SIMPLE\", \"hasCustomLabel\": true, \"isNew\": false, \"label\": \"Enrolled in HBC\", \"optionName\": \"metric_ffb2zqtpxtk_9dpsjnvynnd\", \"sqlExpression\": null}, \"rolling_type\": \"None\", \"show_trend_line\": true, \"slice_id\": 229, \"start_y_axis_at_zero\": true, \"subheader_font_size\": 0.15, \"time_grain_sqla\": \"P0.25Y\", \"time_range\": \"No filter\", \"time_range_endpoints\": [\"inclusive\", \"exclusive\"], \"url_params\": {}, \"viz_type\": \"big_number\", \"y_axis_format\": \"SMART_NUMBER\", \"remote_id\": 384, \"datasource_name\": \"semantic_layer\", \"schema\": \"test_db\", \"database_name\": \"examples\", \"import_time\": 1616735886}",
+                            "slice_name": "Total Enrolled in HBC",
+                            "viz_type": "big_number"
+                        }
+                    },
+                    {
+                        "__Slice__": {
+                            "cache_timeout": null,
+                            "datasource_name": "test_db.semantic_layer",
+                            "datasource_type": "table",
+                            "id": 385,
+                            "params": "{\"adhoc_filters\": [{\"clause\": \"WHERE\", \"comparator\": \"Referred\", \"expressionType\": \"SIMPLE\", \"filterOptionName\": \"filter_77ym61beqdm_o5nwzi6yiie\", \"isExtra\": false, \"isNew\": false, \"operator\": \"==\", \"sqlExpression\": null, \"subject\": \"screening_outcome\"}], \"color_picker\": {\"a\": 1, \"b\": 135, \"g\": 122, \"r\": 0}, \"compare_lag\": 1, \"datasource\": \"59__table\", \"granularity_sqla\": \"case_opened_date\", \"header_font_size\": 0.4, \"metric\": {\"aggregate\": \"COUNT\", \"column\": {\"column_name\": \"screening_outcome\", \"description\": null, \"expression\": null, \"filterable\": true, \"groupby\": true, \"id\": 892, \"is_dttm\": false, \"python_date_format\": null, \"type\": \"VARCHAR\", \"verbose_name\": null}, \"expressionType\": \"SIMPLE\", \"hasCustomLabel\": true, \"isNew\": false, \"label\": \"Referred\", \"optionName\": \"metric_s0cfzuyiogh_okaox7tfovm\", \"sqlExpression\": null}, \"rolling_type\": \"None\", \"show_trend_line\": true, \"slice_id\": 230, \"start_y_axis_at_zero\": true, \"subheader_font_size\": 0.15, \"time_grain_sqla\": \"P0.25Y\", \"time_range\": \"No filter\", \"time_range_endpoints\": [\"inclusive\", \"exclusive\"], \"url_params\": {}, \"viz_type\": \"big_number\", \"y_axis_format\": \"SMART_NUMBER\", \"remote_id\": 385, \"datasource_name\": \"semantic_layer\", \"schema\": \"test_db\", \"database_name\": \"examples\", \"import_time\": 1616735886}",
+                            "slice_name": "Total Referred",
+                            "viz_type": "big_number"
+                        }
+                    },
+                    {
+                        "__Slice__": {
+                            "cache_timeout": null,
+                            "datasource_name": "test_db.semantic_layer",
+                            "datasource_type": "table",
+                            "id": 359,
+                            "params": "{\"adhoc_filters\": [{\"clause\": \"WHERE\", \"comparator\": \"recovered\", \"expressionType\": \"SIMPLE\", \"filterOptionName\": \"filter_eoxwq007du_wnrad0314v\", \"isExtra\": false, \"isNew\": false, \"operator\": \"==\", \"sqlExpression\": null, \"subject\": \"hbc_exit_status\"}], \"color_picker\": {\"a\": 1, \"b\": 135, \"g\": 122, \"r\": 0}, \"compare_lag\": 1, \"datasource\": \"59__table\", \"granularity_sqla\": \"date_of_enrollment_in_hbc\", \"header_font_size\": 0.4, \"metric\": {\"aggregate\": \"COUNT\", \"column\": {\"column_name\": \"hbc_exit_status\", \"description\": null, \"expression\": null, \"filterable\": true, \"groupby\": true, \"id\": 814, \"is_dttm\": false, \"python_date_format\": null, \"type\": \"VARCHAR\", \"verbose_name\": null}, \"expressionType\": \"SIMPLE\", \"hasCustomLabel\": false, \"isNew\": false, \"label\": \"COUNT(hbc_exit_status)\", \"optionName\": \"metric_r7dy8l5952n_n8phglwuh6\", \"sqlExpression\": null}, \"rolling_type\": \"None\", \"show_trend_line\": true, \"slice_id\": 233, \"start_y_axis_at_zero\": true, \"subheader_font_size\": 0.15, \"time_grain_sqla\": \"P0.25Y\", \"time_range\": \"No filter\", \"time_range_endpoints\": [\"inclusive\", \"exclusive\"], \"url_params\": {}, \"viz_type\": \"big_number\", \"y_axis_format\": \"SMART_NUMBER\", \"remote_id\": 359, \"datasource_name\": \"semantic_layer\", \"schema\": \"test_db\", \"database_name\": \"examples\", \"import_time\": 1616735886}",
+                            "slice_name": "Total Recovered",
+                            "viz_type": "big_number"
+                        }
+                    },
+                    {
+                        "__Slice__": {
+                            "cache_timeout": null,
+                            "datasource_name": "test_db.semantic_layer",
+                            "datasource_type": "table",
+                            "id": 387,
+                            "params": "{\"adhoc_filters\": [{\"clause\": \"WHERE\", \"comparator\": \"yes\", \"expressionType\": \"SIMPLE\", \"filterOptionName\": \"filter_0ssk48xwqrs_02vpnomci8cy\", \"isExtra\": false, \"isNew\": false, \"operator\": \"==\", \"sqlExpression\": null, \"subject\": \"eligible_for_hbc\"}], \"bar_stacked\": true, \"bottom_margin\": \"auto\", \"color_scheme\": \"presetColors\", \"columns\": [\"followup_bucket\"], \"datasource\": \"59__table\", \"granularity_sqla\": \"date_of_enrollment_in_hbc\", \"groupby\": [\"chw_id\"], \"label_colors\": {\"Enrolled\": \"#454E7C\", \"Patients\": \"#1FA8C9\", \"Referred\": \"#5AC189\"}, \"metrics\": [{\"aggregate\": \"COUNT\", \"column\": {\"column_name\": \"case_id\", \"description\": null, \"expression\": null, \"filterable\": true, \"groupby\": true, \"id\": 806, \"is_dttm\": false, \"python_date_format\": null, \"type\": \"VARCHAR\", \"verbose_name\": null}, \"expressionType\": \"SIMPLE\", \"hasCustomLabel\": false, \"isNew\": false, \"label\": \"COUNT(case_id)\", \"optionName\": \"metric_k7f066c5sf9_le7v1tbuiy\", \"sqlExpression\": null}], \"row_limit\": 10000, \"show_bar_value\": true, \"show_legend\": true, \"slice_id\": 387, \"time_range\": \"No filter\", \"time_range_endpoints\": [\"inclusive\", \"exclusive\"], \"url_params\": {}, \"viz_type\": \"dist_bar\", \"x_axis_label\": \"Community Health Workers\", \"x_ticks_layout\": \"flat\", \"y_axis_bounds\": [null, null], \"y_axis_format\": \"SMART_NUMBER\", \"y_axis_label\": \"# of Patients in each Category\", \"remote_id\": 387, \"datasource_name\": \"semantic_layer\", \"schema\": \"test_db\", \"database_name\": \"examples\"}",
+                            "slice_name": "Aggregate Follow-ups per CHW",
+                            "viz_type": "dist_bar"
+                        }
+                    },
+                    {
+                        "__Slice__": {
+                            "cache_timeout": null,
+                            "datasource_name": "test_db.semantic_layer",
+                            "datasource_type": "table",
+                            "id": 388,
+                            "params": "{\"adhoc_filters\": [], \"color_scheme\": \"supersetColors\", \"datasource\": \"59__table\", \"donut\": true, \"granularity_sqla\": \"case_opened_date\", \"groupby\": [\"screening_outcome\"], \"innerRadius\": 49, \"label_line\": true, \"labels_outside\": true, \"legendOrientation\": \"top\", \"legendType\": \"scroll\", \"metric\": \"count\", \"number_format\": \"SMART_NUMBER\", \"outerRadius\": 70, \"pie_label_type\": \"key\", \"row_limit\": 100, \"show_labels\": true, \"show_legend\": false, \"slice_id\": 254, \"time_range\": \"No filter\", \"time_range_endpoints\": [\"inclusive\", \"exclusive\"], \"url_params\": {}, \"viz_type\": \"pie\", \"remote_id\": 388, \"datasource_name\": \"semantic_layer\", \"schema\": \"test_db\", \"database_name\": \"examples\", \"import_time\": 1616735886}",
+                            "slice_name": "Proportion of Enrolled Patients out of total Screened",
+                            "viz_type": "pie"
+                        }
+                    },
+                    {
+                        "__Slice__": {
+                            "cache_timeout": null,
+                            "datasource_name": "test_db.semantic_layer",
+                            "datasource_type": "table",
+                            "id": 389,
+                            "params": "{\"adhoc_filters\": [{\"clause\": \"WHERE\", \"comparator\": \"Lost to Follow Up\", \"expressionType\": \"SIMPLE\", \"filterOptionName\": \"filter_edn4iemzxew_6e7ipncrw9x\", \"isExtra\": false, \"isNew\": false, \"operator\": \"!=\", \"sqlExpression\": null, \"subject\": \"followup_bucket\"}], \"annotation_layers\": [], \"bottom_margin\": \"auto\", \"color_scheme\": \"presetColors\", \"comparison_type\": \"values\", \"datasource\": \"59__table\", \"granularity_sqla\": \"case_opened_date\", \"groupby\": [], \"label_colors\": {\"Enrolled\": \"#454E7C\", \"Patients\": \"#1FA8C9\", \"Referred\": \"#5AC189\"}, \"left_margin\": \"auto\", \"limit\": null, \"line_interpolation\": \"linear\", \"metrics\": [{\"aggregate\": null, \"column\": null, \"expressionType\": \"SQL\", \"hasCustomLabel\": true, \"isNew\": false, \"label\": \"Minimum Follow up\", \"optionName\": \"metric_cqxjsocz1l6_9pim20cmrir\", \"sqlExpression\": \"MIN(actual_follow_ups_completed)\"}, {\"aggregate\": null, \"column\": null, \"expressionType\": \"SQL\", \"hasCustomLabel\": true, \"isNew\": false, \"label\": \"Maximum Follow up\", \"optionName\": \"metric_2lf8zmddq8j_ja34nh40vy\", \"sqlExpression\": \"MAX(actual_follow_ups_completed)\"}, {\"aggregate\": null, \"column\": null, \"expressionType\": \"SQL\", \"hasCustomLabel\": true, \"isNew\": false, \"label\": \"Median Follow up\", \"optionName\": \"metric_3pyupxxgu13_xjwbi0rnll\", \"sqlExpression\": \"PERCENTILE_CONT(0.5) WITHIN GROUP(ORDER BY  actual_follow_ups_completed)\"}], \"order_desc\": false, \"rich_tooltip\": true, \"rolling_type\": \"None\", \"row_limit\": 10000, \"show_brush\": \"auto\", \"show_legend\": true, \"show_markers\": true, \"slice_id\": 245, \"time_grain_sqla\": \"P0.25Y\", \"time_range\": \"No filter\", \"time_range_endpoints\": [\"inclusive\", \"exclusive\"], \"url_params\": {\"preselect_filters\": \"{\\\"178\\\":{\\\"__time_range\\\":\\\"No filter\\\"}}\"}, \"viz_type\": \"line\", \"x_axis_format\": \"%Y-%m-%d\", \"x_axis_label\": \"Time Period\", \"x_axis_showminmax\": false, \"x_ticks_layout\": \"auto\", \"y_axis_bounds\": [null, null], \"y_axis_format\": \"SMART_NUMBER\", \"y_axis_label\": \"# of Follow-ups\", \"remote_id\": 389, \"datasource_name\": \"semantic_layer\", \"schema\": \"test_db\", \"database_name\": \"examples\", \"import_time\": 1616735886}",
+                            "slice_name": "Follow-ups per Patient",
+                            "viz_type": "line"
+                        }
+                    },
+                    {
+                        "__Slice__": {
+                            "cache_timeout": null,
+                            "datasource_name": "test_db.semantic_layer",
+                            "datasource_type": "table",
+                            "id": 348,
+                            "params": "{\"adhoc_filters\": [], \"color_scheme\": \"presetColors\", \"datasource\": \"59__table\", \"granularity_sqla\": \"date_of_enrollment_in_hbc\", \"groupby\": [\"symptom_severity\", \"hbc_exit_status\"], \"label_colors\": {\"Enrolled\": \"#454E7C\", \"Patients\": \"#1FA8C9\", \"Referred\": \"#5AC189\", \"active\": \"#A38F79\", \"deceased\": \"#A868B7\", \"lost_to_followup\": \"#8FD3E4\", \"mild\": \"#FF7F44\", \"moderate\": \"#E04355\", \"recovered\": \"#666666\", \"referred\": \"#3CCCCB\", \"severe\": \"#FCC700\"}, \"metric\": \"count\", \"row_limit\": 10000, \"slice_id\": 242, \"sort_by_metric\": false, \"time_range\": \"No filter\", \"time_range_endpoints\": [\"inclusive\", \"exclusive\"], \"url_params\": {}, \"viz_type\": \"sankey\", \"remote_id\": 348, \"datasource_name\": \"semantic_layer\", \"schema\": \"test_db\", \"database_name\": \"examples\", \"import_time\": 1616735886}",
+                            "slice_name": "Comparison of Symptom Severity & HBC Outcomes",
+                            "viz_type": "sankey"
+                        }
+                    },
+                    {
+                        "__Slice__": {
+                            "cache_timeout": null,
+                            "datasource_name": "test_db.semantic_layer",
+                            "datasource_type": "table",
+                            "id": 381,
+                            "params": "{\"adhoc_filters\": [{\"clause\": \"WHERE\", \"comparator\": null, \"expressionType\": \"SQL\", \"filterOptionName\": \"filter_m7ws81n57r_z725lku7e4m\", \"isExtra\": false, \"isNew\": false, \"operator\": null, \"sqlExpression\": \"(hbc_exit_status = 'referred'\\n  AND eligible_for_hbc = 'no')\\n  OR eligible_for_hbc ='yes'\", \"subject\": null}], \"bar_stacked\": false, \"bottom_margin\": \"auto\", \"color_scheme\": \"presetColors\", \"columns\": [\"screening_outcome\"], \"contribution\": false, \"datasource\": \"59__table\", \"granularity_sqla\": \"case_opened_date\", \"groupby\": [\"chw_id\"], \"label_colors\": {\"Enrolled\": \"#454E7C\", \"Patients\": \"#1FA8C9\", \"Referred\": \"#5AC189\"}, \"metrics\": [{\"aggregate\": \"COUNT\", \"column\": {\"column_name\": \"case_id\", \"description\": null, \"expression\": null, \"filterable\": true, \"groupby\": true, \"id\": 806, \"is_dttm\": false, \"python_date_format\": null, \"type\": \"VARCHAR\", \"verbose_name\": null}, \"expressionType\": \"SIMPLE\", \"hasCustomLabel\": false, \"isNew\": false, \"label\": \"COUNT(case_id)\", \"optionName\": \"metric_nq00pj1f8i9_9g3sbsq0f5p\", \"sqlExpression\": null}], \"order_bars\": false, \"row_limit\": 10000, \"show_bar_value\": true, \"show_legend\": true, \"slice_id\": 381, \"time_range\": \"No filter\", \"time_range_endpoints\": [\"inclusive\", \"exclusive\"], \"url_params\": {}, \"viz_type\": \"dist_bar\", \"x_axis_label\": \"Community Health Workers\", \"x_ticks_layout\": \"flat\", \"y_axis_bounds\": [null, null], \"y_axis_format\": \"SMART_NUMBER\", \"y_axis_label\": \"# of Patients\", \"remote_id\": 381, \"datasource_name\": \"semantic_layer\", \"schema\": \"test_db\", \"database_name\": \"examples\"}",
+                            "slice_name": "CHW Aggregation",
+                            "viz_type": "dist_bar"
+                        }
+                    },
+                    {
+                        "__Slice__": {
+                            "cache_timeout": null,
+                            "datasource_name": "test_db.semantic_layer",
+                            "datasource_type": "table",
+                            "id": 380,
+                            "params": "{\"adhoc_filters\": [], \"datasource\": \"59__table\", \"date_filter\": false, \"filter_configs\": [{\"asc\": false, \"clearable\": true, \"column\": \"chw_id\", \"key\": \"mPl4aL9TX\", \"label\": \"Healthcare Worker\", \"multiple\": true, \"searchAllOptions\": true}, {\"asc\": false, \"clearable\": true, \"column\": \"gender\", \"key\": \"IXIbQuAgX\", \"label\": \"Gender\", \"multiple\": true, \"searchAllOptions\": true}, {\"asc\": false, \"clearable\": true, \"column\": \"age_group\", \"key\": \"f6QJ7zJcG\", \"label\": \"AGE GROUP\", \"multiple\": true, \"searchAllOptions\": true}, {\"asc\": false, \"clearable\": true, \"column\": \"catchment_area\", \"key\": \"anr0AmM8F\", \"label\": \"Catchment Area\", \"multiple\": true, \"searchAllOptions\": true}], \"granularity_sqla\": \"case_opened_date\", \"instant_filtering\": true, \"slice_id\": 243, \"time_grain_sqla\": \"P0.25Y\", \"time_range\": \"No filter\", \"time_range_endpoints\": [\"inclusive\", \"exclusive\"], \"url_params\": {}, \"viz_type\": \"filter_box\", \"remote_id\": 380, \"datasource_name\": \"semantic_layer\", \"schema\": \"test_db\", \"database_name\": \"examples\", \"import_time\": 1616735886}",
+                            "slice_name": "Filter by Population",
+                            "viz_type": "filter_box"
+                        }
+                    },
+                    {
+                        "__Slice__": {
+                            "cache_timeout": null,
+                            "datasource_name": "test_db.semantic_layer",
+                            "datasource_type": "table",
+                            "id": 382,
+                            "params": "{\"adhoc_filters\": [], \"datasource\": \"59__table\", \"date_filter\": false, \"filter_configs\": [{\"asc\": false, \"clearable\": true, \"column\": \"caregiver_available\", \"key\": \"4OKFPwBlZ\", \"label\": \"Caregiver \", \"multiple\": true, \"searchAllOptions\": true}, {\"asc\": false, \"clearable\": true, \"column\": \"contact_type\", \"key\": \"iJzBijULK\", \"label\": \"CONTACT TYPE\", \"multiple\": true, \"searchAllOptions\": true}, {\"asc\": false, \"clearable\": true, \"column\": \"symptom_severity\", \"key\": \"--Ha34Hkz\", \"label\": \"Symptom Severity\", \"multiple\": true, \"searchAllOptions\": true}, {\"asc\": false, \"clearable\": true, \"column\": \"comorbidity\", \"key\": \"hitThDmC1\", \"label\": \"Comorbidity\", \"multiple\": true, \"searchAllOptions\": true}, {\"asc\": false, \"clearable\": true, \"column\": \"chw_id\", \"key\": \"ZpKNPFOBK\", \"label\": \"Health Worker\", \"multiple\": true, \"searchAllOptions\": true}], \"granularity_sqla\": \"date_of_enrollment_in_hbc\", \"instant_filtering\": true, \"slice_id\": 248, \"time_grain_sqla\": \"P0.25Y\", \"time_range\": \"No filter\", \"time_range_endpoints\": [\"inclusive\", \"exclusive\"], \"url_params\": {}, \"viz_type\": \"filter_box\", \"remote_id\": 382, \"datasource_name\": \"semantic_layer\", \"schema\": \"test_db\", \"database_name\": \"examples\", \"import_time\": 1616735886}",
+                            "slice_name": "Filter Follow-up Info",
+                            "viz_type": "filter_box"
+                        }
+                    },
+                    {
+                        "__Slice__": {
+                            "cache_timeout": null,
+                            "datasource_name": "test_db.semantic_layer",
+                            "datasource_type": "table",
+                            "id": 383,
+                            "params": "{\"adhoc_filters\": [{\"clause\": \"WHERE\", \"comparator\": \"Enrolled\", \"expressionType\": \"SIMPLE\", \"filterOptionName\": \"filter_0e9st8lezbpn_qtho8vbx1zh\", \"isExtra\": false, \"isNew\": false, \"operator\": \"==\", \"sqlExpression\": null, \"subject\": \"screening_outcome\"}], \"color_picker\": {\"a\": 1, \"b\": 135, \"g\": 122, \"r\": 0}, \"compare_lag\": 1, \"datasource\": \"59__table\", \"granularity_sqla\": \"date_of_enrollment_in_hbc\", \"header_font_size\": 0.4, \"metric\": {\"aggregate\": \"COUNT\", \"column\": {\"column_name\": \"screening_outcome\", \"description\": null, \"expression\": null, \"filterable\": true, \"groupby\": true, \"id\": 892, \"is_dttm\": false, \"python_date_format\": null, \"type\": \"VARCHAR\", \"verbose_name\": null}, \"expressionType\": \"SIMPLE\", \"hasCustomLabel\": false, \"isNew\": false, \"label\": \"COUNT(screening_outcome)\", \"optionName\": \"metric_7vh6nfpvzh9_csi3rj9nf0v\", \"sqlExpression\": null}, \"rolling_type\": \"None\", \"show_trend_line\": true, \"slice_id\": 250, \"start_y_axis_at_zero\": true, \"subheader_font_size\": 0.15, \"time_grain_sqla\": \"P0.25Y\", \"time_range\": \"No filter\", \"time_range_endpoints\": [\"inclusive\", \"exclusive\"], \"url_params\": {}, \"viz_type\": \"big_number\", \"y_axis_format\": \"SMART_NUMBER\", \"remote_id\": 383, \"datasource_name\": \"semantic_layer\", \"schema\": \"test_db\", \"database_name\": \"examples\", \"import_time\": 1616735886}",
+                            "slice_name": "Patients Enrolled per CHW",
+                            "viz_type": "big_number"
+                        }
+                    },
+                    {
+                        "__Slice__": {
+                            "cache_timeout": null,
+                            "datasource_name": "test_db.semantic_layer",
+                            "datasource_type": "table",
+                            "id": 356,
+                            "params": "{\"adhoc_filters\": [], \"color_picker\": {\"a\": 1, \"b\": 135, \"g\": 122, \"r\": 0}, \"compare_lag\": 1, \"datasource\": \"59__table\", \"granularity_sqla\": \"case_opened_date\", \"header_font_size\": 0.6, \"metric\": {\"aggregate\": \"COUNT\", \"column\": {\"column_name\": \"case_id\", \"description\": null, \"expression\": null, \"filterable\": true, \"groupby\": true, \"id\": 806, \"is_dttm\": false, \"python_date_format\": null, \"type\": \"VARCHAR\", \"verbose_name\": null}, \"expressionType\": \"SIMPLE\", \"hasCustomLabel\": false, \"isNew\": false, \"label\": \"COUNT(case_id)\", \"optionName\": \"metric_kubjldx0wt_2qlqs8u2f1g\", \"sqlExpression\": null}, \"min_periods\": \"\", \"rolling_periods\": \"\", \"rolling_type\": null, \"show_trend_line\": true, \"slice_id\": 211, \"start_y_axis_at_zero\": true, \"subheader_font_size\": 0.125, \"time_grain_sqla\": \"P0.25Y\", \"time_range\": \"No filter\", \"time_range_endpoints\": [\"inclusive\", \"exclusive\"], \"url_params\": {\"preselect_filters\": \"{\\\"178\\\":{\\\"__time_range\\\":\\\"No filter\\\"}}\"}, \"viz_type\": \"big_number\", \"y_axis_format\": \"SMART_NUMBER\", \"remote_id\": 356, \"datasource_name\": \"semantic_layer\", \"schema\": \"test_db\", \"database_name\": \"examples\", \"import_time\": 1616735886}",
+                            "slice_name": "KPI - #screened",
+                            "viz_type": "big_number"
+                        }
+                    },
+                    {
+                        "__Slice__": {
+                            "cache_timeout": null,
+                            "datasource_name": "test_db.semantic_layer",
+                            "datasource_type": "table",
+                            "id": 391,
+                            "params": "{\"adhoc_filters\": [{\"clause\": \"WHERE\", \"comparator\": \"no\", \"expressionType\": \"SIMPLE\", \"filterOptionName\": \"filter_zh7fljxwj1_c7udz2uvoff\", \"isExtra\": false, \"isNew\": false, \"operator\": \"!=\", \"sqlExpression\": null, \"subject\": \"eligible_for_hbc\"}], \"bottom_margin\": \"auto\", \"color_scheme\": \"supersetColors\", \"columns\": [], \"datasource\": \"59__table\", \"granularity_sqla\": \"date_of_enrollment_in_hbc\", \"groupby\": [\"hbc_exit_status\"], \"label_colors\": {\"Enrolled\": \"#454E7C\", \"Patients\": \"#1FA8C9\", \"Referred\": \"#5AC189\"}, \"metrics\": [{\"aggregate\": \"COUNT\", \"column\": {\"column_name\": \"case_id\", \"description\": null, \"expression\": null, \"filterable\": true, \"groupby\": true, \"id\": 806, \"is_dttm\": false, \"python_date_format\": null, \"type\": \"VARCHAR\", \"verbose_name\": null}, \"expressionType\": \"SIMPLE\", \"hasCustomLabel\": true, \"isNew\": false, \"label\": \"Patients\", \"optionName\": \"metric_jm9viqqpkd_mux45ppubi8\", \"sqlExpression\": null}], \"row_limit\": 10000, \"show_bar_value\": true, \"show_legend\": true, \"slice_id\": 391, \"time_range\": \"No filter\", \"time_range_endpoints\": [\"inclusive\", \"exclusive\"], \"url_params\": {}, \"viz_type\": \"dist_bar\", \"x_axis_label\": \"HBC Exit Status\", \"x_ticks_layout\": \"flat\", \"y_axis_bounds\": [null, null], \"y_axis_format\": \"SMART_NUMBER\", \"y_axis_label\": \"# of Enrolled Patients \", \"remote_id\": 391, \"datasource_name\": \"semantic_layer\", \"schema\": \"test_db\", \"database_name\": \"examples\"}",
+                            "slice_name": "Aggregate Breakdown of Enrolled Patients",
+                            "viz_type": "dist_bar"
+                        }
+                    },
+                    {
+                        "__Slice__": {
+                            "cache_timeout": null,
+                            "datasource_name": "test_db.semantic_layer",
+                            "datasource_type": "table",
+                            "id": 403,
+                            "params": "{\"adhoc_filters\": [], \"datasource\": \"59__table\", \"date_filter\": true, \"filter_configs\": [{\"asc\": true, \"clearable\": true, \"column\": \"catchment_area\", \"key\": \"0x47QhzcU\", \"multiple\": true, \"searchAllOptions\": false}, {\"asc\": true, \"clearable\": true, \"column\": \"age_group\", \"key\": \"XdYmxvZlp\", \"multiple\": true, \"searchAllOptions\": false}, {\"asc\": true, \"clearable\": true, \"column\": \"gender\", \"key\": \"x6QShHsfY\", \"multiple\": true, \"searchAllOptions\": false}], \"granularity_sqla\": \"case_opened_date\", \"instant_filtering\": true, \"show_sqla_time_granularity\": true, \"slice_id\": 403, \"time_grain_sqla\": null, \"time_range\": \"No filter\", \"time_range_endpoints\": [\"inclusive\", \"exclusive\"], \"url_params\": {}, \"viz_type\": \"filter_box\", \"remote_id\": 403, \"datasource_name\": \"semantic_layer\", \"schema\": \"test_db\", \"database_name\": \"examples\"}",
+                            "slice_name": "Filter",
+                            "viz_type": "filter_box"
+                        }
+                    },
+                    {
+                        "__Slice__": {
+                            "cache_timeout": null,
+                            "datasource_name": "test_db.semantic_layer",
+                            "datasource_type": "table",
+                            "id": 247,
+                            "params": "{\"adhoc_filters\": [], \"datasource\": \"59__table\", \"date_filter\": true, \"granularity_sqla\": \"case_opened_date\", \"instant_filtering\": true, \"show_druid_time_granularity\": false, \"show_druid_time_origin\": false, \"show_sqla_time_column\": false, \"show_sqla_time_granularity\": true, \"slice_id\": 247, \"time_grain_sqla\": \"P0.25Y\", \"time_range\": \"No filter\", \"time_range_endpoints\": [\"inclusive\", \"exclusive\"], \"url_params\": {}, \"viz_type\": \"filter_box\", \"remote_id\": 247, \"datasource_name\": \"semantic_layer\", \"schema\": \"test_db\", \"database_name\": \"examples\"}",
+                            "slice_name": "Time Range & Granularity",
+                            "viz_type": "filter_box"
+                        }
+                    },
+                    {
+                        "__Slice__": {
+                            "cache_timeout": null,
+                            "datasource_name": "test_db.semantic_layer",
+                            "datasource_type": "table",
+                            "id": 404,
+                            "params": "{\"adhoc_filters\": [], \"datasource\": \"59__table\", \"date_filter\": true, \"granularity_sqla\": \"case_opened_date\", \"instant_filtering\": true, \"show_sqla_time_granularity\": true, \"slice_id\": 404, \"time_grain_sqla\": null, \"time_range\": \"No filter\", \"time_range_endpoints\": [\"inclusive\", \"exclusive\"], \"url_params\": {}, \"viz_type\": \"filter_box\", \"remote_id\": 404, \"datasource_name\": \"semantic_layer\", \"schema\": \"test_db\", \"database_name\": \"examples\"}",
+                            "slice_name": "Time Range",
+                            "viz_type": "filter_box"
+                        }
+                    }
+                ],
+                "slug": null
+            }
+        }
+    ],
+    "datasources": [
+        {
+            "__SqlaTable__": {
+                "cache_timeout": null,
+                "columns": [
+                    {
+                        "__TableColumn__": {
+                            "changed_by_fk": 35,
+                            "changed_on": {
+                                "__datetime__": "2021-03-09T11:40:49"
+                            },
+                            "column_name": "hbc_exit_status",
+                            "created_by_fk": 35,
+                            "created_on": {
+                                "__datetime__": "2021-03-09T11:40:49"
+                            },
+                            "description": null,
+                            "expression": null,
+                            "filterable": true,
+                            "groupby": true,
+                            "id": 911,
+                            "is_active": true,
+                            "is_dttm": false,
+                            "python_date_format": null,
+                            "table_id": 59,
+                            "type": "VARCHAR",
+                            "uuid": "1036d03a-05d4-4cf9-9edf-ca33034d1ff9",
+                            "verbose_name": null
+                        }
+                    },
+                    {
+                        "__TableColumn__": {
+                            "changed_by_fk": 35,
+                            "changed_on": {
+                                "__datetime__": "2021-03-09T11:09:15"
+                            },
+                            "column_name": "age_group",
+                            "created_by_fk": 35,
+                            "created_on": {
+                                "__datetime__": "2021-03-09T11:09:15"
+                            },
+                            "description": null,
+                            "expression": null,
+                            "filterable": true,
+                            "groupby": true,
+                            "id": 887,
+                            "is_active": true,
+                            "is_dttm": false,
+                            "python_date_format": null,
+                            "table_id": 59,
+                            "type": "VARCHAR",
+                            "uuid": "1817876b-21ab-463d-aa6c-a72d8c44e5b9",
+                            "verbose_name": null
+                        }
+                    },
+                    {
+                        "__TableColumn__": {
+                            "changed_by_fk": 35,
+                            "changed_on": {
+                                "__datetime__": "2021-03-09T11:09:15"
+                            },
+                            "column_name": "contact_type",
+                            "created_by_fk": 35,
+                            "created_on": {
+                                "__datetime__": "2021-03-09T11:09:15"
+                            },
+                            "description": null,
+                            "expression": null,
+                            "filterable": true,
+                            "groupby": true,
+                            "id": 888,
+                            "is_active": true,
+                            "is_dttm": false,
+                            "python_date_format": null,
+                            "table_id": 59,
+                            "type": "VARCHAR",
+                            "uuid": "11869d41-4ac0-4637-8893-3c04bfd9d406",
+                            "verbose_name": null
+                        }
+                    },
+                    {
+                        "__TableColumn__": {
+                            "changed_by_fk": 35,
+                            "changed_on": {
+                                "__datetime__": "2021-03-09T11:09:15"
+                            },
+                            "column_name": "comorbidity",
+                            "created_by_fk": 35,
+                            "created_on": {
+                                "__datetime__": "2021-03-09T11:09:15"
+                            },
+                            "description": null,
+                            "expression": null,
+                            "filterable": true,
+                            "groupby": true,
+                            "id": 889,
+                            "is_active": true,
+                            "is_dttm": false,
+                            "python_date_format": null,
+                            "table_id": 59,
+                            "type": "VARCHAR",
+                            "uuid": "a06bb0ca-4ac4-461d-af53-afcaac0f32e8",
+                            "verbose_name": null
+                        }
+                    },
+                    {
+                        "__TableColumn__": {
+                            "changed_by_fk": 35,
+                            "changed_on": {
+                                "__datetime__": "2021-03-09T11:09:15"
+                            },
+                            "column_name": "followup_bucket",
+                            "created_by_fk": 35,
+                            "created_on": {
+                                "__datetime__": "2021-03-09T11:09:15"
+                            },
+                            "description": null,
+                            "expression": null,
+                            "filterable": true,
+                            "groupby": true,
+                            "id": 890,
+                            "is_active": true,
+                            "is_dttm": false,
+                            "python_date_format": null,
+                            "table_id": 59,
+                            "type": "VARCHAR",
+                            "uuid": "b92d17b2-5646-4e5a-bf97-13ac500dd537",
+                            "verbose_name": null
+                        }
+                    },
+                    {
+                        "__TableColumn__": {
+                            "changed_by_fk": 35,
+                            "changed_on": {
+                                "__datetime__": "2021-03-09T11:09:15"
+                            },
+                            "column_name": "catchment_area",
+                            "created_by_fk": 35,
+                            "created_on": {
+                                "__datetime__": "2021-03-09T11:09:15"
+                            },
+                            "description": null,
+                            "expression": null,
+                            "filterable": true,
+                            "groupby": true,
+                            "id": 891,
+                            "is_active": true,
+                            "is_dttm": false,
+                            "python_date_format": null,
+                            "table_id": 59,
+                            "type": "VARCHAR",
+                            "uuid": "37bed8ae-9874-40b5-982d-eb9e70260abf",
+                            "verbose_name": null
+                        }
+                    },
+                    {
+                        "__TableColumn__": {
+                            "changed_by_fk": 35,
+                            "changed_on": {
+                                "__datetime__": "2021-03-09T11:09:15"
+                            },
+                            "column_name": "screening_outcome",
+                            "created_by_fk": 35,
+                            "created_on": {
+                                "__datetime__": "2021-03-09T11:09:15"
+                            },
+                            "description": null,
+                            "expression": null,
+                            "filterable": true,
+                            "groupby": true,
+                            "id": 892,
+                            "is_active": true,
+                            "is_dttm": false,
+                            "python_date_format": null,
+                            "table_id": 59,
+                            "type": "VARCHAR",
+                            "uuid": "0e0fd653-efd0-454e-ae1b-4d4f2c83115d",
+                            "verbose_name": null
+                        }
+                    },
+                    {
+                        "__TableColumn__": {
+                            "changed_by_fk": 1,
+                            "changed_on": {
+                                "__datetime__": "2021-02-16T05:32:05"
+                            },
+                            "column_name": "case_id",
+                            "created_by_fk": 1,
+                            "created_on": {
+                                "__datetime__": "2021-02-16T05:32:05"
+                            },
+                            "description": null,
+                            "expression": null,
+                            "filterable": true,
+                            "groupby": true,
+                            "id": 806,
+                            "is_active": true,
+                            "is_dttm": false,
+                            "python_date_format": null,
+                            "table_id": 59,
+                            "type": "VARCHAR",
+                            "uuid": "d07fc668-2cf4-48bd-87c0-0ad72a7f28f4",
+                            "verbose_name": null
+                        }
+                    },
+                    {
+                        "__TableColumn__": {
+                            "changed_by_fk": 1,
+                            "changed_on": {
+                                "__datetime__": "2021-02-16T05:32:05"
+                            },
+                            "column_name": "chw_id",
+                            "created_by_fk": 1,
+                            "created_on": {
+                                "__datetime__": "2021-02-16T05:32:05"
+                            },
+                            "description": null,
+                            "expression": null,
+                            "filterable": true,
+                            "groupby": true,
+                            "id": 807,
+                            "is_active": true,
+                            "is_dttm": false,
+                            "python_date_format": null,
+                            "table_id": 59,
+                            "type": "VARCHAR",
+                            "uuid": "4b75fcc8-47f1-4fe5-a951-5bb87f3eecfa",
+                            "verbose_name": null
+                        }
+                    },
+                    {
+                        "__TableColumn__": {
+                            "changed_by_fk": 1,
+                            "changed_on": {
+                                "__datetime__": "2021-02-16T05:32:05"
+                            },
+                            "column_name": "case_opened_date",
+                            "created_by_fk": 1,
+                            "created_on": {
+                                "__datetime__": "2021-02-16T05:32:05"
+                            },
+                            "description": null,
+                            "expression": null,
+                            "filterable": true,
+                            "groupby": true,
+                            "id": 808,
+                            "is_active": true,
+                            "is_dttm": true,
+                            "python_date_format": null,
+                            "table_id": 59,
+                            "type": "DATE",
+                            "uuid": "901e6cff-efb1-46e2-a70e-ef1536a12856",
+                            "verbose_name": null
+                        }
+                    },
+                    {
+                        "__TableColumn__": {
+                            "changed_by_fk": 1,
+                            "changed_on": {
+                                "__datetime__": "2021-02-16T05:32:05"
+                            },
+                            "column_name": "eligible_for_hbc",
+                            "created_by_fk": 1,
+                            "created_on": {
+                                "__datetime__": "2021-02-16T05:32:05"
+                            },
+                            "description": null,
+                            "expression": null,
+                            "filterable": true,
+                            "groupby": true,
+                            "id": 809,
+                            "is_active": true,
+                            "is_dttm": false,
+                            "python_date_format": null,
+                            "table_id": 59,
+                            "type": "VARCHAR",
+                            "uuid": "279460d4-56c9-4e93-a1af-766674e673fe",
+                            "verbose_name": null
+                        }
+                    },
+                    {
+                        "__TableColumn__": {
+                            "changed_by_fk": 1,
+                            "changed_on": {
+                                "__datetime__": "2021-02-16T05:32:05"
+                            },
+                            "column_name": "date_of_enrollment_in_hbc",
+                            "created_by_fk": 1,
+                            "created_on": {
+                                "__datetime__": "2021-02-16T05:32:05"
+                            },
+                            "description": null,
+                            "expression": null,
+                            "filterable": true,
+                            "groupby": true,
+                            "id": 810,
+                            "is_active": true,
+                            "is_dttm": true,
+                            "python_date_format": null,
+                            "table_id": 59,
+                            "type": "DATE",
+                            "uuid": "3760de33-5308-4967-b897-a9cabe44147f",
+                            "verbose_name": null
+                        }
+                    },
+                    {
+                        "__TableColumn__": {
+                            "changed_by_fk": 1,
+                            "changed_on": {
+                                "__datetime__": "2021-02-16T05:32:05"
+                            },
+                            "column_name": "gender",
+                            "created_by_fk": 1,
+                            "created_on": {
+                                "__datetime__": "2021-02-16T05:32:05"
+                            },
+                            "description": null,
+                            "expression": null,
+                            "filterable": true,
+                            "groupby": true,
+                            "id": 812,
+                            "is_active": true,
+                            "is_dttm": false,
+                            "python_date_format": null,
+                            "table_id": 59,
+                            "type": "VARCHAR",
+                            "uuid": "0c1cbbd3-04f2-482a-a395-e73016029920",
+                            "verbose_name": null
+                        }
+                    },
+                    {
+                        "__TableColumn__": {
+                            "changed_by_fk": 1,
+                            "changed_on": {
+                                "__datetime__": "2021-02-16T05:32:05"
+                            },
+                            "column_name": "caregiver_available",
+                            "created_by_fk": 1,
+                            "created_on": {
+                                "__datetime__": "2021-02-16T05:32:05"
+                            },
+                            "description": null,
+                            "expression": null,
+                            "filterable": true,
+                            "groupby": true,
+                            "id": 815,
+                            "is_active": true,
+                            "is_dttm": false,
+                            "python_date_format": null,
+                            "table_id": 59,
+                            "type": "VARCHAR",
+                            "uuid": "9a989f9d-7de5-4a70-b211-dc6cfefa48e2",
+                            "verbose_name": null
+                        }
+                    },
+                    {
+                        "__TableColumn__": {
+                            "changed_by_fk": 1,
+                            "changed_on": {
+                                "__datetime__": "2021-02-16T05:32:05"
+                            },
+                            "column_name": "symptom_severity",
+                            "created_by_fk": 1,
+                            "created_on": {
+                                "__datetime__": "2021-02-16T05:32:05"
+                            },
+                            "description": null,
+                            "expression": null,
+                            "filterable": true,
+                            "groupby": true,
+                            "id": 821,
+                            "is_active": true,
+                            "is_dttm": false,
+                            "python_date_format": null,
+                            "table_id": 59,
+                            "type": "VARCHAR",
+                            "uuid": "04d18809-63cb-4b2c-aa3e-c4103f7c1b43",
+                            "verbose_name": null
+                        }
+                    },
+                    {
+                        "__TableColumn__": {
+                            "changed_by_fk": 1,
+                            "changed_on": {
+                                "__datetime__": "2021-02-16T05:32:05"
+                            },
+                            "column_name": "expected_follow_up",
+                            "created_by_fk": 1,
+                            "created_on": {
+                                "__datetime__": "2021-02-16T05:32:05"
+                            },
+                            "description": null,
+                            "expression": null,
+                            "filterable": true,
+                            "groupby": true,
+                            "id": 822,
+                            "is_active": true,
+                            "is_dttm": false,
+                            "python_date_format": null,
+                            "table_id": 59,
+                            "type": "INTEGER",
+                            "uuid": "cb95bcfb-bff1-4389-831a-4e3d02d2141e",
+                            "verbose_name": null
+                        }
+                    },
+                    {
+                        "__TableColumn__": {
+                            "changed_by_fk": 1,
+                            "changed_on": {
+                                "__datetime__": "2021-02-16T05:32:05"
+                            },
+                            "column_name": "actual_follow_ups_completed",
+                            "created_by_fk": 1,
+                            "created_on": {
+                                "__datetime__": "2021-02-16T05:32:05"
+                            },
+                            "description": null,
+                            "expression": null,
+                            "filterable": true,
+                            "groupby": true,
+                            "id": 823,
+                            "is_active": true,
+                            "is_dttm": false,
+                            "python_date_format": null,
+                            "table_id": 59,
+                            "type": "INTEGER",
+                            "uuid": "fb64e227-ec52-4c86-907a-2596cc1d2b3e",
+                            "verbose_name": null
+                        }
+                    },
+                    {
+                        "__TableColumn__": {
+                            "changed_by_fk": 1,
+                            "changed_on": {
+                                "__datetime__": "2021-02-16T05:32:05"
+                            },
+                            "column_name": "insert_timestamp",
+                            "created_by_fk": 1,
+                            "created_on": {
+                                "__datetime__": "2021-02-16T05:32:05"
+                            },
+                            "description": null,
+                            "expression": null,
+                            "filterable": true,
+                            "groupby": true,
+                            "id": 831,
+                            "is_active": true,
+                            "is_dttm": true,
+                            "python_date_format": null,
+                            "table_id": 59,
+                            "type": "TIMESTAMP WITHOUT TIME ZONE",
+                            "uuid": "3c6b8bf2-8ffb-4ab8-a75b-1130d7c17a33",
+                            "verbose_name": null
+                        }
+                    },
+                    {
+                        "__TableColumn__": {
+                            "changed_by_fk": 1,
+                            "changed_on": {
+                                "__datetime__": "2021-02-16T05:32:05"
+                            },
+                            "column_name": "update_timestamp",
+                            "created_by_fk": 1,
+                            "created_on": {
+                                "__datetime__": "2021-02-16T05:32:05"
+                            },
+                            "description": null,
+                            "expression": null,
+                            "filterable": true,
+                            "groupby": true,
+                            "id": 832,
+                            "is_active": true,
+                            "is_dttm": true,
+                            "python_date_format": null,
+                            "table_id": 59,
+                            "type": "TIMESTAMP WITHOUT TIME ZONE",
+                            "uuid": "74a9aed1-0e5f-42ae-9171-4f10149dd372",
+                            "verbose_name": null
+                        }
+                    }
+                ],
+                "database_id": 1,
+                "default_endpoint": null,
+                "description": null,
+                "extra": null,
+                "fetch_values_predicate": null,
+                "filter_select_enabled": false,
+                "main_dttm_col": "case_opened_date",
+                "metrics": [
+                    {
+                        "__SqlMetric__": {
+                            "changed_by_fk": 1,
+                            "changed_on": {
+                                "__datetime__": "2021-02-16T05:32:05"
+                            },
+                            "created_by_fk": 1,
+                            "created_on": {
+                                "__datetime__": "2021-02-16T05:32:05"
+                            },
+                            "d3format": null,
+                            "description": null,
+                            "expression": "COUNT(*)",
+                            "extra": null,
+                            "id": 61,
+                            "metric_name": "count",
+                            "metric_type": "count",
+                            "table_id": 59,
+                            "uuid": "dbf870d6-2a40-48a7-8a06-09efbfc8051f",
+                            "verbose_name": "COUNT(*)",
+                            "warning_text": null
+                        }
+                    }
+                ],
+                "offset": 0,
+                "params": "{\"remote_id\": 59, \"database_name\": \"examples\", \"import_time\": 1616735886}",
+                "schema": "test_db",
+                "sql": "",
+                "table_name": "semantic_layer",
+                "template_params": null
+            }
+        }
+    ]
+}
