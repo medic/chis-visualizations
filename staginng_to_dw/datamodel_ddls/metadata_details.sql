@@ -64,7 +64,8 @@ INSERT INTO test_db.source_mapping_details(run_id, source_table, source_column,t
 INSERT INTO test_db.source_mapping_details(run_id, source_table, source_column,transformation_rule, target_table, target_column,primary_key,default_value)    VALUES (1,'test_db.dimagi_json_data','caregiver_available','{"rule":"copy"}','test_db.patient_info','caregiver_available','','na');
 INSERT INTO test_db.source_mapping_details(run_id, source_table, source_column,transformation_rule, target_table, target_column,primary_key,default_value)    VALUES (1,'test_db.dimagi_json_data','referral_location','{"rule":"copy"}','test_db.patient_info','contact_type','','na');
 
-
+INSERT INTO test_db.source_mapping_details(run_id, source_table, source_column,transformation_rule, target_table, target_column,primary_key,default_value)    VALUES (1,'test_db.dimagi_json_data','case_id','{"rule":"copy"}','test_db.geographic_details','case_id','','na');
+INSERT INTO test_db.source_mapping_details(run_id, source_table, source_column,transformation_rule, target_table, target_column,primary_key,default_value)    VALUES (1,'test_db.dimagi_json_data','catchment_area','{"rule":"copy"}','test_db.geographic_details','catchment_area','','Mombasa');
 
 INSERT INTO test_db.source_mapping_details(
     run_id, source_table, source_column, transformation_rule, target_table, target_column,
@@ -163,6 +164,9 @@ INSERT INTO test_db.source_mapping_details(run_id, source_table, source_column,t
 INSERT INTO test_db.source_mapping_details(run_id, source_table, source_column,transformation_rule, target_table, target_column,primary_key,default_value)    VALUES (2,'test_db.medic_json_data','patient_status','{"rule":"copy"}','test_db.patient_info','patient_status','','na');
 INSERT INTO test_db.source_mapping_details(run_id, source_table, source_column,transformation_rule, target_table, target_column,primary_key,default_value)    VALUES (2,'test_db.medic_json_data','caregiver_available','{"rule":"copy"}','test_db.patient_info','caregiver_available','','na');
 INSERT INTO test_db.source_mapping_details(run_id, source_table, source_column,transformation_rule, target_table, target_column,primary_key,default_value)    VALUES (2,'test_db.medic_json_data','referral_location','{"rule":"copy"}','test_db.patient_info','contact_type','','na');
+
+INSERT INTO test_db.source_mapping_details(run_id, source_table, source_column,transformation_rule, target_table, target_column,primary_key,default_value)    VALUES (2,'test_db.medic_json_data','case_id','{"rule":"copy"}','test_db.geographic_details','case_id','','na');
+INSERT INTO test_db.source_mapping_details(run_id, source_table, source_column,transformation_rule, target_table, target_column,primary_key,default_value)    VALUES (2,'test_db.medic_json_data','catchment_area','{"rule":"copy"}','test_db.geographic_details','catchment_area','','Mombasa');
 
 
 INSERT INTO test_db.source_mapping_details(
