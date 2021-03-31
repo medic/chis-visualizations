@@ -1,5 +1,4 @@
 
-====================
 INSERT INTO test_db.dimagi_json_data(
 json_data, insert_date)
  VALUES ('{
@@ -141,7 +140,6 @@ json_data, insert_date)
               "patient_age_unknown": "",
               "patient_age_years": 36,
               "patient_case_status": "confirmed",
-              "patient_date_of_birth": "1990-03-31",
               "patient_family_name": "Root",
               "patient_first_name": "Jacob",
               "patient_sex": "female",
