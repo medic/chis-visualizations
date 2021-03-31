@@ -34,4 +34,15 @@ d. Scenario 4 - Updating views involving xform ids.
     1. As of now, we are getting the form_ids as a list with comma separated values (28fbbe5e-b54f-4cd8-a93f-d31d4a2e3344,adaab35c-0c4d-46bf-a439-ca321c0324b9)
     2. The feq_follow_up_vw view to get the count of form_id is being build based on comma separator ( array_length(regexp_split_to_array(form_id, ','),1), so if in the data there is any other separator than comma(,) then this view needs to be modified accordingly
     3. Example, if the separator is (;), then the above expression will be modified as (array_length(regexp_split_to_array(form_id, ';'),1)
+    
+e. Scenario 5 - Different schema for metadata tables.
+
+    1. Update metadata_config.json to add the new schema name (now schema name is test_db) in source_details_schema_name variable and mapping_schema_name variable.
+    2. If the metadata tables to be put in public schema then keep source_details_schema_name variable and mapping_schema_name variable as blank like the below one.
+        {
+            "source_details_schema_name" : "",
+            "source_details_table_name" : "source_details",
+            "mapping_schema_name" : "",
+            "mapping_table_name" : "source_mapping_details"
+        }
 
