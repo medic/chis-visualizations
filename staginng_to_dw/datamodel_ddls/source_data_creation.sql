@@ -174,7 +174,7 @@ json_data, insert_date)
               "server_date_modified": "2020-10-15T11:26:08.313068",
               "server_date_opened": "2020-10-15T11:24:45.500221",
               "user_id": "117e976c81460c97f3b9c191c9cd11",
-              "xform_ids": "t8d04dec-3812-4add-8b62-cb561a143a6j;pp9538ee-4048-46a5-b078-0e5ac5167a0d"}', '2021-03-22');
+              "xform_ids": "t8d04dec-3812-4add-8b62-cb561a143a6j,pp9538ee-4048-46a5-b078-0e5ac5167a0d"}', '2021-03-22');
 
 INSERT INTO test_db.dimagi_json_data(
 json_data, insert_date)
@@ -338,5 +338,5 @@ json_data, insert_date)
               "server_date_modified": "2020-10-15T11:26:08.313068",
               "server_date_opened": "2020-10-15T11:24:45.500221",
               "user_id": "80987e976c81460c97f3b9c191c9cd51",
-              "xform_ids": "h8d04dec-3812-4add-8b62-cb561a143a5k;rr9538ee-4048-46a5-b078-0e5ac5167a0k"
+              "xform_ids": "h8d04dec-3812-4add-8b62-cb561a143a5k,rr9538ee-4048-46a5-b078-0e5ac5167a0k"
 }', '2021-03-25');
