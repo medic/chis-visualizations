@@ -13,7 +13,7 @@ def fetch_metadata():
         # read connection parameters
         params = config()
         # read metadata config file to get the schema name and table names of the metadata config
-        metadata_file = open('metadata_config.json', "r")
+        metadata_file = open('/usr/local/airflow/app/metadata_config.json', "r")
         metadata = json.loads(metadata_file.read())
         # connect to the PostgreSQL server
         print('Connecting to the PostgreSQL database...')
@@ -67,3 +67,4 @@ if __name__ == '__main__':
         helper.process_data(metadata_df, metadata_mapping_df)
     except Exception as e:
         print(f"Failed to read metadata with exception: {e}")
+        exit(1)

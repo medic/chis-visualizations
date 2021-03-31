@@ -2,7 +2,7 @@
 from configparser import ConfigParser
 
 
-def config(filename='.dbenv', section='postgresql'):
+def config(filename='/usr/local/airflow/app/.dbenv', section='postgresql'):
     # create a parser
     parser = ConfigParser()
     # read config file

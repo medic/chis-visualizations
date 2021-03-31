@@ -31,6 +31,7 @@ def load_data_to_database(data,
                                                 data=data,
                                                 load_type=load_type)
     target_processor.load_data()
+    print(f'Completed loading data to table:{table_name} with {len(data.index)} records')
 
 
 def process_source_n_load_target(source_df,

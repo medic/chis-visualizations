@@ -29,7 +29,6 @@ class TransformColumnToRow:
         target_df = pd.DataFrame()
         for target_column in target_column_details:
             if target_column_details[target_column] == "transformed_column_name":
-                print ('self.transformation_details',self.transformation_details)
                 target_df[target_column] = [self.transformation_details['column_to_transform']] * len(self.data)
             else:
                 dummy=target_column_details[target_column]
