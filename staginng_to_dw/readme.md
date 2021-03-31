@@ -36,6 +36,7 @@ d. Scenario 4 - Updating views involving xform ids.
     3. Example, if the separator is (;), then the above expression will be modified as (array_length(regexp_split_to_array(form_id, ';'),1)
     
 e. Scenario 5 - Different schema for metadata tables.
+
     1. Update metadata_config.json to add the new schema name (now schema name is test_db) in source_details_schema_name variable and mapping_schema_name variable.
     2. If the metadata tables to be put in public schema then keep source_details_schema_name variable and mapping_schema_name variable as blank like the below one.
         {
