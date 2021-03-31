@@ -115,10 +115,12 @@ INSERT INTO test_db.source_mapping_details(
     primary_key)
     VALUES (1, 'test_db.dimagi_json_data', 'case_id,nausea_vomiting', '{"rule":"transpose_column_name_to_row","column_to_transform":"nausea_vomiting"}',
             'test_db.case_symptom_details', '{"case_id":"case_id","symptom_name":"transformed_column_name","symptom_present":"nausea_vomiting"}', '');
+			
 INSERT INTO test_db.source_mapping_details(
     run_id, source_table, source_column, transformation_rule, target_table, target_column,
     primary_key)
     VALUES (1, 'test_db.dimagi_json_data', 'case_id,dry_cough', '{"rule":"transpose_column_name_to_row","column_to_transform":"dry_cough"}',
+            'test_db.case_symptom_details', '{"case_id":"case_id","symptom_name":"transformed_column_name","symptom_present":"dry_cough"}', '');
   		
 			
 INSERT INTO test_db.source_mapping_details(
@@ -241,6 +243,12 @@ INSERT INTO test_db.source_mapping_details(
     primary_key)
     VALUES (2, 'test_db.medic_json_data', 'case_id,nausea_vomiting', '{"rule":"transpose_column_name_to_row","column_to_transform":"nausea_vomiting"}',
             'test_db.case_symptom_details', '{"case_id":"case_id","symptom_name":"transformed_column_name","symptom_present":"nausea_vomiting"}', '');
+			
+INSERT INTO test_db.source_mapping_details(
+    run_id, source_table, source_column, transformation_rule, target_table, target_column,
+    primary_key)
+    VALUES (2, 'test_db.medic_json_data', 'case_id,dry_cough', '{"rule":"transpose_column_name_to_row","column_to_transform":"dry_cough"}',
+            'test_db.case_symptom_details', '{"case_id":"case_id","symptom_name":"transformed_column_name","symptom_present":"dry_cough"}', '');
 			
 			
 INSERT INTO test_db.source_mapping_details(
