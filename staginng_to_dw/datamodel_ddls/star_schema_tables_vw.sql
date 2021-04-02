@@ -71,8 +71,8 @@ CREATE TABLE test_db.chw_role_details
 
 create or replace view test_db.symptom_severity_vw as
 select b.case_id as case_id,
-CASE WHEN b.symptom_name ='{dry_cough,diarrhoea,fever,headache,loss_of_appetite,loss_taste_smell,Myalgia,nasal_congestion,nausea_vomiting,rash_discoloration}' then 'severe'
-WHEN b.symptom_name ='{dry_cough,fever,headache,loss_of_appetite,loss_taste_smell,Myalgia,nasal_congestion,rash_discoloration}' THEN 'moderate'
+CASE WHEN b.symptom_name ='{dry_cough,diarrhoea,fatigue,fever,headache,loss_of_appetite,loss_taste_smell,muscle_aches_pains,myalgia,nasal_congestion,nausea_vomiting,rash_discoloration}' then 'severe'
+WHEN b.symptom_name ='{dry_cough,fatigue,fever,headache,loss_of_appetite,loss_taste_smell,muscle_aches_pains,myalgia,nasal_congestion,rash_discoloration}' THEN 'moderate'
 WHEN b.symptom_name ='{dry_cough,fever}' or b.symptom_name ='{fever}' or b.symptom_name ='{dry_cough}' or b.symptom_name ='{cough}' THEN 'mild' ELSE 'NA'
 END severity_name
 from(
@@ -82,7 +82,7 @@ FROM (
 SELECT
     case_id,array_agg(symptom_name ORDER BY symptom_name) as symptom_name,date_trunc('day',insert_timestamp) as insert_timestamp,
     row_number() OVER (PARTITION BY case_id ORDER BY date_trunc('day',insert_timestamp) DESC) AS rownum
-  FROM test_db.case_symptom_details group by case_id,date_trunc('day',insert_timestamp)) x where rownum = 1) b ;
+  FROM test_db.case_symptom_details where symptom_present = 'yes' group by case_id,date_trunc('day',insert_timestamp)) x where rownum = 1) b ;
 
 =========================================================feq_follow_up_vw===========================================================
 

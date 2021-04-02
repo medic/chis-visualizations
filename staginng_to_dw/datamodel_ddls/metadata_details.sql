@@ -64,7 +64,8 @@ INSERT INTO test_db.source_mapping_details(run_id, source_table, source_column,t
 INSERT INTO test_db.source_mapping_details(run_id, source_table, source_column,transformation_rule, target_table, target_column,primary_key,default_value)    VALUES (1,'test_db.dimagi_json_data','caregiver_available','{"rule":"copy"}','test_db.patient_info','caregiver_available','','na');
 INSERT INTO test_db.source_mapping_details(run_id, source_table, source_column,transformation_rule, target_table, target_column,primary_key,default_value)    VALUES (1,'test_db.dimagi_json_data','referral_location','{"rule":"copy"}','test_db.patient_info','contact_type','','na');
 
-
+INSERT INTO test_db.source_mapping_details(run_id, source_table, source_column,transformation_rule, target_table, target_column,primary_key,default_value)    VALUES (1,'test_db.dimagi_json_data','case_id','{"rule":"copy"}','test_db.geographic_details','case_id','','na');
+INSERT INTO test_db.source_mapping_details(run_id, source_table, source_column,transformation_rule, target_table, target_column,primary_key,default_value)    VALUES (1,'test_db.dimagi_json_data','catchment_area','{"rule":"copy"}','test_db.geographic_details','catchment_area','','Mombasa');
 
 INSERT INTO test_db.source_mapping_details(
     run_id, source_table, source_column, transformation_rule, target_table, target_column,
@@ -124,6 +125,12 @@ INSERT INTO test_db.source_mapping_details(
     primary_key)
     VALUES (1, 'test_db.dimagi_json_data', 'case_id,dry_cough', '{"rule":"transpose_column_name_to_row","column_to_transform":"dry_cough"}',
             'test_db.case_symptom_details', '{"case_id":"case_id","symptom_name":"transformed_column_name","symptom_present":"dry_cough"}', '');
+
+INSERT INTO test_db.source_mapping_details(
+    run_id, source_table, source_column, transformation_rule, target_table, target_column,
+    primary_key)
+    VALUES (1, 'test_db.dimagi_json_data', 'case_id,myalgia', '{"rule":"transpose_column_name_to_row","column_to_transform":"myalgia"}',
+            'test_db.case_symptom_details', '{"case_id":"case_id","symptom_name":"transformed_column_name","symptom_present":"myalgia"}', '');
   		
 			
 INSERT INTO test_db.source_mapping_details(
@@ -138,41 +145,6 @@ INSERT INTO test_db.source_mapping_details(
     VALUES (1, 'test_db.dimagi_json_data', 'case_id,sore_throat', '{"rule":"transpose_column_name_to_row","column_to_transform":"sore_throat"}',
             'test_db.case_symptom_details', '{"case_id":"case_id","symptom_name":"transformed_column_name","symptom_present":"sore_throat"}', '');
 			
-INSERT INTO test_db.source_mapping_details(
-    run_id, source_table, source_column, transformation_rule, target_table, target_column,
-    primary_key)
-    VALUES (1, 'test_db.dimagi_json_data', 'case_id,hiv', '{"rule":"transpose_column_name_to_row","column_to_transform":"hiv"}',
-            'test_db.comorbidity_details', '{"case_id":"case_id","comorbidity_name":"transformed_column_name","comorbidity_present":"hiv"}', '');
-
-INSERT INTO test_db.source_mapping_details(
-    run_id, source_table, source_column, transformation_rule, target_table, target_column,
-    primary_key)
-    VALUES (1, 'test_db.dimagi_json_data', 'case_id,chronic_kidney_disease', '{"rule":"transpose_column_name_to_row","column_to_transform":"chronic_kidney_disease"}',
-            'test_db.comorbidity_details', '{"case_id":"case_id","comorbidity_name":"transformed_column_name","comorbidity_present":"chronic_kidney_disease"}', '');
-
-INSERT INTO test_db.source_mapping_details(
-    run_id, source_table, source_column, transformation_rule, target_table, target_column,
-    primary_key)
-    VALUES (1, 'test_db.dimagi_json_data', 'case_id,chronic_lung_conditions', '{"rule":"transpose_column_name_to_row","column_to_transform":"chronic_lung_conditions"}',
-            'test_db.comorbidity_details', '{"case_id":"case_id","comorbidity_name":"transformed_column_name","comorbidity_present":"chronic_lung_conditions"}', '');
-
-INSERT INTO test_db.source_mapping_details(
-    run_id, source_table, source_column, transformation_rule, target_table, target_column,
-    primary_key)
-    VALUES (1, 'test_db.dimagi_json_data', 'case_id,malnutrition', '{"rule":"transpose_column_name_to_row","column_to_transform":"malnutrition"}',
-            'test_db.comorbidity_details', '{"case_id":"case_id","comorbidity_name":"transformed_column_name","comorbidity_present":"malnutrition"}', '');
-
-INSERT INTO test_db.source_mapping_details(
-    run_id, source_table, source_column, transformation_rule, target_table, target_column,
-    primary_key)
-    VALUES (1, 'test_db.dimagi_json_data', 'case_id,severe_obesity', '{"rule":"transpose_column_name_to_row","column_to_transform":"severe_obesity"}',
-            'test_db.comorbidity_details', '{"case_id":"case_id","comorbidity_name":"transformed_column_name","comorbidity_present":"severe_obesity"}', '');
-
-INSERT INTO test_db.source_mapping_details(
-    run_id, source_table, source_column, transformation_rule, target_table, target_column,
-    primary_key)
-    VALUES (1, 'test_db.dimagi_json_data', 'case_id,tb', '{"rule":"transpose_column_name_to_row","column_to_transform":"tb"}',
-            'test_db.comorbidity_details', '{"case_id":"case_id","comorbidity_name":"transformed_column_name","comorbidity_present":"tb"}', '');
 
 INSERT INTO test_db.source_mapping_details(run_id, source_table, source_column,transformation_rule, target_table, target_column,primary_key,default_value)    VALUES (2,'test_db.medic_json_data','user_id','{"rule":"copy"}','test_db.hbc_details','chw_id','','chw1');
 INSERT INTO test_db.source_mapping_details(run_id, source_table, source_column,transformation_rule, target_table, target_column,primary_key,default_value)    VALUES (2,'test_db.medic_json_data','case_id','{"rule":"copy"}','test_db.hbc_details','case_id','','case1');
@@ -192,6 +164,9 @@ INSERT INTO test_db.source_mapping_details(run_id, source_table, source_column,t
 INSERT INTO test_db.source_mapping_details(run_id, source_table, source_column,transformation_rule, target_table, target_column,primary_key,default_value)    VALUES (2,'test_db.medic_json_data','patient_status','{"rule":"copy"}','test_db.patient_info','patient_status','','na');
 INSERT INTO test_db.source_mapping_details(run_id, source_table, source_column,transformation_rule, target_table, target_column,primary_key,default_value)    VALUES (2,'test_db.medic_json_data','caregiver_available','{"rule":"copy"}','test_db.patient_info','caregiver_available','','na');
 INSERT INTO test_db.source_mapping_details(run_id, source_table, source_column,transformation_rule, target_table, target_column,primary_key,default_value)    VALUES (2,'test_db.medic_json_data','referral_location','{"rule":"copy"}','test_db.patient_info','contact_type','','na');
+
+INSERT INTO test_db.source_mapping_details(run_id, source_table, source_column,transformation_rule, target_table, target_column,primary_key,default_value)    VALUES (2,'test_db.medic_json_data','case_id','{"rule":"copy"}','test_db.geographic_details','case_id','','na');
+INSERT INTO test_db.source_mapping_details(run_id, source_table, source_column,transformation_rule, target_table, target_column,primary_key,default_value)    VALUES (2,'test_db.medic_json_data','catchment_area','{"rule":"copy"}','test_db.geographic_details','catchment_area','','Mombasa');
 
 
 INSERT INTO test_db.source_mapping_details(
@@ -252,6 +227,7 @@ INSERT INTO test_db.source_mapping_details(
     primary_key)
     VALUES (2, 'test_db.medic_json_data', 'case_id,dry_cough', '{"rule":"transpose_column_name_to_row","column_to_transform":"dry_cough"}',
             'test_db.case_symptom_details', '{"case_id":"case_id","symptom_name":"transformed_column_name","symptom_present":"dry_cough"}', '');
+
 			
 			
 INSERT INTO test_db.source_mapping_details(
@@ -269,41 +245,6 @@ INSERT INTO test_db.source_mapping_details(
 INSERT INTO test_db.source_mapping_details(
     run_id, source_table, source_column, transformation_rule, target_table, target_column,
     primary_key)
-    VALUES (2, 'test_db.medic_json_data', 'case_id,dry_cough', '{"rule":"transpose_column_name_to_row","column_to_transform":"dry_cough"}',
-            'test_db.case_symptom_details', '{"case_id":"case_id","symptom_name":"transformed_column_name","symptom_present":"dry_cough"}', '');
-			
-INSERT INTO test_db.source_mapping_details(
-    run_id, source_table, source_column, transformation_rule, target_table, target_column,
-    primary_key)
-    VALUES (2, 'test_db.medic_json_data', 'case_id,hiv', '{"rule":"transpose_column_name_to_row","column_to_transform":"hiv"}',
-            'test_db.comorbidity_details', '{"case_id":"case_id","comorbidity_name":"transformed_column_name","comorbidity_present":"hiv"}', '');
+    VALUES (2, 'test_db.medic_json_data', 'case_id,myalgia', '{"rule":"transpose_column_name_to_row","column_to_transform":"myalgia"}',
+            'test_db.case_symptom_details', '{"case_id":"case_id","symptom_name":"transformed_column_name","symptom_present":"myalgia"}', '');
 
-INSERT INTO test_db.source_mapping_details(
-    run_id, source_table, source_column, transformation_rule, target_table, target_column,
-    primary_key)
-    VALUES (2, 'test_db.medic_json_data', 'case_id,chronic_kidney_disease', '{"rule":"transpose_column_name_to_row","column_to_transform":"chronic_kidney_disease"}',
-            'test_db.comorbidity_details', '{"case_id":"case_id","comorbidity_name":"transformed_column_name","comorbidity_present":"chronic_kidney_disease"}', '');
-
-INSERT INTO test_db.source_mapping_details(
-    run_id, source_table, source_column, transformation_rule, target_table, target_column,
-    primary_key)
-    VALUES (2, 'test_db.medic_json_data', 'case_id,chronic_lung_conditions', '{"rule":"transpose_column_name_to_row","column_to_transform":"chronic_lung_conditions"}',
-            'test_db.comorbidity_details', '{"case_id":"case_id","comorbidity_name":"transformed_column_name","comorbidity_present":"chronic_lung_conditions"}', '');
-
-INSERT INTO test_db.source_mapping_details(
-    run_id, source_table, source_column, transformation_rule, target_table, target_column,
-    primary_key)
-    VALUES (2, 'test_db.medic_json_data', 'case_id,malnutrition', '{"rule":"transpose_column_name_to_row","column_to_transform":"malnutrition"}',
-            'test_db.comorbidity_details', '{"case_id":"case_id","comorbidity_name":"transformed_column_name","comorbidity_present":"malnutrition"}', '');
-
-INSERT INTO test_db.source_mapping_details(
-    run_id, source_table, source_column, transformation_rule, target_table, target_column,
-    primary_key)
-    VALUES (2, 'test_db.medic_json_data', 'case_id,severe_obesity', '{"rule":"transpose_column_name_to_row","column_to_transform":"severe_obesity"}',
-            'test_db.comorbidity_details', '{"case_id":"case_id","comorbidity_name":"transformed_column_name","comorbidity_present":"severe_obesity"}', '');
-
-INSERT INTO test_db.source_mapping_details(
-    run_id, source_table, source_column, transformation_rule, target_table, target_column,
-    primary_key)
-    VALUES (2, 'test_db.medic_json_data', 'case_id,tb', '{"rule":"transpose_column_name_to_row","column_to_transform":"tb"}',
-            'test_db.comorbidity_details', '{"case_id":"case_id","comorbidity_name":"transformed_column_name","comorbidity_present":"tb"}', '');
