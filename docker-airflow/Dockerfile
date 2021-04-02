@@ -5,7 +5,7 @@
 # SOURCE: https://github.com/puckel/docker-airflow
 
 FROM python:3.7-slim-buster
-LABEL maintainer="SmitaM"
+LABEL maintainer="Puckel_"
 
 # Never prompt the user for choices on installation/configuration of packages
 ENV DEBIAN_FRONTEND noninteractive
@@ -24,6 +24,7 @@ ENV LANG en_US.UTF-8
 ENV LC_ALL en_US.UTF-8
 ENV LC_CTYPE en_US.UTF-8
 ENV LC_MESSAGES en_US.UTF-8
+ENV PYTHONPATH "/usr/local/airflow/app:${PYTHONPATH}"
 
 # Disable noisy "Handling signal" log messages:
 # ENV GUNICORN_CMD_ARGS --log-level WARNING
@@ -50,18 +51,22 @@ RUN set -ex \
         rsync \
         netcat \
         locales \
-    && sed -i 's/^# en_US.UTF-8 UTF-8$/en_US.UTF-8 UTF-8/g' /etc/locale.gen \
-    && locale-gen \
-    && update-locale LANG=en_US.UTF-8 LC_ALL=en_US.UTF-8 \
+        apt-transport-https \
+        ca-certificates \
+        gnupg2 \
+        lsb-release \
+        software-properties-common \
     && useradd -ms /bin/bash -d ${AIRFLOW_USER_HOME} airflow \
     && pip install -U pip setuptools wheel \
     && pip install pytz \
     && pip install pyOpenSSL \
     && pip install ndg-httpsclient \
     && pip install pyasn1 \
-    && pip install apache-airflow[crypto,celery,postgres,hive,jdbc,mysql,ssh${AIRFLOW_DEPS:+,}${AIRFLOW_DEPS}]==${AIRFLOW_VERSION} \
+    && pip install psycopg2-binary \
+    && pip install apache-airflow[crypto,docker,celery,hive,jdbc,mysql,ssh${AIRFLOW_DEPS:+,}${AIRFLOW_DEPS}]==${AIRFLOW_VERSION} \
     && pip uninstall -y SQLAlchemy \
     && pip install SQLAlchemy==1.3.15 \
+    && pip install pandas==1.2.3 \
     && pip install 'redis==3.2' \
     && if [ -n "${PYTHON_DEPS}" ]; then pip install ${PYTHON_DEPS}; fi \
     && apt-get purge --auto-remove -yqq $buildDeps \
@@ -77,6 +82,12 @@ RUN set -ex \
 
 COPY script/entrypoint.sh /entrypoint.sh
 COPY config/airflow.cfg ${AIRFLOW_USER_HOME}/airflow.cfg
+# Moving ETL code into Airflow Container
+# code folder should have below files/folder from ETL code(staginng_to_dw) - except for datamodels_ddls/readme.md/requirement.txt
+COPY code/ /usr/local/airflow/app/
+
+# Moving dag code into Airflow container
+COPY dags/etl_airflow.py /usr/local/airflow/dags/
 
 RUN chown -R airflow: ${AIRFLOW_USER_HOME}
 

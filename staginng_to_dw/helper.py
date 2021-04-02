@@ -21,7 +21,7 @@ def load_data_to_database(data,
     :param table_name:
     :param target_db:
     :param target_connection_details:
-    :param load_type:
+    :param load_type:default
     :return:
     """
 
